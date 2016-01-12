@@ -1,0 +1,19 @@
+//		SCREEN WIDTH MEDIA QUERIES		//	
+
+body {
+	display:flex;
+}
+
+@media screen and (min-width: 765px) {
+
+	.container {
+		max-width: 90%;
+	}
+
+}
+
+@media screen and (min-width: 1000px) {
+	.container {
+		max-width: 80%;
+	}
+}

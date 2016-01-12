@@ -1,0 +1,297 @@
+//			MAIN HOME PAGE STYLING		//
+
+span { font-weight: 700;}
+
+main {
+	background: $dark;
+	display:flex;
+	flex:1;
+	min-height: 90vh;
+	justify-content: center;
+	flex-direction:column;
+}
+
+.content-wrapper {
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:center;
+	flex:1;
+	padding-bottom: .5em;
+	background:$light-blue-bg;
+	&:nth-of-type(even){background:$light-bg;}
+}
+
+.content-container{
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	flex:1;
+	max-width:95%;
+}
+
+.patch-version {
+	display:flex;
+	justify-content: center;
+	background: $dark;
+	font-size: .85em;
+	color: $light;
+	span {
+		padding-left: 1em;
+		color: lightgreen;
+	}
+}
+
+.introduction {
+	display:flex;
+	flex-direction:column;
+	flex-wrap: wrap;
+	justify-content:flex-start;
+	align-items:center;
+	h3 {margin-top: .5em;}
+	p {max-width: 70%;}
+	ul {
+		padding: .5em 0;
+		display:flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		list-style-type: disc;
+		li {padding:.25em 0;}
+	}
+	a {	margin: 0 auto;}
+	img {
+		width:100%;
+		max-width: 1000px;
+		border: $thin-border;
+		border-radius: $border-radius;
+	}
+}
+
+.pros-and-cons {
+	display:flex;
+	flex-direction: row;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	div{
+		display:flex;
+		flex-wrap:wrap;
+		border-radius: $border-radius;
+		border: $border;
+		flex-direction: column;
+		margin-top:.5em;
+		ul {
+			margin-left: 2em;
+			display:flex;
+			flex-direction:column;
+			justify-content: flex-start;
+			li { padding-right: 1em;}
+		}
+	}
+	.pros { background: lightgreen;}
+	.cons {background: $runes-light-red;}
+}
+
+.quick-guide {
+	display:flex;
+	flex:1;
+	padding: .5em;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 100%;
+	ul {
+		display:flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items:center;
+		flex:1;
+		li {
+			width: 100%;
+			background: $dark;
+			border:$thin-border;
+			flex: 1;
+			a {
+				display:flex;
+				padding: .25em 0;
+				flex: 1;
+				justify-content: center;
+				text-decoration: none;
+				color: $light;
+				transition: all .5s;
+				&:hover {
+					background: darken($yellow, 15%);
+					color: $dark-blue;
+				}
+			}
+			.active-item {
+				background: $yellow;
+				font-weight: 700;
+				color: $dark-blue;
+			}
+		}
+	}
+}
+
+.explanation {
+	display: none;
+	background: white;
+	border: $border;
+	border-radius: $border-radius;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 90%;
+	padding: .5em 1em;
+	margin-bottom: .5em;
+	p {padding: .5em 0;}
+}
+
+.runes-list {
+	display:flex;
+	justify-content: center;
+	width:100%;
+	flex:1;
+	&.rune-top {
+		font-size: 16px;
+		li:first-child{border-top-left-radius: $border-radius;}
+		li:last-child{border-top-right-radius: $border-radius;}
+	}
+	&.rune-bottom {
+		li:first-child{border-bottom-left-radius: $border-radius;}
+		li:last-child{border-bottom-right-radius: $border-radius;}
+	}
+	li {
+		border:1px solid black;
+		padding: .5em 0;
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		flex: 1;
+		img {padding-bottom: .5em;}
+	}
+}
+
+.mastery-image {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		padding: .75em 0;
+		max-width: 100%;
+	}
+}
+
+.skill-order {
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: .5em 0;
+	max-width: 90%;
+	margin: 0 auto;
+	font-weight: 700;
+	li {
+		display:flex;
+		align-items:center;
+		flex-direction: column;
+		padding: .2em;
+		img {
+			width:64px;
+			margin: .5em;
+			border-radius: $border-radius;
+			border: $thin-border;
+		}
+	}
+}
+
+.skill-hide {display:none;}
+
+.item-container {
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:center;
+	background: $fade-bg;
+	border: $border;
+	border-radius: $border-radius;
+	ul {
+		display:flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding: 1em 0;
+		li {
+			font-weight: 700;
+			font-size: .9em;
+			display:flex;
+			text-align: center;
+			flex-direction: column;
+			padding: .5em 1em;
+			a {
+				padding: .5em;
+			}
+			img {
+				border-radius: $border-radius;
+				border: $thin-border;
+				max-width: 64px;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+button {
+	font-weight: 700;
+	color: $light;
+	background: $dark;
+	border-radius: $border-radius;
+	padding: .25em 1em;
+	margin: .25em auto;
+	margin-bottom: 1em;
+	border-left-color: $light;
+	border-top-color:$light;
+	border-right-color: $light-blue;
+	border-bottom-color: $light-blue;
+	transition: all .5s;
+	&:hover {
+		background:$yellow;
+		color: $dark;
+	}
+}
+
+@media screen and (min-width: 765px) {
+	main {
+		background: url("/img/bg/watch.jpg");
+		min-height: 100vh;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+
+	.quick-guide ul {flex-direction:row;}
+	.runes-list.top {font-size: 21px;}
+	.pros-and-cons div{
+		min-width: 40%;
+		max-width: 45%;
+	}
+
+	.max-order {
+		max-width: 60%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+
+	.explanation {
+		max-width: 80%;
+		padding: .7em 1em;
+	}
+	.three-tree .explanation {max-width:100%;}
+	.content-container{max-width:75%;}
+}
+
+@media screen and (min-width: 1600px) {
+	.content-container {max-width: 1200px;}
+}

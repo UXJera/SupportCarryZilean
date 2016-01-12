@@ -1,0 +1,68 @@
+Lane Matchups
+
+Sort?
+
+Good ADCS to lane with
+
+  > Low mobility ADCS
+  > ADC's with CC
+  > Good follow up potential
+
+Vayne ->
+Jinx ->
+Tristana ->
+
+Kog'Maw ->
+Kindred ->
+
+
+Bad ADCs to lane with
+
+Ezreal ->
+
+ADCS
+
+Easy ADCs to lane against
+
+  > Kog'Maw
+  > Vayne
+  > Kalista
+
+
+Difficult ADCs to lane against
+
+  > High Mobility
+  > Ranged CC
+  > High Burst
+
+Ezreal ->
+Lucian ->
+Draven ->
+Miss Fortune ->
+
+
+
+Facing against in lane:
+
+Easy supports to lane against
+
+Alistar ->
+
+Difficult supports to lane against
+
+Leona ->
+Brand ->
+Nami ->
+Thresh ->  This one is tricky until you learn how to play against him.
+
+<flex 1 - flex 4 >
+
+.content-container {}
+
+ul:first-child {
+  li{flex:1}
+}
+
+ul:last-child {
+  li {flex: 4}
+}

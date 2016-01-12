@@ -1,0 +1,43 @@
+body {
+	font-size: 16px;
+}
+
+.header {
+	background-color: green;
+	min-height: 10vh;
+}
+
+.nav-menu {
+	min-height: inherit;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: flex-end;
+	list-style: none;
+	text-decoration: none;
+}
+
+.nav-menu a {
+	text-decoration: none;
+	color: black;
+}
+
+.nav-menu li{
+	text-align: center;
+	border-radius: 5px;
+	margin: .33rem;
+	padding: 1.2rem 3rem;
+	max-width: 5rem;
+	font-size: 1.3em;
+	background-color: white;
+}
+
+div {
+	margin: 10px;
+	font-size: 3em;
+}
+
+
+@media screen and (max-width: 600px) {
+	
+}

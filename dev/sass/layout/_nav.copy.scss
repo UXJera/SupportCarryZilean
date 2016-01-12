@@ -1,0 +1,132 @@
+//			NAVIGATION & HEADER STYLING		//
+
+
+header {
+	display:flex;
+	flex-direction:column;
+	width: 100%;
+	text-align: center;
+	background: black;
+	border-bottom: 2px solid black;
+}
+
+.main-nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around; 
+	flex-direction: column;
+	li {
+		position: relative;
+		background: $nav-blue;
+		flex: 1 0 auto;
+		a {
+			display:flex;
+			align-items: center;
+			text-decoration: none;
+			color: white;
+			font-size: 1rem;
+			padding: 0 auto;
+			img {
+				border-radius: 5px;
+				margin-right: 1rem;
+				max-height: 36px;
+			}	
+		}
+	}
+}
+
+.dropdown-toggle {
+	margin: 0;
+	padding: 0 .5em;
+	border: 0;
+	font-family: 'FontAwesome';
+	content: "";
+	text-transform: lowercase; /* Stop screen readers to read the text as capital letters */
+	background-color: transparent;
+	&:after {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 42px;
+		color: white;
+		content: "\f107";
+		line-height: 1.25rem;	
+	}
+	&:hover, &:focus {
+		background: $dark-blue;
+	}
+	&.toggle-on:after {
+		content: "\f106";
+	}
+}
+.main-nav ul ul {
+	display: none;
+	position: absolute;
+	z-index:100;
+	flex-direction: column;
+	width: 100%;
+	li {
+		a {
+			border-left: 1px solid black;
+			border-right: 1px solid black;
+			display:flex;
+			justify-content: flex-start;
+			text-align: left;
+			font-size: 1.03rem;
+			padding: .6rem .4rem;
+			flex: 1 0 auto;
+		}
+		&:last-child {
+			border-bottom: 1px solid black;
+		}
+	}
+}
+
+.main-nav ul .toggled-on {
+	display: flex;
+}
+
+@media screen and (max-width: 600px){
+	.main-nav ul ul li a {
+		padding-left: 2em;
+	}
+	.dropdown-toggle {
+		display: none;
+	}
+}
+
+.menu li a {
+	transition: all .3s;
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: .33rem 1rem;
+}
+
+.menu li a:hover {
+	background: $dark-blue;
+}
+
+@media screen and (min-width: 600px) {
+	
+	.main-nav ul {
+		flex-direction: row;
+		li a {
+			justify-content: center;
+		}	
+	}
+}
+
+
+@media screen and (min-width: 1000px) {
+	.main-nav ul {
+		flex-direction: row;
+	}
+	.brand a{
+		justify-content: flex-start;
+	}
+	.return-to-start a{
+		padding-right: 100px;
+	}
+}
+

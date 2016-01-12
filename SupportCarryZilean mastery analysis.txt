@@ -1,0 +1,153 @@
+EACH MAIN TAB IS COLLAPSABLE ON EXPLAIN
+PRIMARY IMAGE OF SKILLS USED
+
+FEROCITY:   -> NOT USEFUL
+
+Overview: The Feroicity Tree (left-most tree) is an offensive based tree that doesn't really suit the needs of a Support Zilean. 
+
+I do not recommend taking any points in this tree, but I will go through and show the strengths of each incase you want to do some experimenting.
+
+Tier 1:
+
+Attack Speed		vs		AP
+
+The extra attack speed doesn't benefit Support Zilean much, so I would take the 2% bonus to AP. This is more beneficial for an AP mid Zilean, but can work well for a Support Zilean who focuses more on AP and maxing Time Bomb first.
+
+More Dmg			vs		Health on Kill
+
+This is a tricky one. Normally, you take Feast for the extra sustain in lane, but the extra 2% damage both given and taken can be a boon considering it is easier to kill you, and thus easier to trigger your ultimate. 
+
+This one is preferencial, and normally I'd stick with Feast, but Double Edge Sword isn't too bad.
+
+Tier 2:
+
+Vamp				vs		AD & AP per level
+
+The spell vamp isn't useful for Zilean because it has 33% reduced effect on AoE spells, so the AD/AP per level is better by default. An extra 15AP isn't a deal breaker late game, but it is far better than the alternative.
+
+More Dmg on Kill	vs		Dmg to snared
+
+The Bounty Hunter can provide a max of 5% extra damage, but may reliably will maybe get a 2-3% when going AP. For a support, you do not want to try to take the kills, making this mastery useless.
+
+The extra damage to snared is a solid choice if you plan on using your slow in your spell combo. The extra damage will ONLY go off on the first bomb detonation unless you follow up with another slow spell at the end of the stun. Generally I take this option over Bounty Hunter because in team fights, there will be some crowd control effect on your target, so you get the bonus damage.
+
+Tier 3:
+
+Armor Pen			vs		Magic Pen
+
+I do not recommend going this far into the tree because the final keystones are poor choices for Zilean.
+
+For this tree, the Magic Penetration is better than the Armor Penetration. DO NOT USE.
+
+Heal on Crit
+
+Zilean doesn't crit, so this is pointless. DO NOT USE.
+
+AA extra damage
+
+Zilean shouldn't be getting enough auto attacks to reliably use this talent, so this is pointless. DO NOT USE.
+
+DoT for bonus AP/AD
+
+Of all the keystones in this tree, this is the only real choice, but it isn't a very good one. Since Time Bomb is your only damaing spell and it has a 50% reduction in damage, it is better to just go the Thunderlord's Decree route and get either of the better Tier 3 talents in that tree. DO NOT USE.
+
+CUNNING:
+
+Overview: The Cunning Tree (center tree) is the ultility based tree, which has some powerful talents to aid the Zilean player.
+
+Tier 1:
+MS out of Combat	vs	Easier Last Hit
+
+The extra 3% movespeed out of combat is a solid choice for early game. Unfortunatly, Movement Speed calculation is scalar (instead of being additive), so you end up with an extra 6 movement speed when using a maxed Time Warp.
+
+Having a little extra help killing minions in lane isn't worth taking since your ADC should be getting all of the farm anyways. DO NOT USE.
+
+Longer Buffs 			vs	Better Potions		vs Assassin
+
+Having the stronger potions is the best option in lane because it helps you sustain through the rough early game.
+
+Having the extra duration on the buff is better for a mid-laner, although I'd probably still take the stronger potions for mid-lane.
+
+Assassin is useless because you shouldn't be dueling anyone to begin with. DO NOT USE.
+
+Tier 2:
+More Dmg < 40%	vs	Mana Regen
+
+The mana regen is probably the best talent to take a Support Zilean in the entire mastery list. When you build more mana, you get an even greater effect from this talent. This is huge when you buy a tear first, which solves most of Zilean's mana problems.
+
+The extra damage just isn't as valuable with Zilean's kit.
+
+Passive Gold			vs	Restore health on Kill
+
+As a support, the default go-to is Bandit because it increases the passive gold generation and rewards for harassing in lane.
+
+The health/mana restoration on kill can be the saving grace in some situations, but Zilean's ultimate is far better insurance policy than Dangerous Game. DO NOT USE.
+
+Tier 3:
+Armor/Magic Pen		vs	5% extra CDR
+
+I prefer the extra 5% CDR because it has the highest value for Zilean in terms of spell rotations. I go into more details about the importance of CDR in the <a href="" target="_blank">CDR and You Guide.</a>
+
+The flat armor/magic penetration has been argued as the better alternative to the ferocity's percentage based tier 3 choice, but Precision is slated to be nerfed in the future. On almost any other champion, this would be the choice talent, but I value the extra CDR over more damage per spell.
+
+30% burst = more speed
+
+As Support Zilean, there are a few reaons why you shouldn't take this. First, this mastery works best when maxing Time Bomb and doesn't work at all when maxing Time Warp, and second, you can cast your Time Warp on yourself for an even larger speed boost that is much more reliable. DO NOT USE.
+
+3rd attack/spell = Damage on target
+
+Out of all of the keystone masteries, this is the least terrible of the bunch. Landing 3 consecutive spells/attacks deals a decent burst. This is most useful in laning when you can land a double bomb combo and throw an auto attack to proc the Thunderlords. As the game progresses, this gets weaker and weaker (due to AP being limited and positioning being less forgiving).
+
+Better Heal/Shield
+
+If this mastery was changed to give the bonus to ANY buff given (or they just included movespeed bonus), this would be the best choice. Currently, the only spell that this procs off of is the Chronoshift revival, which offers no early game bonus, and a limited effect as the game goes on.
+
+
+RESOLVE: 
+
+The Resolve Tree (right tree) is the defensive tree that offers solid secondary choices for defense.
+
+Tier 1:
+Health Regen			vs	%Armor/MR
+
+The health regen is better for Zilean in lane because as you auto attack the enemy, the minions WILL attack you back and deal a considerable amount of damage. This helps you bounce back from that deficit.
+
+The extra Armor/MR isn't worth it because Zilean doesn't build "tanky". While I do recommend picking up a Zeke's Harbinger and an item that builds out of Chalice, the extra bonus won't be enough to make a huge difference in the mid to late game.
+
+More MS					vs	2 less dmg from champs
+
+I prefer the extra MS in the river and brush because it makes escapes much easier. I like the utility of this talent over the miniscule damage reduction.
+
+Taking 2 fewer damage from champions adds up over time, but each auto attack from an ADC will hit you for about 50-60 damage, so you'll be taking a ton of damage before you negate enough damage from that first auto attack. This talent works better for supports with higher armor or armor steroids.
+
+Tier 2:
+Stronger Self-Shield	vs	Flat HP
+
+The extra 45HP is the best choice for me. This is an early game talent (in which Zilean is weakest). If you are running HP seals or quints, this will put you over 600HP going to lane, which is good for a more passive support.
+
+The only benefit from this mastery is the extra 8% increase to your regeneration and health from Ancient Coin. This is such a small amount that it isn't worth it. You gain an extra 0.1 hp regen per 2 seconds in lane and a 0.9 hp regen when using a potion.
+
+Lower Summoners	vs	Insane Regen
+
+The lower cooldown on Summoner Spells is the most common choice in this tree, for good reason. For example, if you are tracking your opponents summoner spells by their default values (5 minute flash/teleport, 4 minute heal, 3.5minute exhaust/ignite), you may be off by 30 seconds on a flash timing. (255sec/4.25minute flash/tp, 204sec/3.4minute heal, 179sec/3minute exhaust/ignite). Also having these spells more readily available makes more opportunities to engage/prevent plays.
+
+The extra health regen is not a bad talent at all, it's just better for those who expect to be staying in lane for long periods of time at a lower health. Since Support Zilean has great sustain with the Ancient Coin and three potions, this mastery is a bit unnecessary for him.
+
+Tier 3:
+Tenacity					vs	Bonus defense around enemies
+
+The extra tenacity is a nice thought, but Zilean is supposed to be elusive and able to run away before those hard CC spells land. Often this is useful in the early game while Zilean gets the levels and items needed to leave an impact in the game.
+
+The bonus to defenses when enemies are around is not a good thing for Zilean, as he shouldn't be anywhere near the enemy team's core. At most, you will have 3 people diving in, which only grants you 9 armor/mr in a position where you shouldn't be. Ultimately, this talent is best for champions who engage, and Zilean does best counter-engaging and creating picks. DO NOT TAKE
+
+AA steals life based on your max health
+
+The auto attacks stealing a bit of your max health is alright, but since you're ranged and your enemy SHOULDN'T let you get free autos every 4 seconds, the strength of this talent are limited. In the late game, you shouldn't be able to get free auto attacks outside of creating picks.
+
+300 bonus HP for killing cannons/jungle
+
+The changes to siege minion timings make this an interesting choice. Sticking around in lane, you will get an about an extra 50-60 hp, but as the game goes on, siege minions come out every other wave (and every wave after 35 minutes), which means that reaching the bonus 300HP is guaranteed if the game goes long enough. The downside to this is that it doesn't help you much in the early game compared to the other options. A huge crux of this guide is understanding the strengths and weaknesses of Zilean, and making it out of the early game without too many problems is the primary objective.
+
+Dmg reduction
+
+Out of all of the keystone talents in all trees, this is the second best option. You will almost always have a 6% damage reduction, and help out your lane partner by soaking some of his damage. Depending on how aggressive your enemy laners are, you may even want to take this over Thunderlord's and the extra CDR.

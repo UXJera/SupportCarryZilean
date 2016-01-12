@@ -1,0 +1,123 @@
+//			NAVIGATION & HEADER STYLING		//
+
+
+header {
+	display:flex;
+	flex-direction:column;
+	width: 100%;
+	text-align: center;
+	background: $dark;
+	border-bottom: $border;
+}
+
+.main-nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex-direction: column;
+	li {
+		min-width:20%;
+		position: relative;
+		background: $nav-blue;
+		flex: 1 0 auto;
+		a {
+			display:flex;
+			justify-content:space-between;
+			align-items: center;
+			text-decoration: none;
+			color: white;
+			font-weight: 700;
+			font-size: 1.2em;
+			img {
+				order:1;
+				border-radius: 5px;
+				margin-right: 1rem;
+				max-height: 36px;
+				max-width: 36px;
+			}
+		}
+		ul {
+			display:none;
+		}
+		&:hover > ul, &:active > ul, &:focus > ul {
+			display:flex;
+			z-index: 1000;
+		}
+	}
+	.brand {
+		flex:1;
+		h1 {order:0;}
+		span {padding-left:.3em;}
+		a {
+			color: $nav-blue;
+			transition: background .5s ease-in 0s;
+			&:hover {
+				color:white;
+				transition: background .5s ease-out 2s;
+					h1 {transition: color 1s;
+					span {transition: all 1s ease-in;}
+				}
+			}
+		}
+	}
+}
+
+.main-nav .sub-menu {
+	position: absolute;
+	flex-direction: column;
+	width: 100%;
+	li {
+		a {
+			border-left: $thin-border;
+			border-right: $thin-border;
+			display:flex;
+			justify-content: flex-start;
+			font-size: 1.03em;
+			padding: .6rem 1rem;
+			flex: 1 0 auto;
+		}
+		&:last-child {
+			border-bottom: $thin-border;
+		}
+	}
+}
+
+.main-nav ul .toggle-on {
+	display: flex;
+}
+
+@media screen and (max-width: 600px){
+	.main-nav ul ul li a {
+		padding-left: 2em;
+	}
+	.dropdown-toggle {
+		display: none;
+	}
+}
+
+.menu li a {
+	transition: all .5s;
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: .33rem 1rem;
+}
+
+.menu li a:hover {
+	background: $dark-blue;
+}
+
+@media screen and (min-width: 600px) {
+	.main-nav ul {flex-direction: row;
+		li a {
+			justify-content: center;
+			img {order:0;}
+		}
+	}
+}
+
+
+@media screen and (min-width: 1000px) {
+	.main-nav ul {flex-direction: row;}
+	//.brand a{justify-content: flex-start;}
+}

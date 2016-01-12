@@ -1,0 +1,85 @@
+//		What to buy and when	//
+
+Starting Items
+
+	Coin
+	3 potions
+	ward
+
+Early Back
+
+	Tear of the Goddess
+	Pink ward
+	More pots
+
+Early Game
+
+	Sightstone
+	Sweeper
+	
+Early-Mid Game
+
+	Boots
+	Glacial
+	
+	
+	
+Why I don't like these items:
+
+Spellthief -> Spookies
+	1) Lower gold generation than Coin
+		ST -> 2gp10, 8gold when hitting enemy (avg of 5 per minute). 50-58gpm.
+		Coin -> Health sustain, 24 gold and 30 life per wave (58gpm).
+	2) Coin can be upgraded much later, ST has a high upgrade priority
+		Coin is one of the last items to be upgraded, because the stats don't improve as much. This allows more item diversity rather than having to sink your next 1,850 gold into upgrading spellthief (you get a sightstone + either cdr boots or Glacial Shroud).
+	3) The base values for maxed Q are strong in the early-mid game
+		AP isn't needed when your rank 5 Q can do 225+ damage per bomb in the mid game.
+
+Eye of Oasis (Talisman Alternative) 
+	1) No CDR
+	2) You lose out on upgrading sightstone for another 10% cooldown on activatible items (Mikaels, Banner, Talisman)
+		
+Mobility Boots
+	1) Zilean has enough speed that they don't mean much
+	2) The loss of MS when hit makes it easier for enemies to stick onto you.
+
+Athene's Unholy Grail
+	1) Good mid lane item, not so good support item.
+	2) Puts you over CDR cap, so you have to ignore 2 core CDR items in build (They are: CDR boots, Zeke's, Talisman, or Banner/Mikaels). If the game is going super late, you can take this and another NLR-based item and sell Zekes and Banner/Mikael.
+	3) Passive isn't that great since your mana regen is solid, or you can just return to base and come back quickly.
+
+		
+Morellos
+	Similar reasons to Athene's
+		
+NLR-based items
+	1) AP isn't a focus for Support Zilean
+	2) Expensive components on a build that has tight inventory management.
+	Rabadons ->
+		Low base AP in the support build makes this item suck
+	Ludens ->
+		OK burst, 
+	Zhonya ->
+		This is an OK item, but leave you 10% down in CDR, so slower rotations and longer ultimate CD at the expense of stalling longer if you get caught or focused in a teamfight.
+	Archangels ->
+		This is the final item I include in the build because you don't have inventory space and it's a total of 2350g to have banked before you can outright buy this.
+		
+BUILDS IVE TRIED:
+
+Eye of Oasis
+CDR Boots
+Zekes
+Morello/Grail
+--
+2x Luxury Items -> Banshee / Deadmans / Zhonya
+
+Did not have good sucess w/ this build. Lower mana pool = fewer rotations and quicker OOM.
+
+
+//
+Tear
+Eye Rush
+CDR Boots
+Zekes
+
+We stomped against a bad laner, very easy game.
