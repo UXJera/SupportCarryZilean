@@ -16,19 +16,29 @@ main {
 	flex-direction:column;
 	justify-content:flex-start;
 	align-items:center;
-	flex:1;
+	height: 100%;
+	//flex:1;
 	padding-bottom: .5em;
 	background:$light-blue-bg;
 	&:nth-of-type(even){background:$light-bg;}
+	h3, h5 {
+		display:flex;
+		align-items:center;
+		img {
+			border: $thin-border;
+			border-radius: $border-radius;
+			margin: 0 .5em;
+		}
+	}
 }
 
 .content-container{
 	display:flex;
-	flex-direction:column;
-	flex-wrap:wrap;
-	justify-content:center;
+	//flex-direction:column;
+	//flex-wrap:wrap;
+	//justify-content:center;
 	align-items:center;
-	flex:1;
+	//flex:1;
 	max-width:95%;
 }
 
@@ -51,8 +61,8 @@ main {
 	justify-content:flex-start;
 	align-items:center;
 	h3 {margin-top: .5em;}
-	p {max-width: 70%;}
 	ul {
+		margin-left: 2em;
 		padding: .5em 0;
 		display:flex;
 		flex-wrap: wrap;
@@ -71,12 +81,12 @@ main {
 
 .pros-and-cons {
 	display:flex;
-	flex-direction: row;
+	//flex-direction: row;
 	justify-content:space-around;
 	flex-wrap:wrap;
 	div{
 		display:flex;
-		flex-wrap:wrap;
+		//flex-wrap:wrap;
 		border-radius: $border-radius;
 		border: $border;
 		flex-direction: column;
@@ -94,23 +104,21 @@ main {
 }
 
 .quick-guide {
-	display:flex;
-	flex:1;
+	//display:flex;
+	//flex:1;
 	padding: .5em;
-	justify-content: flex-start;
-	flex-direction: column;
+	//justify-content: flex-start;
+	//flex-direction: column;
 	width: 100%;
 	ul {
 		display:flex;
 		flex-direction:column;
 		justify-content: center;
 		align-items:center;
-		flex:1;
 		li {
 			width: 100%;
 			background: $dark;
 			border:$thin-border;
-			flex: 1;
 			a {
 				display:flex;
 				padding: .25em 0;
@@ -263,7 +271,7 @@ button {
 
 @media screen and (min-width: 765px) {
 	main {
-		background: url("/img/bg/watch.jpg");
+		background: url("/img/bg/zil.jpg");
 		min-height: 100vh;
 		background-attachment: fixed;
 		background-size: cover;
@@ -271,9 +279,12 @@ button {
 
 	.quick-guide ul {flex-direction:row;}
 	.runes-list.top {font-size: 21px;}
-	.pros-and-cons div{
-		min-width: 40%;
-		max-width: 45%;
+	.pros-and-cons {
+		flex-wrap:nowrap;
+		div{
+			min-width: 40%;
+			max-width: 45%;
+		}
 	}
 
 	.max-order {
@@ -283,7 +294,7 @@ button {
 }
 
 @media screen and (min-width: 1000px) {
-
+	.introduction p {max-width: 70%;}
 	.explanation {
 		max-width: 80%;
 		padding: .7em 1em;

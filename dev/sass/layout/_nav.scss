@@ -32,8 +32,8 @@ header {
 				order:1;
 				border-radius: 5px;
 				margin-right: 1rem;
-				max-height: 36px;
-				max-width: 36px;
+				height: 36px;
+				width: 36px;
 			}
 		}
 		ul {
@@ -45,19 +45,10 @@ header {
 		}
 	}
 	.brand {
-		flex:1;
 		h1 {order:0;}
 		span {padding-left:.3em;}
 		a {
-			color: $nav-blue;
-			transition: background .5s ease-in 0s;
-			&:hover {
-				color:white;
-				transition: background .5s ease-out 2s;
-					h1 {transition: color 1s;
-					span {transition: all 1s ease-in;}
-				}
-			}
+			color:white;
 		}
 	}
 }
@@ -108,16 +99,30 @@ header {
 }
 
 @media screen and (min-width: 600px) {
-	.main-nav ul {flex-direction: row;
+	.main-nav ul {
+		flex-direction: row;
 		li a {
 			justify-content: center;
-			img {order:0;}
+				img {
+					order:0;
+			}
 		}
 	}
 }
 
 
 @media screen and (min-width: 1000px) {
-	.main-nav ul {flex-direction: row;}
-	//.brand a{justify-content: flex-start;}
+	.main-nav ul {flex-direction: row;
+	.brand a {
+		color: $nav-blue;
+		transition: background .5s ease-in 0s;
+		&:hover {
+			color:white;
+			transition: background .5s ease-out 2s;
+				h1 {transition: color 1s;
+					span {transition: all 1s ease-in;}
+				}
+			}
+		}
+	}
 }
