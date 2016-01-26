@@ -13,6 +13,8 @@
 	img {max-width: 100%;}
 }
 
+//	STYLES FOR SPELLS, COMBOS AND TRICKS	//
+
 .skill-container{
 	margin: .5em 0;
 	display:flex;
@@ -74,6 +76,8 @@
 	}
 }
 
+//	STYLES FOR RUNES 101	//
+
 .rune-container {
 	display:flex;
   flex-direction:column;
@@ -81,7 +85,7 @@
   justify-content:space-around;
   flex:1;
 	ul {
-		border: $border;
+		//border: $border;
 		border-radius: $border-radius;
 		display:flex;
     justify-content: space-around;
@@ -100,6 +104,8 @@
 		}
 	}
 }
+
+//	STYLES FOR MASTERY BREAKDOWN	//
 
 .mastery-container {
   border: $border;
@@ -120,7 +126,7 @@
       justify-content: center;
       align-items:center;
 			text-align:center;
-			background:lightgreen;
+			background: $green-bg;
 			* {padding-bottom: .5em;}
 			p {padding: .5em;}
 			img {
@@ -141,6 +147,8 @@
 		}
 	}
 }
+
+//	STYLES FOR ITEM OPTIMIZATION	//
 
 .item-exp {
 	display:flex;
@@ -172,18 +180,12 @@
 }
 
 .avoid {
-	background: $runes-light-red;
+	background: $red-light;
 	padding: 1em 0;
-	//ul {padding: 0;
-	//	li {padding: 0;}
-	//}
+	border:none;
 	.item-list{
-    //justify-content:flex-start;
-    //align-items:flex-start;
-    //flex-direction:column;
 		text-align:left;
 		padding: 0 2em;
-    //flex:1;
 		> li {
 			margin:0 auto;
 		}
@@ -197,7 +199,6 @@
 			li {
 				display:flex;
 				text-align:left;
-        //justify-content:center;
 				align-items:center;
 				padding: .25em 0;
 				font-weight: 400;
@@ -215,6 +216,8 @@
 		}
 }
 
+//	STYLES FOR LANING MATCHUPS	//
+
 .champ-row {
 	display:flex;
   flex-direction:column;
@@ -224,9 +227,9 @@
 	border-radius: $border-radius;
 	margin: .25em 0;
 	padding: .5em;
-	background: white;
+	background: $runes-light-blue;
 	width:100%;
-	&:nth-of-type(even) {background: #ccc;}
+	&:nth-of-type(even) {background: lighten($runes-light-blue, 10%);}
 	> * {
 		margin: 0 .25em;
 	}
@@ -259,6 +262,10 @@
 	}
 }
 
+.support-matchup .champ-row p {flex:6;}
+
+//	STYLES FOR CDR AND YOU	//
+
 .cdr-container {
   flex-direction:column;
   flex-wrap:nowrap;
@@ -272,12 +279,59 @@
 	}
 }
 
-.support-matchup .champ-row p {flex:6;}
+//	STYLES FOR Q vs E DEBATE	//
 
-.red-runes > ul { background: $runes-red;}
-.yellow-runes > ul { background: $runes-yellow;}
-.blue-runes >  ul { background: $runes-blue;}
-.purple-runes >  ul { background: $runes-purple;}
+.pros-and-cons .time-bomb, .pros-and-cons .time-warp {
+	color:white;
+	border:none;
+}
+
+.pros-and-cons .time-bomb {background: $time-bomb-blue-bg;}
+.pros-and-cons .time-warp {background: $time-warp-blue-bg;}
+
+
+.debate-winner {
+	display:flex;
+	flex-direction:column;
+	border: $border;
+	border-radius: $border-radius;
+	max-width: 70%;
+	justify-content:center;
+	padding: 1em;
+	margin-top: 1em;
+	background:  $fade-bg;
+
+}
+
+//	STYLES FOR GAMEPLAY VIDEO	//
+
+.video-block {
+	background: white;
+	border-radius: $border-radius;
+	border: $border;
+	max-width: 95%;
+	margin: 1em 0;
+	& > * {margin: .5em 1em;}
+	h3 {}
+	div {display:flex; justify-content: center;}
+	p {font-size: .9em;}
+}
+
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 
 .special-item {
 	background:$dark; color:#ddd;
@@ -302,6 +356,7 @@
 
 @media screen and (min-width: 1000px) {
 	.spell-combo{max-width: 60%;}
-	.avoid{max-width: 75%;}
+	.avoid, .video-block{max-width: 75%;}
 	.summary{max-width: 50%;}
+
 }

@@ -34,11 +34,7 @@ main {
 
 .content-container{
 	display:flex;
-	//flex-direction:column;
-	//flex-wrap:wrap;
-	//justify-content:center;
 	align-items:center;
-	//flex:1;
 	max-width:95%;
 }
 
@@ -81,34 +77,37 @@ main {
 
 .pros-and-cons {
 	display:flex;
-	//flex-direction: row;
 	justify-content:space-around;
 	flex-wrap:wrap;
 	div{
 		display:flex;
-		//flex-wrap:wrap;
 		border-radius: $border-radius;
 		border: $border;
 		flex-direction: column;
 		margin-top:.5em;
+		padding: .4em;
 		ul {
 			margin-left: 2em;
 			display:flex;
 			flex-direction:column;
 			justify-content: flex-start;
+			list-style-type: disc;
 			li { padding-right: 1em;}
 		}
 	}
-	.pros { background: lightgreen;}
-	.cons {background: $runes-light-red;}
+	img {
+		max-width: 64px;
+		max-height:64px;
+		margin: 0 auto;
+		border:$thin-border;
+		border-radius: $border-radius;
+	}
+	.pros {background: $green-bg;}
+	.cons {background: $red;}
 }
 
 .quick-guide {
-	//display:flex;
-	//flex:1;
-	padding: .5em;
-	//justify-content: flex-start;
-	//flex-direction: column;
+	padding-bottom: .5em;
 	width: 100%;
 	ul {
 		display:flex;
@@ -118,7 +117,6 @@ main {
 		li {
 			width: 100%;
 			background: $dark;
-			border:$thin-border;
 			a {
 				display:flex;
 				padding: .25em 0;
@@ -129,13 +127,13 @@ main {
 				transition: all .5s;
 				&:hover {
 					background: darken($yellow, 15%);
-					color: $dark-blue;
+					color: $time-warp-blue;
 				}
 			}
 			.active-item {
 				background: $yellow;
 				font-weight: 700;
-				color: $dark-blue;
+				color: $time-warp-blue;
 			}
 		}
 	}
@@ -178,6 +176,7 @@ main {
 		text-align: center;
 		flex: 1;
 		img {padding-bottom: .5em;}
+		&:last-of-type{color:white;}
 	}
 }
 

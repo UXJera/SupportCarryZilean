@@ -1,21 +1,5 @@
 //			SASS MAIN COLOR SHORTHANDS		//
 
-
-
-.red {background: #FF4747;}
-.light-red {background: lighten( #FF4747, 20%);}
-
-.yellow {background: #FFF24F;}
-.light-yellow {background: lighten(#FFF24F, 20%);}
-
-.blue {background: #00A8E8;}
-.light-blue {background: lighten(#00A8E8, 20%);}
-
-.purple {background: #E24FE2;}
-.light-purple {background: lighten(#E24FE2, 20%);}
-
-.green {background: #5CBA55;}
-
 $runes-red: #FF4747;
 $runes-light-red: lighten( #FF4747, 20%);
 $runes-yellow: #FFF24F;
@@ -25,33 +9,58 @@ $runes-light-blue: lighten(#00A8E8, 20%);
 $runes-purple: #E24FE2;
 $runes-light-purple: lighten(#E24FE2, 20%);
 
-$blue1: #549aa8;
-$yellow1: #fee520;
-$darkblue1: #2010a9;
+
+$time-bomb-blue: #549aa8;
+$time-warp-blue: #2010a9;
 
 $nav-blue: #639fab;
 $light: #bbcde5;
 $dark: #222;
+$red: #FF4747;
+$red-light: lighten($red, 20%);
 $yellow: #edc236;
-$light-blue: darken( #bbcde5, 10%);
-$dark-blue: #1c5d99;
+$yellow-light:lighten($yellow, 20%);
+$light-blue: darken(#bbcde5, 10%);
 
 $blue-bg: rgba(99, 159, 171, .92);
 $light-blue-bg: rgba(140, 232, 255, .95);
 $light-bg: rgba(191, 238, 255, .95);
 $fade-bg:  rgba(255, 255, 255, .5);
+$fade-light-bg: rgba(255, 255, 255, .7);
+$green-bg: lighten(rgba(87, 255, 87, .9), 10%);
+$time-bomb-blue-bg: lighten(rgba(28, 93, 153, .8), 10%);
+$time-warp-blue-bg: lighten(rgba(32, 16, 169, .8), 15%);
+
+.green {background: #5CBA55;}
+
+//  BG COLORS FOR RUNES ON HOME PAGE AND RUNES 101  //
+
+.red {background: $red;}
+.light-red {background: $red-light;}
+
+.yellow {background: $yellow;} //#FFF24F
+.light-yellow {background: $yellow-light;}
+
+.blue {background: #00A8E8;} //
+.light-blue {background: lighten(#00A8E8, 20%);}
+
+.purple {background: $time-warp-blue;}
+.light-purple {background: lighten($time-warp-blue, 20%);}
+
+.red-runes > ul { background: $red;}
+.yellow-runes > ul { background: $runes-yellow;}
+.blue-runes >  ul { background: $runes-blue;}
+.purple-runes >  ul { background: $time-warp-blue-bg; color:white;}
+
+//  BG IMG FOR MASTERY PAGE //
 
 .cunning {background:url('/img/masteries/cunning-bg.png');}
 .ferocity {background:url('/img/masteries/ferocity-bg.png');}
 .resolve {background:url('/img/masteries/resolve-bg.png');}
 
-
-
 .cunning, .ferocity, .resolve {
   min-height: 100vh;
   background-attachment: fixed;
   background-size: cover;
-  > h4, h6 {
-     color: #eee;
- }
+  > h4, h6 {color: #eee;}
 }

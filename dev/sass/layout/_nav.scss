@@ -7,7 +7,7 @@ header {
 	width: 100%;
 	text-align: center;
 	background: $dark;
-	border-bottom: $border;
+	border-bottom: $thin-border;
 }
 
 .main-nav ul {
@@ -18,7 +18,7 @@ header {
 	li {
 		min-width:20%;
 		position: relative;
-		background: $nav-blue;
+		background: $runes-blue;//$time-bomb-blue;
 		flex: 1 0 auto;
 		a {
 			display:flex;
@@ -95,7 +95,7 @@ header {
 }
 
 .menu li a:hover {
-	background: $dark-blue;
+	background:$time-warp-blue;
 }
 
 @media screen and (min-width: 600px) {
@@ -114,7 +114,7 @@ header {
 @media screen and (min-width: 1000px) {
 	.main-nav ul {flex-direction: row;
 	.brand a {
-		color: $nav-blue;
+		color: $runes-blue;//$time-bomb-blue;
 		transition: background .5s ease-in 0s;
 		&:hover {
 			color:white;
