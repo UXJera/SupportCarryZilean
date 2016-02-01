@@ -54,9 +54,9 @@ $time-warp-blue-bg: lighten(rgba(32, 16, 169, .8), 15%);
 
 //  BG IMG FOR MASTERY PAGE //
 
-.cunning {background:url('/img/masteries/cunning-bg.png');}
-.ferocity {background:url('/img/masteries/ferocity-bg.png');}
-.resolve {background:url('/img/masteries/resolve-bg.png');}
+.cunning {background: #36213C;}//background:url('/img/masteries/cunning-bg.png');}
+.ferocity {background: #321000;}//background:url('/img/masteries/ferocity-bg.png');}
+.resolve {background: #152530;}//background:url('/img/masteries/resolve-bg.png');}
 
 .cunning, .ferocity, .resolve {
   min-height: 100vh;

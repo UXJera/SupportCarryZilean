@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app>
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<title>What to Buy and When | Support Carry Zilean</title>
-	<meta name="author" content="Jera"></meta>
+
+	<meta name="author" content="UX Jera"></meta>
+	<link rel="shortcut icon" href="/favicon/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="shortcut icon" href="/favicon/favicon.ico">
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -25,33 +28,7 @@
 </head>
 <body>
 
-<header class="menu-section">
-	<nav role="navigation" class="main-nav menu">
-	<ul>
-		<li class="brand"><a href="/"><h1>SUPPORT <span>CARRY</span> </h1><img src="/img/Zilport.png" alt="Zilean face icon"></a></li>
-		<li><a href="/#quick-guide"><img src="/img/skills/Q64.png" alt="Time bomb Icon">QUICK GUIDE</a></li>
-		<li><a  class="nav-toggle" href="#" aria-haspopup="true"><img src="/img/skills/W64.png" alt="Rewind Icon">BEGINNER GUIDES</a>
-			<ul class="sub-menu">
-				<li><a href="/beginner-guides/runes-101/">Runes 101</a></li>
-				<li><a href="/beginner-guides/mastery-breakdown/">Mastery Breakdown</a></li>
-				<li><a href="/beginner-guides/spells-combos-tricks/">Spells, Combos, and Tricks</a></li>
-				<li><a href="/beginner-guides/what-to-buy-and-when/">What to Buy and When</a></li>
-				<li><a href="/beginner-guides/laning-matchups/">Laning Matchups</a></li>
-			</ul>
-		</li>
-
-		<li><a  class="nav-toggle" href="#" aria-haspopup="true"><img src="/img/skills/E64.png" alt="Time Warp Icon">ADVANCED GUIDES</a>
-			<ul class="sub-menu">
-				<li><a href="/advanced-guides/cdr-and-you">CDR and You</a></li>
-				<li><a href="/advanced-guides/the-great-q-vs-e-debate">The Great Q vs E Debate</a></li>
-				<li><a href="/advanced-guides/optimizing-time-warp">Optimizing Time Warp</a></li>
-				<li><a href="/advanced-guides/importance-of-mana-regen">The Importance of Mana Regen</a></li>
-			</ul>
-		</li>
-		<li class=""><a href="/gameplay/"><img src="/img/skills/R64.png" alt="Chronoshift Icon">GAMEPLAY</a></li>
-	</ul>
-	</nav>
-</header>
+<div ng-include src="'/assets/nav.url'"></div>
 
 <main>
 	<div class="content-wrapper">
@@ -251,14 +228,14 @@
 	<div class="content-wrapper">
 		<div class="content-container">
 			<h4>The Items to Avoid</h4>
-			<div class="item-container avoid">
+			<div class="item-container avoid lg-cont">
 				<ul class="item-list">
 					<li><span>Spellthief's Edge</span><a href="http://leagueoflegends.wikia.com/wiki/Spellthief%27s_Edge" target="_blank"><img src="/img/items/spellthief64.png" alt="Spellthief's Edge Icon"></a><span>350g</span></li>
 					<li>
 						<ul>
 							<li>Coin is 48 gpm (4 per creep x 6 creeps x 2 waves) plus 30 life per wave.</li>
 							<li>Spellthief is 8 per hit (max of 48 per min) + 10 extra damage (max 60 per min) and 5 AP.</li>
-							<li>For Spellthief's to work, you have to put yourself out to harass, making it predictable when your Spellthief is fully stacked.</li>
+							<li>For Spellthief's to work optimally, you have to put yourself out to harass, making it predictable when your Spellthief is fully stacked.</li>
 							<li>If you don't land Time Bombs or autos, you lose out on gold efficiency.</li>
 						</ul>
 					<li><span>Frost Queen's Claim</span><a href="http://leagueoflegends.wikia.com/wiki/Frost_Queen's_Claim" target="_blank"><img src="/img/items/spookies64.png" alt="Frost Queen's Claim Icon"></a><span>2200g</span></li>
@@ -269,7 +246,7 @@
 							<li>The active from Talisman is better for engagement/disengage, especially with the Captain Boots enchantment.</li>
 						</ul>
 					</li>
-						<li>Talisman of Ascension</span><a href="http://leagueoflegends.wikia.com/wiki/Talisman" target="_blank"><img src="/img/items/talisman64.png" alt="Talisman of Ascension Icon"></a><span>2200g</span></li>
+						<li><span>Talisman of Ascension</span><a href="http://leagueoflegends.wikia.com/wiki/Talisman" target="_blank"><img src="/img/items/talisman64.png" alt="Talisman of Ascension Icon"></a><span>2200g</span></li>
 					<li>
 						<ul>
 							<li>I used to really like this item before Eye of the Oasis had CDR, but now this guy is out.</li>
@@ -277,7 +254,7 @@
 							<li>Taking this means you won't have 5-slot efficency unless you pick up a 20% CDR item, which takes away from the utility of the build.</li>
 							</ul>
 					</li>
-					<li><span>Athene's Unholy Grail</span><a href="http://leagueoflegends.wikia.com/wiki/Grail" target="_blank"><img src="/img/items/grail64.png" alt="Athene's Unholy Grail Icon"></a><span>2800g</span></li>
+					<li><span>Athene's Unholy Grail</span><a href="http://leagueoflegends.wikia.com/wiki/Grail" target="_blank"><img src="/img/items/grail64.png" alt="Athene's Unholy Grail Icon"></a><span>2700g</span></li>
 					<li>
 						<ul>
 							<li>You want to buy this ONLY if you are trying to achieve 40% CDR with only 3 items.</li>
@@ -285,7 +262,7 @@
 							<li>The mana regen from the kill/assist passive isn't that great because you have enough regen full build.</li>
 						</ul>
 					</li>
-					<li><span>Morellonomicon</span><a href="http://leagueoflegends.wikia.com/wiki/Morellonomicon" target="_blank"><img src="/img/items/morello64.png" alt="Morellonomicon Icon"></a><span>2550g</span></li>
+					<li><span>Morellonomicon</span><a href="http://leagueoflegends.wikia.com/wiki/Morellonomicon" target="_blank"><img src="/img/items/morello64.png" alt="Morellonomicon Icon"></a><span>2400g</span></li>
 					<li>
 						<ul>
 							<li>This is similar theme to Athene's, except offers no defensive stats, but with easier components.</li>
@@ -304,7 +281,7 @@
 					<li>
 						<ul>
 							<li>These are similar to Boots of Mobility, but with fewer drawbacks.</li>
-							<li>You have to ignore the "Swifties Fever" (buying Boots of Swiftness on every champion) because it does not make a significant speed increase while his Time Warp is on himself.</li>
+							<li>You have to ignore the "Swifties Fever" (buying Boots of Swiftness on every champion) because it does not make a significant speed increase while his Time Warp is on himself (only +20 movespeed overall).</li>
 							<li>Casting Time Warp on yourself will override the movespeed loss of most spells, making these not as effective as other champions.</p>
 							<li>Also, you'll have to find another 10% CDR that these guys don't bring.</li>
 						</ul>
@@ -337,18 +314,10 @@
 		</div>
 	</div>
 </main>
-<footer class="main-footer">
-	<div class="footer-container">
-		<a href="https://twitter.com/UX_Jera" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
-		<a href="https://www.youtube.com/channel/UCdnThue1VY1FuC_WsiSPZ3A" target="_blank"><i class="fa fa-youtube-square fa-2x"></i></a>
-		<a href="https://www.linkedin.com/in/jeremiahnyman" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
-		<a href="https://github.com/UXJera" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
-		<a href="http://www.piedpiper.com/" target="_blank"><i class="fa fa-pied-piper fa-2x"></i></a>
-		<span>Designed by <a href="https://www.twitter.com/UX_Jera" target="_blank">@UX_Jera</a> 2016.</span>
-	</div>
-</footer>
-	<script type="text/javascript" src="/js/libs/jquery-2.1.3.min.js"></script>
-	<script type="text/javascript" src="/js/doubletaptogo.min.js"></script>
-	<script type="text/javascript" src="/js/expand.js"></script>
+
+<div ng-include src="'/assets/footer.url'"></div>
+
+	<script type="text/javascript" src="/js/app.js"></script>
+
 </body>
 </html>

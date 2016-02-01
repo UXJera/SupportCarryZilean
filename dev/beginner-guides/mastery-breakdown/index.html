@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app>
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
@@ -10,6 +10,9 @@
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="/favicon/favicon.ico">
+
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -25,33 +28,7 @@
 </head>
 <body>
 
-<header class="menu-section">
-	<nav role="navigation" class="main-nav menu">
-	<ul>
-		<li class="brand"><a href="#"><h1>SUPPORT <span>CARRY</span> </h1><img src="/img/Zilport.png" alt="Zilean face icon"></a></li>
-		<li><a href="/#quick-guide"><img src="/img/skills/Q64.png" alt="Time bomb Icon">QUICK GUIDE</a></li>
-		<li><a  class="nav-toggle" href="/" aria-haspopup="true"><img src="/img/skills/W64.png" alt="Rewind Icon">BEGINNER GUIDES</a>
-			<ul class="sub-menu">
-				<li><a href="/beginner-guides/runes-101/">Runes 101</a></li>
-				<li><a href="/beginner-guides/mastery-breakdown/">Mastery Breakdown</a></li>
-				<li><a href="/beginner-guides/spells-combos-tricks/">Spells, Combos, and Tricks</a></li>
-				<li><a href="/beginner-guides/what-to-buy-and-when/">What to Buy and When</a></li>
-				<li><a href="/beginner-guides/laning-matchups/">Laning Matchups</a></li>
-			</ul>
-		</li>
-
-		<li><a  class="nav-toggle" href="#" aria-haspopup="true"><img src="/img/skills/E64.png" alt="Time Warp Icon">ADVANCED GUIDES</a>
-			<ul class="sub-menu">
-				<li><a href="/advanced-guides/cdr-and-you">CDR and You</a></li>
-				<li><a href="/advanced-guides/the-great-q-vs-e-debate">The Great Q vs E Debate</a></li>
-				<li><a href="/advanced-guides/optimizing-time-warp">Optimizing Time Warp</a></li>
-				<li><a href="/advanced-guides/importance-of-mana-regen">The Importance of Mana Regen</a></li>
-			</ul>
-		</li>
-		<li class=""><a href="/gameplay/"><img src="/img/skills/R64.png" alt="Chronoshift Icon">GAMEPLAY</a></li>
-	</ul>
-	</nav>
-</header>
+<div ng-include src="'/assets/nav.url'"></div>
 
 <main>
 	<div class="content-wrapper">
@@ -61,13 +38,13 @@
 				<p><span>Early Season 6 preface: </span> Right now there isn't a single 18-point mastery that synergizes well with Support Zilean.</p>
 				<p>However, there are talents in the Cunning Tree that work really well with Zilean (extra mana regen, extra CDR), so Cunning is the tree that I recommend going deep into.</p>
 				<p>Zilean's early game is his weakest point, so many of the mastery talents are taken to alleviate some of the pain so that you can make it to the mid game in good shape.</p>
-				<p>These are the masteries that have served me best in the over 300+ games I've played on Zilean this season.</p>
+				<p>These are the masteries that have served me best in the over 300+ games I've played on Zilean since the most recent mastery redesign.</p>
 				<a href="/img/masteries/01812mastery.png" target="_blank"><img src="/img/masteries/01812mastery.png"></a>
 			</div>
 		</div>
 	</div>
 	<div class="content-wrapper">
-		<div class="quick-guide" id="ferocity">
+		<div class="quick-guide" id="/ferocity">
 			<ul>
 				<li><a class="active-item">Ferocity</a></li>
 				<li><a href="#cunning">Cunning</a></li>
@@ -82,12 +59,12 @@
 				<ul>
 					<li class="unused">
 						<h4>Fury</h4>
-						<img src="/img/masteries/fer11.png" alt="Ferocity Mastery: Fury">
-						<p>+4% Attack Speed</p>
+						<a href="http://leagueoflegends.wikia.com/wiki/Fury_(Season_2016_Mastery)" target="blank"><img src="/img/masteries/fer11.png" alt="Ferocity Mastery: Fury">
+						<p>+4% Attack Speed</p></a>
 					</li>
 					<li>
 						<h4>Sorcery</h4>
-						<img src="/img/masteries/fer12.png" alt="Ferocity Mastery: Sorcery">
+						<a href="http://leagueoflegends.wikia.com/wiki/Sorcery_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/fer12.png" alt="Ferocity Mastery: Sorcery"></a>
 						<p>+2% increased Ability damage</p>
 					</li>
 				</ul>
@@ -98,13 +75,13 @@
 				<ul>
 					<li class="unused">
 						<h4>Double Edged Sword</h4>
-						<img src="/img/masteries/fer111.png" alt="Ferocity Mastery: Double Edged Sword">
+						<a href="http://leagueoflegends.wikia.com/wiki/Double-Edged_Sword_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/fer111.png" alt="Ferocity Mastery: Double Edged Sword"></a>
 						<p>Melee: Deal 3% additional damage, take 1.5% additional damage</p>
 						<p>Ranged: Deal and take 2% additional damage</p>
 					</li>
 					<li class="unused">
 						<h4>Feast</h4>
-						<img src="/img/masteries/fer112.png" alt="Ferocity Mastery: Feast">
+						<a href="http://leagueoflegends.wikia.com/wiki/Feast_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/fer112.png" alt="Ferocity Mastery: Feast"></a>
 						<p>Killing a unit restores 20 Health (25 second cooldown)</p>
 					</li>
 				</ul>
@@ -115,12 +92,12 @@
 				<ul>
 					<li class="unused">
 						<h4>Vampirism</h4>
-						<img src="/img/masteries/fer21.png" alt="Ferocity Mastery: Vampirism">
+						<a href="http://leagueoflegends.wikia.com/wiki/Vampirism_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/fer21.png" alt="Ferocity Mastery: Vampirism"></a>
 						<p>+2% Lifesteal and Spell Vamp</p>
 					</li>
 					<li>
 						<h4>Natural Talent</h4>
-						<img src="/img/masteries/fer22.png" alt="Ferocity Mastery: Natural Talent">
+						<a href="http://leagueoflegends.wikia.com/wiki/Natural_Talent_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/fer22.png" alt="Ferocity Mastery: Natural Talent"></a>
 						<p>+10 Attack Damage and 15 Ability Power at level 18</p>
 						<p>(.55 Attack Damage and .83 Ability Power per level)</p>
 					</li>
@@ -132,12 +109,12 @@
 				<ul>
 					<li class="unused">
 						<h4>Bounty Hunter</h4>
-						<img src="/img/masteries/fer211.png" alt="Ferocity Mastery: Bounty Hunter">
+						<a href="http://leagueoflegends.wikia.com/wiki/Bounty_Hunter_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/fer211.png" alt="Ferocity Mastery: Bounty Hunter"></a>
 						<p>Deal 1% increased damage for each unique enemy champion you have killed</p>
 					</li>
 					<li>
 						<h4>Oppressor</h4>
-						<img src="/img/masteries/fer212.png" alt="Ferocity Mastery: Oppressor">
+						<a href="http://leagueoflegends.wikia.com/wiki/Oppressor_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/fer212.png" alt="Ferocity Mastery: Oppressor"></a>
 						<p>Deal 2.5% increased damage to targets with impaired movement (slow, stun, root, taunt, etc.)</p>
 					</li>
 				</ul>
@@ -149,12 +126,12 @@
 				<ul>
 					<li class="unused">
 						<h4>Battering Blows</h4>
-						<img src="/img/masteries/fer31.png" alt="Ferocity Mastery: Battering Blows">
+						<a href="http://leagueoflegends.wikia.com/wiki/Battering_Blows_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/fer31.png" alt="Ferocity Mastery: Battering Blows"></a>
 						<p>7% Armor Penetration</p>
 					</li>
 					<li class="unused">
 						<h4>Piercing Thoughts</h4>
-						<img src="/img/masteries/fer32.png" alt="Ferocity Mastery: Piercing Thoughts">
+						<a href="http://leagueoflegends.wikia.com/wiki/Piercing_Thoughts_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/fer32.png" alt="Ferocity Mastery: Piercing Thoughts"></a>
 						<p>7% Magic Penetration</p>
 					</li>
 				</ul>
@@ -166,7 +143,7 @@
 				<ul class="three-tree">
 					<li class="unused">
 						<h4>Warlord's Bloodlust</h4>
-						<img src="/img/masteries/fer311.png" alt="Ferocity Mastery: Warlord's Bloodlust">
+						<a href="http://leagueoflegends.wikia.com/wiki/Warlord%27s_Bloodlust_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/fer311.png" alt="Ferocity Mastery: Warlord's Bloodlust"></a>
 						<p>Your critical strikes on enemy champions heal you for 15% of the damage dealt and grant extra attack speed</p>
 						<button class="expand"><span>Show Explanation</span></button>
 						<div class="explanation">
@@ -175,7 +152,7 @@
 					</li>
 					<li class="unused">
 						<h4>Fervor of Battle</h4>
-						<img src="/img/masteries/fer312.png" alt="Ferocity Mastery: Fury">
+						<a href="http://leagueoflegends.wikia.com/wiki/Fervor_of_Battle_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/fer312.png" alt="Ferocity Mastery: Fury"></a>
 						<p>When you deal damage to an enemy, you gain a stacking buff that causes auto attacks to deal bonus damage at max stacks</p>
 						<button class="expand"><span>Show Explanation</span></button>
 						<div class="explanation">
@@ -184,11 +161,11 @@
 					</li>
 					<li class="unused">
 						<h4>Deathfire Touch</h4>
-						<img src="/img/masteries/fer313.png" alt="Ferocity Mastery: Fury">
+						<a href="http://leagueoflegends.wikia.com/wiki/Deathfire_Touch_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/fer313.png" alt="Ferocity Mastery: Fury"></a>
 						<p>Your spells cause enemy champions to take magic damage equal to 20% of your Ability Power, halved for Area of Effect spells</p>
 						<button class="expand"><span>Show Explanation</span></button>
 						<div class="explanation">
-							<p>Of all the keystones in this tree, this is the only real choice, but it isn't a very good one.</p>
+							<p>Of all the keystones in this tree, this is the best choice, although it isn't a very good one.</p>
 							<p>Since Time Bomb is your only damaging spell and deals 50% less Deathfire Touch damage, it is better to just go the Thunderlord's Decree route and get either of the better Tier 3 talents in that tree.</p>
 						</div>
 					</li>
@@ -196,7 +173,7 @@
 		</div>
 	</div>
 	<div class="content-wrapper">
-		<div class="quick-guide" id="cunning">
+		<div class="quick-guide" id="/cunning">
 			<ul>
 				<li><a href="#ferocity">Ferocity</a></li>
 				<li><a class="active-item">Cunning</a></li>
@@ -210,12 +187,12 @@
 				<ul>
 					<li>
 						<h4>Wanderer</h4>
-						<img src="/img/masteries/cun11.png" alt="Cunning Mastery: Wanderer">
+						<a href= "http://leagueoflegends.wikia.com/wiki/Wanderer_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/cun11.png" alt="Cunning Mastery: Wanderer"></a>
 						<p>3% Movement Speed out of combat</p>
 					</li>
 					<li class="unused">
 						<h4>Savagery</h4>
-						<img src="/img/masteries/cun12.png" alt="Cunning Mastery: Savagery">
+						<a href="http://leagueoflegends.wikia.com/wiki/Savagery_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/cun12.png" alt="Cunning Mastery: Savagery"></a>
 						<p>Single attacks and spells deal 5 bonus damage to minions</p>
 					</li>
 				</ul>
@@ -227,21 +204,21 @@
 				<ul class="three-tree">
 					<li class="unused">
 						<h4>Runic Affinity</h4>
-						<img src="/img/masteries/cun111.png" alt="Cunning Mastery: Runic Affinity">
+						<a href="http://leagueoflegends.wikia.com/wiki/Runic_Affinity_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/cun111.png" alt="Cunning Mastery: Runic Affinity"></a>
 						<p>Jungle Buffs last 15% longer</p>
 						<p>18 second longer on blue/red buff</p>
 						<p>27 seconds longer on Baron/5 Dragon buff</p>
 					</li>
 					<li>
 						<h4>Secret Stash</h4>
-						<img src="/img/masteries/cun112.png" alt="Cunning Mastery: Secret Stash">
+						<a href="http://leagueoflegends.wikia.com/wiki/Secret_Stash_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/cun112.png" alt="Cunning Mastery: Secret Stash"></a>
 						<p>Potions last 10% longer (15 heal)</p>
 						<p>Potions are switched with Biscuits that restore 20 Health and 15 Mana on use</p>
 					</li>
 					<li class="unused">
 						<h4>Assassin</h4>
-						<img src="/img/masteries/cun113.png" alt="Cunning Mastery: Assassin">
-						<p>Deal 1.5% increased damage when no allied champions are nearby</p>
+						<a href="http://leagueoflegends.wikia.com/wiki/Assassin_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/cun113.png" alt="Cunning Mastery: Assassin"></a>
+						<p>Deal 2% increased damage against champions when no allied champions are nearby</p>
 					</li>
 				</ul>
 				<button class="expand"><span>Show Explanation</span></button>
@@ -253,12 +230,12 @@
 				<ul>
 					<li class="unused">
 						<h4>Merciless</h4>
-						<img src="/img/masteries/cun21.png" alt="Cunning Mastery: Merciless">
+						<a href="http://leagueoflegends.wikia.com/wiki/Merciless_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/cun21.png" alt="Cunning Mastery: Merciless"></a>
 						<p>Deal 5% increased damage to champions below 40% health</p>
 					</li>
 					<li>
 						<h4>Meditation</h4>
-						<img src="/img/masteries/cun22.png" alt="Cunning Mastery: Meditation">
+						<a href="http://leagueoflegends.wikia.com/wiki/Meditation_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/cun22.png" alt="Cunning Mastery: Meditation"></a>
 						<p>Regenerate 1.5% of your missing Mana every 5 seconds</p>
 					</li>
 				</ul>
@@ -270,13 +247,13 @@
 				<ul>
 					<li>
 						<h4>Bandit</h4>
-						<img src="/img/masteries/cun211.png" alt="Cunning Mastery: Bandit">
+						<a href="http://leagueoflegends.wikia.com/wiki/Bandit_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/cun211.png" alt="Cunning Mastery: Bandit"></a>
 						<p>Gain 1 gold for each nearby minion killed by an ally.</p>
 						<p>Gain 3 gold when hitting an enemy champion with a basic attack (5 second cooldown)</p>
 					</li>
 					<li class="unused">
 						<h4>Dangerous Game</h4>
-						<img src="/img/masteries/cun212.png" alt="Cunning Mastery: Dangerous Game">
+						<a href="http://leagueoflegends.wikia.com/wiki/Dangerous_Game_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/cun212.png" alt="Cunning Mastery: Dangerous Game"></a>
 						<p>Champion kills and assists restore 5% of your missing Health and Mana</p>
 					</li>
 				</ul>
@@ -288,13 +265,12 @@
 				<ul>
 					<li class="unused">
 						<h4>Precision</h4>
-						<img src="/img/masteries/cun31.png" alt="Cunning Mastery: Precision">
-						<p>Gain 5 + .5 per level Armor Penetration</p>
-						<p>and 3 + .3 per level Magic Penetration</p>
+						<a href="http://leagueoflegends.wikia.com/wiki/Precision_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/cun31.png" alt="Cunning Mastery: Precision"></a>
+						<p>Gain 3.3 + .3 per level (8.4 total at level 18) Armor and Magic Penetration</p>
 					</li>
 					<li>
 						<h4>Intelligence</h4>
-						<img src="/img/masteries/cun32.png" alt="Cunning Mastery: Intelligence">
+						<a href="http://leagueoflegends.wikia.com/wiki/Intelligence_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/cun32.png" alt="Cunning Mastery: Intelligence"></a>
 						<p>Your Cooldown Reduction cap is increased to 45% and you gain 5% Cooldown Reduction</p>
 					</li>
 				</ul>
@@ -306,8 +282,8 @@
 				<ul class="three-tree">
 					<li class="unused">
 						<h4>Stormraider's Surge</h4>
-						<img src="/img/masteries/cun311.png" alt="Cunning Mastery: Stormraider's Surge">
-						<p>Dealing 30% of a champion's max Health within 2 seconds grants 35% Movement Speed for 3 seconds</p>
+						<a href="http://leagueoflegends.wikia.com/wiki/Stormraider%27s_Surge_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/cun311.png" alt="Cunning Mastery: Stormraider's Surge"></a>
+						<p>Dealing 30% of a champion's max Health within 2 seconds grants 40% Movement Speed and 75% slow resist for 3 seconds</p>
 						<button class="expand"><span>Show Explanation</span></button>
 						<div class="explanation">
 							<p>As Support Zilean, there are a couple of reasons why you shouldn't take this.</p>
@@ -317,10 +293,12 @@
 					</li>
 					<li>
 						<h4>Thunderlord's Decree</h4>
-						<img src="/img/masteries/cun312.png" alt="Cunning Mastery: Thunderlord's Decree">
+						<a href="http://leagueoflegends.wikia.com/wiki/Thunderlord's_Decree_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/cun312.png" alt="Cunning Mastery: Thunderlord's Decree"></a>
 						<p>Your 3rd attack or spell on an enemy champion deals 10 damage per level,
 							<br>plus 30% of your bonus Attack Damage
-							<br>plus 10% of your Ability Power</p>
+							<br>plus 10% of your Ability Power
+							<br>every 15-25 seconds (based on level)
+						</p>
 						<button class="expand"><span>Show Explanation</span></button>
 						<div class="explanation">
 							<p>Out of all of the keystone masteries, this is the least terrible of the bunch. Landing 3 consecutive spells/attacks deals a decent burst.</p>
@@ -330,7 +308,7 @@
 					</li>
 					<li class="unused">
 						<h4>Windspeaker's Blessing</h4>
-						<img src="/img/masteries/cun313.png" alt="Cunning Mastery: Windspeaker's Blessing">
+						<a href="http://leagueoflegends.wikia.com/wiki/Windspeaker%27s_Blessing_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/cun313.png" alt="Cunning Mastery: Windspeaker's Blessing"></a>
 						<p>Your heas and shields are 10% stronger<br>
 							Additionally, shields and heals on other allies increase their armor and magic resist by a flat amount for 3 seconds</p>
 						<button class="expand"><span>Show Explanation</span></button>
@@ -343,7 +321,7 @@
 		</div>
 	</div>
 	<div class="content-wrapper">
-		<div class="quick-guide" id="resolve">
+		<div class="quick-guide" id="/resolve">
 			<ul>
 				<li><a href="#ferocity">Ferocity</a></li>
 				<li><a href="#cunning">Cunning</a></li>
@@ -357,12 +335,12 @@
 				<ul>
 					<li>
 						<h4>Recovery</h4>
-						<img src="/img/masteries/res11.png" alt="Resolve Mastery: Recovery">
+						<a href="http://leagueoflegends.wikia.com/wiki/Recovery_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/res11.png" alt="Resolve Mastery: Recovery"></a>
 						<p>+2 Health per 5 seconds</p>
 					</li>
 					<li class="unused">
 						<h4>Unyeilding</h4>
-						<img src="/img/masteries/res12.png" alt="Resolve Mastery: Unyeilding">
+						<a href="http://leagueoflegends.wikia.com/wiki/Unyielding_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/res12.png" alt="Resolve Mastery: Unyeilding"></a>
 						<p>+5% Bonus Armor and Magic Resist</p>
 					</li>
 				</ul>
@@ -374,12 +352,12 @@
 				<ul>
 					<li>
 						<h4>Explorer</h4>
-						<img src="/img/masteries/res111.png" alt="Resolve Mastery: Explorer">
+						<a href="http://leagueoflegends.wikia.com/wiki/Explorer_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/res111.png" alt="Resolve Mastery: Explorer"></a>
 						<p>+15 Movement Speet in Brush and River</p>
 					</li>
 					<li  class="unused">
 						<h4>Tough Skin</h4>
-						<img src="/img/masteries/res112.png" alt="Resolve Mastery: Tough Skin">
+						<a href="http://leagueoflegends.wikia.com/wiki/Tough_Skin_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/res112.png" alt="Resolve Mastery: Tough Skin"></a>
 						<p>You take 2 less damage from champion basic attacks</p>
 					</li>
 				</ul>
@@ -391,12 +369,12 @@
 				<ul>
 					<li class="unused">
 						<h4>Runic Armor</h4>
-						<img src="/img/masteries/res21.png" alt="Resolve Mastery: Runic Armor">
+						<a href="http://leagueoflegends.wikia.com/wiki/Runic_Armor_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/res21.png" alt="Resolve Mastery: Runic Armor"></a>
 						<p>Shields, healing, regeneration, and lifesteal on you are 8% stronger</p>
 					</li>
 					<li>
 						<h4>Veteran's Scars</h4>
-						<img src="/img/masteries/res22.png" alt="Resolve Mastery: Veteran's Scars">
+						<a href="http://leagueoflegends.wikia.com/wiki/Veteran%27s_Scars_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/res22.png" alt="Resolve Mastery: Veteran's Scars"></a>
 						<p>+45 Health</p>
 					</li>
 				</ul>
@@ -408,7 +386,7 @@
 				<ul>
 					<li>
 						<h4>Insight</h4>
-						<img src="/img/masteries/res211.png" alt="Resolve Mastery: Insight">
+						<a href="http://leagueoflegends.wikia.com/wiki/Insight_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/res211.png" alt="Resolve Mastery: Insight"></a>
 						<p>Reduce the cooldown of Summoner Spells by 15%</p>
 						<p><span>Flash/Teleport |</span> 300sec (5min) -> 255sec (4.25min)<br>
 							<span>Heal |</span> 240sec (4min) -> 204sec (3.4min)<br>
@@ -417,7 +395,7 @@
 					</li>
 					<li  class="unused">
 						<h4>Perseverance</h4>
-						<img src="/img/masteries/res212.png" alt="Resolve Mastery: Perseverance">
+						<a href="http://leagueoflegends.wikia.com/wiki/Perseverance_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/res212.png" alt="Resolve Mastery: Perseverance"></a>
 						<p>+50% Base Health Regen, increased to +200% when below 25%  Health</p>
 					</li>
 				</ul>
@@ -429,12 +407,12 @@
 				<ul>
 					<li>
 						<h4>Swiftness</h4>
-						<img src="/img/masteries/res31.png" alt="Resolve Mastery: Swiftness">
+						<a href="http://leagueoflegends.wikia.com/wiki/Swiftness_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/res31.png" alt="Resolve Mastery: Swiftness"></a>
 						<p>+15% Tenacity and Slow Resist</p>
 					</li>
 					<li  class="unused">
 						<h4>Legendary Guardian</h4>
-						<img src="/img/masteries/res32.png" alt="Resolve Mastery: Legendary Guardian">
+						<a href="http://leagueoflegends.wikia.com/wiki/Legendary_Guardian_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/res32.png" alt="Resolve Mastery: Legendary Guardian"></a>
 						<p>+3 Armor and Magic Resist for each nearby enemy champion</p>
 					</li>
 				</ul>
@@ -446,8 +424,8 @@
 				<ul class="three-tree">
 					<li class="unused">
 						<h4>Grasp of the Undying</h4>
-						<img src="/img/masteries/res311.png" alt="Resolve Mastery: Grasp of the Undying">
-						<p>Every 4 seconds in combat your next attack against enemy champions steals 1.5% of your max Health</p>
+						<a href="http://leagueoflegends.wikia.com/wiki/Grasp_of_the_Undying_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/res311.png" alt="Resolve Mastery: Grasp of the Undying"></a>
+						<p>Every 4 seconds in combat your next attack against enemy champions deals and steals 1.5% of your max Health</p>
 						<button class="expand"><span>Show Explanation</span></button>
 						<div class="explanation">
 							<p>The auto attacks stealing 9-12 health seems alright, but the damage you take from the creeps attacking you back is not worth the small amount of life stolen.</p>
@@ -456,8 +434,8 @@
 					</li>
 					<li class="unused">
 						<h4>Strength of Ages</h4>
-						<img src="/img/masteries/res312.png" alt="Resolve Mastery: Strength of Ages">
-						<p>When a Siege minion dies nearby, you gain a permanent 10 health (up to 300) and heal for 6% max health</p>
+						<a href="http://leagueoflegends.wikia.com/wiki/Strength_of_the_Ages_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/res312.png" alt="Resolve Mastery: Strength of Ages"></a>
+						<p>When a Siege minion dies nearby, you gain a permanent 20 health (up to 300) and heal for 6% max health</p>
 						<button class="expand"><span>Show Explanation</span></button>
 						<div class="explanation">
 							<p>The changes to siege minion timings make this an interesting choice.</p>
@@ -467,8 +445,8 @@
 					</li>
 					<li>
 						<h4>Bond of Stone</h4>
-						<img src="/img/masteries/res313.png" alt="Resolve Mastery: Bond of Stone">
-						<p>+3% Damage Reduction, increased to 6% while near an allied champion.</p>
+						<a href="http://leagueoflegends.wikia.com/wiki/Bond_of_Stone_(Season_2016_Mastery)" target="_blank"><img src="/img/masteries/res313.png" alt="Resolve Mastery: Bond of Stone"></a>
+						<p>+4% Damage Reduction.</p>
 						<p>6% of the damage taken by the nearest allied champion is dealt to you instead</p>
 						<button class="expand"><span>Show Explanation</span></button>
 						<div class="explanation">
@@ -494,18 +472,10 @@
 		</div>
 	</div>
 </main>
-<footer class="main-footer">
-	<div class="footer-container">
-		<a href="https://twitter.com/UX_Jera" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
-		<a href="https://www.youtube.com/channel/UCdnThue1VY1FuC_WsiSPZ3A" target="_blank"><i class="fa fa-youtube-square fa-2x"></i></a>
-		<a href="https://www.linkedin.com/in/jeremiahnyman" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
-		<a href="https://github.com/UXJera" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
-		<a href="http://www.piedpiper.com/" target="_blank"><i class="fa fa-pied-piper fa-2x"></i></a>
-		<span>Designed by <a href="https://www.twitter.com/UX_Jera" target="_blank">@UX_Jera</a> 2016.</span>
-	</div>
-</footer>
-	<script type="text/javascript" src="/js/libs/jquery-2.1.3.min.js"></script>
-	<script type="text/javascript" src="/js/doubletaptogo.min.js"></script>
-	<script type="text/javascript" src="/js/expand.js"></script>
+
+<div ng-include src="'/assets/footer.url'"></div>
+
+	<script type="text/javascript" src="/js/app.js"></script>
+	
 </body>
 </html>

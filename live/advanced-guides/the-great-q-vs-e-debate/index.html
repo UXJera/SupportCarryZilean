@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app>
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-	<!-- use this to redirect to another page -->
-	<meta http-equiv="refresh" content="0; URL='/under-construction.html'">
 
 	<title>The Great Q vs E Debate | Support Carry Zilean</title>
 	<meta name="author" content="Jera"></meta>
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="/favicon/favicon.ico">
+
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -28,40 +28,278 @@
 </head>
 <body>
 
-<header class="menu-section">
-	<nav role="navigation" class="main-nav menu">
-	<ul>
-		<li class="brand"><a href="/"><h1>SUPPORT CARRY </h1><img src="/img/Zilport.png" alt="Zilean face icon"></a></li>
-		<li><a href="/#quick-guide"><img src="/img/skills/Q64.png" alt="Time bomb Icon">QUICK GUIDE</a></li>
-		<li><a  class="nav-toggle" href="#"><img src="/img/skills/W64.png" alt="Rewind Icon">BEGINNER GUIDES</a>
-			<ul class="sub-menu">
-				<li><a href="/beginner-guides/runes-101/">Runes 101</a></li>
-				<li><a href="/beginner-guides/mastery-breakdown/">Mastery Breakdown</a></li>
-				<li><a href="/beginner-guides/spells-combos-tricks/">Spells, Combos, and Tricks</a></li>
-				<li><a href="/beginner-guides/what-to-buy-and-when/">What to Buy and When</a></li>
-				<li><a href="/beginner-guides/laning-matchups/">Laning Matchups</a></li>
-			</ul>
-		</li>
-
-		<li><a  class="nav-toggle" href="#"><img src="/img/skills/E64.png" alt="Time Warp Icon">ADVANCED GUIDES</a>
-			<ul class="sub-menu">
-				<li><a href="/advanced-guides/cdr-and-you">CDR and You</a></li>
-				<li><a href="/advanced-guides/the-great-q-vs-e-debate">The Great Q vs E Debate</a></li>
-				<li><a href="/advanced-guides/optimizing-time-warp">Optimizing Time Warp</a></li>
-				<li><a href="/advanced-guides/importance-of-mana-regen">The Importance of Mana Regen</a></li>
-			</ul>
-		</li>
-		<li class=""><a href="#"><img src="/img/skills/R64.png" alt="Chronoshift Icon">GAMEPLAY</a></li>
-	</ul>
-	</nav>
-</header>
+<div ng-include src="'/assets/nav.url'"></div>
 
 <main>
 	<div class="content-wrapper">
-		<h2>The Great Q vs E Debate</h2>
-    <div class="content-container">
+		<div class="content-container">
+			<div class="introduction">
+			<h2>The Great Q vs E Debate</h2>
+			<p>Since this is a debate, there are several categories which one spell is better than the other. Each category will focus on the strengths that it brings throughout the game.</p>
+			<p>Your goal is to make it into the late game where levels and utility items will make the largest impact as Support Zilean.</p>
+			<p>The big thing to consider when choosing what to max, you’ll want to make your decision on a number of factors:</p>
+			<ul>
+				<li>Which support are you playing against? (The most important factor)</li>
+				<li>How well can your ADC follow up to your CC or damage?</li>
+				<li>Will your jungler be willing to come to your lane?</li>
+			</ul>
 		</div>
 	</div>
+</div>
+	<div class="content-wrapper">
+    <div class="content-container">
+			<h3>Laning Impact</h3>
+			<p>Laning is the point in the game where you stay by your ADC and help him CS and stay alive.</p>
+			<p>Choosing to max Time Bomb or Time Warp means a drastic difference on how you play the lane.</p>
+			<div class="pros-and-cons">
+				<div class="pros time-bomb">
+					<img src="/img/skills/Q64.png" alt="Time Bomb Skill Icon">
+					<ul>
+						<li>Great for wearing down enemy laners</li>
+						<li>Can help push the wave quickly</li>
+						<li>Plays aggressively by tossing out spells to poke enemies down</li>
+						<li>Can deny enemies CS by using the high damage to zone enemies</li>
+					</ul>
+				</div>
+				<div class="pros time-warp">
+					<img src="/img/skills/E64.png" alt="Time Warp Skill Icon">
+					<ul>
+						<li>Great for all-inning enemy laners</li>
+						<li>Fantastic gank support with jungler</li>
+						<li>Plays passively and waits for all-in opportunities</li>
+						<li>Great for getting one person out of danger</li>
+					</ul>
+				</div>
+			</div>
+			<div class="debate-winner">
+				<h5>WINNER: Time Warp <img src="/img/skills/E64.png" alt="Time Warp Skill Icon"></h5>
+				<p>This is my personal preference and what has worked best for me.</p>
+				<p>When you play in solo-queue, you’re not likely to know the tendencies of your lane partner, which means you can be punished easily for being out of position.</p>
+				<p>This works both ways, where YOU can punish enemies for being out of position.</p>
+				<p>If you have a partner in voice comms, maxing E works even better for coordinating all-ins.</p>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="content-wrapper">
+		<div class="content-container">
+			<h3>Mana Consumption</h3>
+			<p>Spells cost resources, and the more resources you have, the more you can expend.</p>
+			<div class="pros-and-cons">
+				<div class="pros time-bomb">
+					<img src="/img/skills/Q64.png" alt="Time Bomb Skill Icon">
+					<ul>
+						<li>60 – 80 mana per cast</li>
+						<li>155 – 175 mana per spell cycle (only bombs)</li>
+						<li>You use this spell more often because of the poke damage</li>
+					</ul>
+				</div>
+				<div class="pros time-warp">
+					<img src="/img/skills/E64.png" alt="Time Warp Skill Icon">
+					<ul>
+						<li>50 mana per cast</li>
+						<li>205 – 255 mana per spell cycle (using 1 or 2 slows with double bombs)</li>
+						<li>You use this combo less often because you wait for enemy misposition</li>
+					</ul>
+				</div>
+			</div>
+			<div class="debate-winner">
+				<h5>WINNER: Time Warp <img src="/img/skills/E64.png" alt="Time Warp Skill Icon"></h5>
+				<p>Even though the overall spell combo costs more for Time Warp, you will be using it far less often than throwing out Double Bombs.</p>
+				<p>Mana preservation is much easier to do with cheaper Time Bombs and being calculated on when you decide to strike.</p>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrapper">
+		<div class="content-container">
+			<h3>Cooldown</h3>
+			<p>Cooldowns are how often your spells will be available again after casting.</p>
+			<p>To get a deeper read into the exact numbers behind cooldown reduction, you can read the article <a href="/advanced-guides/cdr-and-you">CDR and You.</a></p>
+			<div class="pros-and-cons">
+				<div class="pros time-bomb">
+					<img src="/img/skills/Q64.png" alt="Time Bomb Skill Icon">
+					<ul>
+						<li>10 second base cooldown that scales with ranks</li>
+						<li>Minimum CD of 4.4 seconds</li>
+						<li>Spell cycle of 4.4 seconds with 1.1 sec delay (at max CDR)</li>
+					</ul>
+				</div>
+				<div class="pros time-warp">
+					<img src="/img/skills/E64.png" alt="Time Warp Skill Icon">
+					<ul>
+						<li>15 second base cooldown that does NOT scale with ranks</li>
+						<li>Minimum CD of 8.2 seconds</li>
+						<li>Spell cycle of 8.2 seconds with 4.9 sec delay (at max CDR)</li>
+					</ul>
+				</div>
+			</div>
+			<div class="debate-winner">
+				<h5>WINNER: Time Bomb <img src="/img/skills/Q64.png" alt="Time Bomb Skill Icon"></h5>
+				<p> The base cooldown of Time Warp is static throughout ranks, while you get passive cooldown with ranks in Time Bomb.</p>
+				<p>All of Zilean’s skills work great with CDR, so this shouldn’t be a deciding factor since you should be aiming for a quick 45% CDR, regardless of which skill you max.</p>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrapper">
+		<div class="content-container">
+			<h3>Damage</h3>
+			<p>Damage is self-explanitory, but does not define Zilean's kit.</p>
+			<div class="pros-and-cons">
+				<div class="pros time-bomb">
+					<img src="/img/skills/Q64.png" alt="Time Bomb Skill Icon">
+					<ul>
+						<li>At rank 3, you get a decent spike dealing 120+ damage per bomb with 0 AP</li>
+						<li>At rank 5, you deal 300 per bomb to minions, and about 220 to champions</li>
+					</ul>
+				</div>
+				<div class="pros time-warp">
+					<img src="/img/skills/E64.png" alt="Time Warp Skill Icon">
+					<ul>
+						<li>The base damage on your bombs will be ~50-60 until you hit level 14</li>
+						<li>The damage is very low, but you get stronger CC</li>
+					</ul>
+				</div>
+			</div>
+			<div class="debate-winner">
+				<h5>WINNER: Time Bomb <img src="/img/skills/Q64.png" alt="Time Bomb Skill Icon"></h5>
+				<p>Time Bomb does the more damage, no question about it, but it doesn’t always guarantee a kill.</p>
+				<p>The 3 second countdown on the Time Bomb gives plenty of time to use Heal or have support intervention.</p>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrapper">
+		<div class="content-container">
+			<h3>Crowd Control</h3>
+			<p>Crowd control is one of the biggest assets to Zilean's kit. Your choice is between longer stuns or more potent slows.</p>
+			<div class="pros-and-cons">
+				<div class="pros time-bomb">
+					<img src="/img/skills/Q64.png" alt="Time Bomb Skill Icon">
+					<ul>
+						<li>Base of 1.1 second stun, up to 1.5 seconds</li>
+						<li>AoE CC, so the more targets the better</li>
+						<li>Bomb smart-targeting prioritizes enemy champions</li>
+						<li>Tricky skillshot stun on lower cooldown</li>
+					</ul>
+				</div>
+				<div class="pros time-warp">
+					<img src="/img/skills/E64.png" alt="Time Warp Skill Icon">
+					<ul>
+						<li>The base duration is 2.5 seconds, the longest single slow behind Nasus’ Wither</li>
+						<li>Single target CC, but can be cast twice to affect 2 targets</li>
+						<li>Can be chained together for 5 seconds of 99% slow (along with 1.1 seconds of stun)</li>
+						<li>Consistent point-and-click guaranteed slow at 550 range</li>
+					</ul>
+				</div>
+			</div>
+			<div class="debate-winner">
+				<h5>WINNER: Time Warp <img src="/img/skills/E64.png" alt="Time Warp Skill Icon"></h5>
+				<p>The pure lockdown on maxed Time Warp oppressive, with a maximum of 5 seconds of near immobilization.</p>
+				<p>The only real difference you get from rank 1 Time Bomb and rank 5 is an extra .4 seconds of stun at the expense of a point-and-click 99% slow.</p>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrapper">
+		<div class="content-container">
+			<h3>Spell Utility</h3>
+			<p>Spell Utility can be described as the impact that the spell that benefits the team.</p>
+			<div class="pros-and-cons">
+				<div class="pros time-bomb">
+					<img src="/img/skills/Q64.png" alt="Time Bomb Skill Icon">
+					<ul>
+						<li>Great for zoning out choke points or cause enemies to walk a longer path</li>
+						<li>Can cause enemies to back off if they have 1 bomb on their head</li>
+						<li>Pushes out lanes quickly if there is low wave clear on the team</li>
+					</ul>
+				</div>
+				<div class="pros time-warp">
+					<img src="/img/skills/E64.png" alt="Time Warp Skill Icon">
+					<ul>
+						<li>Can speed up an ally by 99% MS or slow an enemy by 99%</li>
+						<li>Great pick tool, can causes flashes to be burned at Rank 3 (70% slow)</li>
+						<li>Near perma 600+ movement speed to get around to ward and out of bad situations</li>
+					</ul>
+				</div>
+			</div>
+			<div class="debate-winner">
+				<h5>WINNER: Time Warp <img src="/img/skills/E64.png" alt="Time Warp Skill Icon"></h5>
+				<p>Time Warp can help you get around the map quick and get the critical vision, get you out of scary chases, or speed up your main engage champion to force a fight.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="content-wrapper">
+    <div class="content-container">
+			<h3>Mid Game Impact</h3>
+			<p>The Mid Game impact usually refers when you are around level 9 to 10 and are grouping as a team.<p>
+			<div class="pros-and-cons">
+				<div class="pros time-bomb">
+					<img src="/img/skills/Q64.png" alt="Time Bomb Skill Icon">
+					<ul>
+						<li>Good for zoning out enemies</li>
+						<li>Helps with wave clear</li>
+						<li>Good AoE damage in teamfights</li>
+					</ul>
+				</div>
+				<div class="pros time-warp">
+					<img src="/img/skills/E64.png" alt="Time Warp Skill Icon">
+					<ul>
+						<li>Great for catching people out of position</li>
+						<li>Amazing peel for your ADC</li>
+						<li>Consistent and reliable single-target effect</li>
+					</ul>
+				</div>
+			</div>
+			<div class="debate-winner">
+				<h5>WINNER: Time Warp <img src="/img/skills/E64.png" alt="Time Warp Skill Icon"></h5>
+				<p>The slow from Time Warp is so punishing, plus having the speed to zip around and set up ward lines is so valuable.</p>
+				<p>Hands down this the better mid game spell because of its versatility.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="content-wrapper">
+		<div class="content-container">
+			<h3>The Big Downsides to Each Build</h3>
+			<div class="pros-and-cons">
+				<div class="cons time-bomb">
+					<img src="/img/skills/Q64.png" alt="Time Bomb Skill Icon">
+					<ul>
+						<li>Dependent on landing double bombs, which can be difficult against mobile champions</li>
+						<li>Can deny CS/Kills from ADC because of bomb damage</li>
+						<li>Tempts you to build AP to do more damage to keep up with the damage pacing of the game, which lowers overall utility</li>
+					</ul>
+				</div>
+				<div class="cons time-warp">
+					<img src="/img/skills/E64.png" alt="Time Warp Skill Icon">
+					<ul>
+						<li>Low damage output by yourself</li>
+						<li>Dependent on allies following up on your CC</li>
+						<li>Forces you to play passively and not spam spells (which can be boring to some)</li>
+						<li>Arguably higher skill cap to capitalize on enemy mispositions</li>
+					</ul>
+				</div>
+			</div>
+			<div class="debate-winner">
+				<h5>LOSER: Time Bomb <img src="/img/skills/Q64.png" alt="Time Bomb Skill Icon"></h5>
+				<p>I can’t emphasize how difficult it is to land a Double Bomb combo without a good slow.</p>
+				<p>In lane, the enemy can use your Time Bombs against you to deny CS from your ADC.</p>
+				<p>Maxing Time Warp is very safe and has great potential to make plays, while maxing Time Bomb is riskier.</p>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrapper">
+		<div class="content-container">
+			<h3>The Big Winner: Time Warp <img src="/img/skills/E64.png" alt="Time Warp Skill Icon"></h3>
+			<div class="summary">
+				<p>While maxing Time Bomb feel good to do damage, it feels even better when you can get an enemy to flash at level 5 by walking up to them and pressing Time Warp.</p>
+				<p>It feels even better 30 seconds later when you can chase down that same enemy and get an easy kill without taking too much damage.</p>
+				<p>Overall, I've had the best experience maxing Time Warp because it is a highly versatile tool that really catches enemies off-guard (since there is no cast delay for the spell).</p>
+				<p>Maxing Time Warp goes with the mantra "I'm going to out-smart the enemy by forcing them to waste high cooldown spells trying make something happen".</p>
+				<p>When you're starting out, you should try maxing Time Bomb first, then try maxing Time Warp. It will give you a great feel on how different the two builds feel and with experience, you'll find the best one to use in each situation.</p>
+			</div>
+		</div>
+	</div>
+
 		<div class="article-footer">
 			<div class="footer-container">
 			<a href="/advanced-guides/cdr-and-you"><i class="fa fa-arrow-circle-o-left fa-3x"></i></a>
@@ -71,24 +309,15 @@
 				<h4>Want More Articles?</h4>
 			</div>
 			<div class="footer-container">
-				<a href="/advanced-guides/optimizing-time-warp"><p>Optimizing Time Warp</p></a>
-				<a href="/advanced-guides/optimizing-time-warp"><i class="fa fa-arrow-circle-o-right fa-3x"></i></a>
+				<a href="/advanced-guides/harnessing-the-power-of-ms"><p>Harnessing the Power of Movement Speed</p></a>
+				<a href="/advanced-guides/harnessing-the-power-of-ms"><i class="fa fa-arrow-circle-o-right fa-3x"></i></a>
 			</div>
 	</div>
 </main>
 
-<footer class="main-footer">
-	<div class="footer-container">
-		<a href="https://twitter.com/UX_Jera" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
-		<a href="https://www.youtube.com/channel/UCdnThue1VY1FuC_WsiSPZ3A" target="_blank"><i class="fa fa-youtube-square fa-2x"></i></a>
-		<a href="https://www.linkedin.com/in/jeremiahnyman" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
-		<a href="https://github.com/UXJera" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
-		<a href="http://www.piedpiper.com/" target="_blank"><i class="fa fa-pied-piper fa-2x"></i></a>
-		<span>Designed by <a href="https://www.twitter.com/UX_Jera" target="_blank">@UX_Jera</a> 2016.</span>
-	</div>
-</footer>
-	<script type="text/javascript" src="/js/libs/jquery-2.1.3.min.js"></script>
-	<script type="text/javascript" src="/js/doubletaptogo.min.js"></script>
-	<script type="text/javascript" src="/js/expand.js"></script>
+<div ng-include src="'/assets/footer.url'"></div>
+
+	<script type="text/javascript" src="/js/app.js"></script>
+
 </body>
 </html>

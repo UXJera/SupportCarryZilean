@@ -62,7 +62,7 @@ header {
 			border-left: $thin-border;
 			border-right: $thin-border;
 			display:flex;
-			justify-content: flex-start;
+			justify-content: center;
 			font-size: 1.03em;
 			padding: .6rem 1rem;
 			flex: 1 0 auto;
@@ -94,7 +94,7 @@ header {
 	padding: .33rem 1rem;
 }
 
-.menu li a:hover {
+.menu li a:hover,.menu li a:active {
 	background:$time-warp-blue;
 }
 

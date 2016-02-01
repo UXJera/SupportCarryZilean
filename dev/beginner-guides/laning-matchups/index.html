@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app>
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
@@ -10,6 +10,9 @@
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="/favicon/favicon.ico">
+
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -25,33 +28,7 @@
 </head>
 <body>
 
-<header class="menu-section">
-	<nav role="navigation" class="main-nav menu">
-	<ul>
-		<li class="brand"><a href="/"><h1>SUPPORT <span>CARRY</span> </h1><img src="/img/Zilport.png" alt="Zilean face icon"></a></li>
-		<li><a href="/#quick-guide"><img src="/img/skills/Q64.png" alt="Time bomb Icon">QUICK GUIDE</a></li>
-		<li><a  class="nav-toggle" href="#" aria-haspopup="true"><img src="/img/skills/W64.png" alt="Rewind Icon">BEGINNER GUIDES</a>
-			<ul class="sub-menu">
-				<li><a href="/beginner-guides/runes-101/">Runes 101</a></li>
-				<li><a href="/beginner-guides/mastery-breakdown/">Mastery Breakdown</a></li>
-				<li><a href="/beginner-guides/spells-combos-tricks/">Spells, Combos, and Tricks</a></li>
-				<li><a href="/beginner-guides/what-to-buy-and-when/">What to Buy and When</a></li>
-				<li><a href="/beginner-guides/laning-matchups/">Laning Matchups</a></li>
-			</ul>
-		</li>
-
-		<li><a  class="nav-toggle" href="#" aria-haspopup="true"><img src="/img/skills/E64.png" alt="Time Warp Icon">ADVANCED GUIDES</a>
-			<ul class="sub-menu">
-				<li><a href="/advanced-guides/cdr-and-you">CDR and You</a></li>
-				<li><a href="/advanced-guides/the-great-q-vs-e-debate">The Great Q vs E Debate</a></li>
-				<li><a href="/advanced-guides/optimizing-time-warp">Optimizing Time Warp</a></li>
-				<li><a href="/advanced-guides/importance-of-mana-regen">The Importance of Mana Regen</a></li>
-			</ul>
-		</li>
-		<li class=""><a href="/gameplay/"><img src="/img/skills/R64.png" alt="Chronoshift Icon">GAMEPLAY</a></li>
-	</ul>
-	</nav>
-</header>
+<div ng-include src="'/assets/nav.url'"></div>
 
 <main>
 	<div class="content-wrapper">
@@ -66,7 +43,7 @@
 	</div>
 
 	<div class="content-wrapper">
-		<div class="quick-guide" id="yourADC">
+		<div class="quick-guide" id="/yourADC">
 			<ul>
 				<li><a class="active-item">Your lane partner</a></li>
 				<li><a href="#oppADC">Opposing Marksmen</a></li>
@@ -95,6 +72,14 @@
 				</div>
 				<h5>Vayne</h5>
 				<p>Vayne is my favorite ADC to lane with. She works well with your speed boost and has insane kill potential. Many of Vayne's weaknesses are fixed with Zilean by her side.</p>
+			</div>
+			<div class="champ-row">
+				<img src="/img/champion/jihn.png">
+				<div>
+					<img src="/img/star.svg"><img src="/img/star.svg"><img src="/img/star.svg"><img src="/img/star.svg"><img src="/img/star.svg">
+				</div>
+				<h5>Jhin</h5>
+				<p>Jhin has a rough time with mobility, which is something that Zilean excels at providing. This is a favorable lane, because double bombs allow for easy procs from Jhin's traps.</p>
 			</div>
 			<div class="champ-row">
 				<img src="/img/champion/jinx.png">
@@ -181,7 +166,7 @@
 	</div>
 
 	<div class="content-wrapper">
-		<div class="quick-guide" id="oppADC">
+		<div class="quick-guide" id="/oppADC">
 			<ul>
 				<li><a href="#yourADC">Your lane partner</a></li>
 				<li><a class="active-item">Opposing Marksmen</a></li>
@@ -264,7 +249,7 @@
 		</div>
 	</div>
 	<div class="content-wrapper">
-		<div class="quick-guide" id="oppSup">
+		<div class="quick-guide" id="/oppSup">
 			<ul>
 				<li><a href="#yourADC">Your lane partner</a></li>
 				<li><a href="#oppADC">Opposing Marksmen</a></li>
@@ -420,6 +405,15 @@
 				<p>Nautilus has fallen out of favor, but he's annoying for a tank with his CC kit. Once Nautilus goes in, it's hard for him to retreat, so you can get heavy damage onto him.</p>
 			</div>
 			<div class="champ-row">
+				<img src="/img/champion/nunu.png">
+				<div>
+					<img src="/img/star.svg">
+				</div>
+				<h5>Nunu</h5>
+				<img src="/img/skills/E64.png">
+				<p>Nunu can be easily punished because of his short range to use his abilities.</p>
+			</div>
+			<div class="champ-row">
 				<img src="/img/champion/poppy.png">
 				<div>
 					<img src="/img/star.svg"><img src="/img/star.svg"><img src="/img/star.svg">
@@ -431,11 +425,11 @@
 			<div class="champ-row">
 				<img src="/img/champion/shen.png">
 				<div>
-					<img src="/img/star.svg"><img src="/img/star.svg">
+					<img src="/img/star.svg"><img src="/img/star.svg"><img src="/img/star.svg">
 				</div>
 				<h5>Shen</h5>
 				<img src="/img/skills/E64.png">
-				<p>Shen brings good sustain and CC with taunt, but he's punishable when he leaves lane or gets too far ahead of his ADC. You can also double bomb the enemy ADC to prevent some damage.</p>
+				<p>Shen recently got a rework that changed some of the mechanics of his kit, and he is FAR weaker in the support role now. He does not put out nearly as much damage as before, and he cannot sustain his lane.</p>
 			</div>
 			<div class="champ-row">
 				<img src="/img/champion/sona.png">
@@ -462,7 +456,7 @@
 				</div>
 				<h5>Tahm Kench</h5>
 				<img src="/img/skills/E64.png">
-				<p>Tahm Kench is one of thse supports that you don't expect to make it past bans. This guy is a huge pain, as usual. You have to play passive against him, because he can eat the damage from double bombs.</p>
+				<p>Tahm Kench is one of these supports that you don't expect to make it past bans. This guy is a huge pain, as usual. You have to play passive against him, because he can eat the damage from double bombs.</p>
 			</div>
 			<div class="champ-row">
 				<img src="/img/champion/taric.png">
@@ -525,18 +519,10 @@
 		</div>
 	</div>
 </main>
-<footer class="main-footer">
-	<div class="footer-container">
-		<a href="https://twitter.com/UX_Jera" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
-		<a href="https://www.youtube.com/channel/UCdnThue1VY1FuC_WsiSPZ3A" target="_blank"><i class="fa fa-youtube-square fa-2x"></i></a>
-		<a href="https://www.linkedin.com/in/jeremiahnyman" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
-		<a href="https://github.com/UXJera" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
-		<a href="http://www.piedpiper.com/" target="_blank"><i class="fa fa-pied-piper fa-2x"></i></a>
-		<span>Designed by <a href="https://www.twitter.com/UX_Jera" target="_blank">@UX_Jera</a> 2016.</span>
-	</div>
-</footer>
-	<script type="text/javascript" src="/js/libs/jquery-2.1.3.min.js"></script>
-	<script type="text/javascript" src="/js/doubletaptogo.min.js"></script>
-	<script type="text/javascript" src="/js/expand.js"></script>
+
+<div ng-include src="'/assets/footer.url'"></div>
+
+	<script type="text/javascript" src="/js/app.js"></script>
+
 </body>
 </html>

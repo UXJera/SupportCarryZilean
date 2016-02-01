@@ -46,7 +46,12 @@ main {
 	color: $light;
 	span {
 		padding-left: 1em;
-		color: lightgreen;
+		a {
+			color: lightgreen;
+			text-decoration:none;
+			transition: all .5s;
+			&:hover {color: darken(lightgreen, 20%)}
+		}
 	}
 }
 
@@ -299,9 +304,9 @@ button {
 		padding: .7em 1em;
 	}
 	.three-tree .explanation {max-width:100%;}
-	.content-container{max-width:75%;}
+	.content-container{max-width:80%;}
 }
 
 @media screen and (min-width: 1600px) {
-	.content-container {max-width: 1200px;}
+	.content-container {max-width: 70%;}
 }
