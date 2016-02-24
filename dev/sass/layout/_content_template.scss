@@ -179,6 +179,18 @@
 	}
 }
 
+.item-cont-alt {
+	background: darken($time-bomb-blue-bg, 20%);
+	color:white;
+}
+
+ul.short-list {
+	padding:0;
+	li {
+		padding:0;
+	}
+}
+
 .avoid {
 	background: lighten($red, 5%);
 	padding: 1em 0;
@@ -411,6 +423,10 @@ ul.faq {
 	li {
 		display:flex;
 		flex-direction:column;
+		p:first-of-type {
+			text-align:center;
+			font-weight: 700;
+		}
 		div {margin:0 auto;}
 		img {
 			width: 64px;
@@ -424,7 +440,7 @@ ul.faq {
 
 .nerf{color:$runes-red;}
 .buff{color:darken($green-bg, 45%);}
-.neutral{color:$yellow;}
+.neutral{color:#777;}
 
 
 //	STYLES FOR GAMEPLAY VIDEO	//
