@@ -31,7 +31,7 @@ header {
 			img {
 				order:1;
 				border-radius: 5px;
-				margin-right: 1rem;
+				margin-right: 1em;
 				height: 36px;
 				width: 36px;
 			}
@@ -124,5 +124,12 @@ header {
 				}
 			}
 		}
+	}
+}
+
+@media screen and (max-width: 1350px) {
+	nav {font-size: .8em;}
+	.main-nav ul li a {font-size:1em;
+		img {margin-right: .5em;}
 	}
 }

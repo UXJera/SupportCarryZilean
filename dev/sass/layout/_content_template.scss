@@ -26,6 +26,7 @@
 		border-radius: $border-radius;
 		border: $thin-border;
 		max-width: 64px;
+		@include box-shadow;
 	}
 }
 
@@ -46,6 +47,7 @@
 		max-width: 64px;
 		max-height: 64px;
 		margin: 0 .2em;
+		@include box-shadow;
 	}
 	div {
 		display:flex;
@@ -92,6 +94,7 @@
 		padding: .5em;
     flex-wrap:wrap;
     flex:1;
+		@include box-shadow;
 		li {
 			min-width: 200px;
 			display:flex;
@@ -113,6 +116,7 @@
 	display: flex;
   flex-direction: column;
 	padding: 1em;
+	@include box-shadow;
   ul {
   	display: flex;
     flex-direction:column;
@@ -127,6 +131,7 @@
       align-items:center;
 			text-align:center;
 			background: $green-bg;
+			@include box-shadow-alt-2;
 			* {padding-bottom: .5em;}
 			p {padding: .5em;}
 			img {
@@ -135,8 +140,8 @@
 			}
 		}
 		.unused {
-			background: #aaa;
-			color: #444;
+			background: #bbb;
+			color: #555;
 		}
 	}
 	ul:nth-of-type(even){
@@ -179,9 +184,46 @@
 	}
 }
 
+.final-stats {
+	ul {
+		li {
+			img {
+				@include border;
+			}
+		}
+		li.item-box {
+			text-align:center;
+			img {margin: 0 .3em; @include box-shadow;}
+		}
+		ul {
+			list-style-type: disc;
+			margin-left: 4em;
+		}
+	}
+	div {
+		display:flex;
+		flex-direction:row;
+		justify-content:center;
+		p {flex:1;}
+		p:first-of-type {
+			font-weight: 700;
+		}
+		p:nth-of-type(2) {
+			margin: 0 1em;
+		}
+	}
+	.sub-list {
+		text-align:center;
+		span {margin-right: 1em;}
+	}
+}
+
 .item-cont-alt {
 	background: darken($time-bomb-blue-bg, 20%);
 	color:white;
+	ul li img {
+		@include box-shadow-alt;
+	}
 }
 
 ul.short-list {
@@ -214,6 +256,9 @@ ul.short-list {
 				align-items:center;
 				padding: .25em 0;
 				font-weight: 400;
+				a img {
+					@include box-shadow-alt;
+				}
 			}
 		}
 	p {
@@ -230,6 +275,35 @@ ul.short-list {
 
 //	STYLES FOR LANING MATCHUPS	//
 
+.tier-box {
+	@include border;
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	padding: 0 1em;
+	margin-bottom: 1em;
+	width: 75%;
+	@include box-shadow;
+	img {
+		@include border-radius;
+		margin: .3em;
+		max-width: 64px;
+		max-height: 64px;
+		@include box-shadow-alt;
+	}
+	.stars img {
+		max-width: 35px;
+		max-height: 35px;
+		flex-basis: 25px;
+		box-shadow: none;
+	}
+	div {text-align:center;}
+}
+
+.tier-1 {background: $yellow-light;}
+.tier-2 {background:$fade-bg;}
+.tier-3 {background:$red-light;}
+
 .champ-row {
 	display:flex;
   flex-direction:column;
@@ -241,6 +315,7 @@ ul.short-list {
 	padding: .5em;
 	background: $runes-light-blue;
 	width:100%;
+	@include box-shadow;
 	&:nth-of-type(even) {background: lighten($runes-light-blue, 10%);}
 	> * {
 		margin: 0 .25em;
@@ -260,6 +335,7 @@ ul.short-list {
 			max-width: 35px;
 			max-height: 35px;
 		  flex-basis: 25px;
+			box-shadow:none;
 		}
 	}
 	img{
@@ -267,6 +343,7 @@ ul.short-list {
 		max-width: 64px;
 		max-height: 64px;
 		border-radius: $border-radius;
+		@include box-shadow-alt;
 	}
 	&.legend {
 		margin-bottom:0;
@@ -284,6 +361,7 @@ ul.short-list {
 	img {
 		border-radius: $border-radius;
 		width: 100%;
+		@include box-shadow;
 	}
 	div {
 		display:flex;
@@ -296,6 +374,7 @@ ul.short-list {
 .pros-and-cons .time-bomb, .pros-and-cons .time-warp {
 	color:white;
 	border:none;
+	@include box-shadow;
 }
 
 .pros-and-cons .time-bomb {background: $time-bomb-blue-bg;}
@@ -321,12 +400,15 @@ ul.faq {
 	border: $border;
 	padding:0;
 	overflow:hidden;
+	margin-left: 0;
+	@include box-shadow;
 	li {
 		padding: .5em 1em;
 		&:nth-of-type(odd) {
 			background:$time-warp-blue-bg;
 			color:white;
 			padding: 1em 3em;
+			font-size: 1.05em;
 			font-weight: 700;
 		}
 		&:nth-of-type(even) {
@@ -340,6 +422,7 @@ ul.faq {
 	border: $border;
 	border-radius:$border-radius;
 	overflow:hidden;
+	@include box-shadow;
 	li {
 		display:flex;
 		flex-direction: row;
@@ -392,6 +475,7 @@ ul.faq {
 		}
 		&.speedup p{
 			color: white;
+			@include box-shadow;
 			background: lighten($time-warp-blue, 35%);
 			&:nth-of-type(2){background:lighten($time-warp-blue, 27%);}
 			&:nth-of-type(3){background:lighten($time-warp-blue, 20%);}
@@ -400,6 +484,7 @@ ul.faq {
 		}
 		&.slowdown p{
 			color: black;
+			@include box-shadow;
 			background: $yellow;
 			&:nth-of-type(2){background: darken($yellow, 10%);}
 			&:nth-of-type(3){background: darken($yellow, 20%); color: #111}
@@ -408,6 +493,7 @@ ul.faq {
 		}
 		&.swifties p{
 			color: black;
+			@include box-shadow;
 			background: #bbb;
 			&:nth-of-type(2){background: #999;}
 			&:nth-of-type(3){background: #666; color:#eee;}
@@ -434,12 +520,13 @@ ul.faq {
 			margin:0 auto;
 			border: $thin-border;
 			border-radius: $border-radius;
+			@include box-shadow;
 		}
 	}
 }
 
 .nerf{color:$runes-red;}
-.buff{color:darken($green-bg, 45%);}
+.buff{color:darken($green-bg, 43%);}
 .neutral{color:#777;}
 
 
@@ -451,6 +538,7 @@ ul.faq {
 	border: $border;
 	max-width: 95%;
 	margin: 1em 0;
+	@include box-shadow;
 	& > * {margin: .5em 1em;}
 	h3 {}
 	div {display:flex; justify-content: center;}
@@ -479,10 +567,14 @@ ul.faq {
 }
 
 @media screen and (min-width: 765px) {
+	button{
+		 @include box-shadow;
+	}
 	.mastery-container {
 		ul {flex-direction:row;
 			li {width: 40%;}
 		}
+		button {box-shadow: none;}
 	}
 	.champ-row {flex-direction:row;}
 	.cdr-container {
@@ -496,7 +588,7 @@ ul.faq {
 
 @media screen and (min-width: 1000px) {
 	.spell-combo{max-width: 60%;}
-	.video-block{min-width: 75%;}
+	.video-block{min-width: 750px; max-width: 750px;}
 	.summary{max-width: 50%;}
 	.lg-cont{max-width: 75%;}
 	ul.bump-right{margin-left: 2em;}
