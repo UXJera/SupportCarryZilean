@@ -1,0 +1,2 @@
+RewriteCond %{HTTP_HOST} ^supportcarryzilean.com [NC]
+RewriteRule ^(.*)$ http://www.supportcarryzilean.com/$1 [L,R=301]
