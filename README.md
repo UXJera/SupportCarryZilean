@@ -1,0 +1,3 @@
+This is the source code for my website, SupportCarryZilean.com. This website is to help spread the information about a League of Legends champion and how to be a better player with a specific champion. SupportCarryZilean.com is a passion project of mine where I wanted to do a full project without using a standard Framework, but instead use Flexbox and my knowledge of CSS to bring everything together.
+
+I added this project to GitHub so that people would be able to see my code, and offer feedback for improvements that can be made. I am a UX Designer, so my coding is not as solid as someone who is more familiar with development. With that in mind, please let me know what can be done to make this website better.
