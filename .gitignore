@@ -47,5 +47,11 @@ Temporary Items
 .apdisk
 
 # Ignore docs files
-dev/.sass-cache
-dev/.sass-cache/*
+.sass-cache
+.sass-cache/*
+riot.txt
+config.rb
+sitemap.xml
+.htaccess
+robots.txt
+node_modules

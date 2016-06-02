@@ -51,6 +51,7 @@ header {
 			color:white;
 		}
 	}
+	&.isOpen {display:none; }
 }
 
 .main-nav .sub-menu {
@@ -75,6 +76,22 @@ header {
 
 .main-nav ul .toggle-on {
 	display: flex;
+}
+
+.mobile-nav {
+	background: $time-warp-blue-bg;
+	display:flex;
+	flex-direction:row;
+	justify-content: flex-end;
+	align-items:center;
+	padding: .5em 1em;
+	border-bottom: 1px solid #222;
+	a:after {
+		content: "\f0c9";
+		font: 2.5em fontawesome;
+		color:white;
+		padding-right:.48em;
+	}
 }
 
 @media screen and (max-width: 600px){
@@ -107,6 +124,10 @@ header {
 					order:0;
 			}
 		}
+		&.isOpen {display:flex;}
+	}
+	.mobile-nav {
+		display:none;
 	}
 }
 

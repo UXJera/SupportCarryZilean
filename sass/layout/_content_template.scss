@@ -197,6 +197,7 @@
 		}
 		li.item-box {
 			text-align:center;
+			h5 {justify-content: center;}
 			img {margin: 0 .3em; @include box-shadow;}
 		}
 		ul {

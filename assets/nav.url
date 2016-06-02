@@ -1,6 +1,7 @@
-<header class="menu-section">
-	<nav role="navigation" class="main-nav menu">
-	<ul>
+<header>
+<nav role="navigation" class="main-nav menu">
+	<div class="mobile-nav"><p></p><a class="nav-trigger"></a></div>
+	<ul class="primary-nav isOpen">
 		<li class="brand"><a href="/"><h1>SUPPORT <span>CARRY</span> </h1><img src="/img/Zilport.png" alt="Zilean face icon"></a></li>
 		<li><a href="/#quick-guide"><img src="/img/skills/Q64.png" alt="Time bomb Icon">QUICK GUIDE</a></li>
 		<li><a class="nav-toggle" href="#" aria-haspopup="true"><img src="/img/skills/W64.png" alt="Rewind Icon">BEGINNER GUIDES</a>
@@ -25,4 +26,9 @@
 		<li class=""><a href="/gameplay/"><img src="/img/skills/R64.png" alt="Chronoshift Icon">GAMEPLAY</a></li>
 	</ul>
 	</nav>
+	<script>
+	  $('.nav-trigger').on('click', function() {
+	    $('.primary-nav').toggleClass('isOpen');
+	  });
+		</script>
 </header>
