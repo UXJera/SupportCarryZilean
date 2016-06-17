@@ -80,6 +80,11 @@
 }
 
 //	STYLES FOR RUNES 101	//
+.rune-page-block {
+	a {text-decoration: none;}
+	h5{justify-content: center; color:black;}
+}
+
 .rune-page-block a img {
 	@include box-shadow;
 	@include border-thin;
