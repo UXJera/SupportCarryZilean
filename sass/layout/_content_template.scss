@@ -82,7 +82,9 @@
 //	STYLES FOR RUNES 101	//
 .rune-page-block {
 	a {text-decoration: none;}
-	h5{justify-content: center; color:black;}
+	h5{justify-content: center; color:black; transition: all .5s;
+		&:hover {color:#aaa;}
+	}
 }
 
 .rune-page-block a img {
