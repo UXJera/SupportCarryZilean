@@ -1,0 +1,83 @@
+//	STYLES FOR LANING MATCHUPS	//
+
+.tier-box {
+	@include border;
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	padding: 0 1em;
+	margin-bottom: 1em;
+	width: 75%;
+	@include box-shadow;
+	img {
+		@include border-radius;
+		margin: .3em;
+		max-width: 64px;
+		max-height: 64px;
+		@include box-shadow-alt;
+	}
+	.stars img {
+		max-width: 35px;
+		max-height: 35px;
+		flex-basis: 25px;
+		box-shadow: none;
+	}
+	div {text-align:center;}
+}
+
+.tier-1 {background: $yellow-light;}
+.tier-2 {background:$fade-bg;}
+.tier-3 {background:$red-light;}
+
+.champ-row {
+	display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+	border: $border;
+	border-radius: $border-radius;
+	margin: .25em 0;
+	padding: .5em;
+	background: $runes-light-blue;
+	width:100%;
+	@include box-shadow;
+	&:nth-of-type(even) {background: lighten($runes-light-blue, 10%);}
+	> * {
+		margin: 0 .25em;
+	}
+	h5 {flex:1;}
+	p{
+    flex:5;
+		font-size: .9em;
+	}
+	div{
+		display:flex;
+	  flex-wrap:wrap;
+    justify-content:center;
+    flex-basis: 200px;
+    flex:1;
+		img {
+			max-width: 35px;
+			max-height: 35px;
+		  flex-basis: 25px;
+			box-shadow:none;
+		}
+	}
+	img{
+    flex:1;
+		max-width: 64px;
+		max-height: 64px;
+		border-radius: $border-radius;
+		@include box-shadow-alt;
+	}
+	&.legend {
+		margin-bottom:0;
+		background:lighten($yellow, 20%);
+	}
+}
+
+.support-matchup .champ-row p {flex:6;}
+
+@media screen and (min-width: 765px) {
+	.champ-row {flex-direction:row;}
+}

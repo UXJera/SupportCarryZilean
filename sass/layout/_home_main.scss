@@ -4,11 +4,7 @@ span { font-weight: 700;}
 
 main {
 	background: $dark;
-	//display:flex;
-	//flex:1;
 	min-height: 90vh;
-	//justify-content: center;
-	//flex-direction:column;
 	h1 {
 		font-size: 1.8em;
 		font-weight: 700;
@@ -22,7 +18,6 @@ main {
 	justify-content:center;
 	align-items:center;
 	height: 100%;
-	//flex:1;
 	padding-bottom: .5em;
 	background:$light-blue-bg;
 	&:nth-of-type(even){background:$light-bg;}
@@ -48,7 +43,7 @@ main {
 }
 
 .patch-version {
-	display:flex; 
+	display:flex;
 	justify-content: center;
 	background: $dark;
 	font-size: .85em;
@@ -61,32 +56,6 @@ main {
 			transition: all .5s;
 			&:hover {color: darken(lightgreen, 20%)}
 		}
-	}
-}
-
-.introduction {
-	display:flex;
-	flex-direction:column;
-	flex-wrap: wrap;
-	justify-content:flex-start;
-	align-items:center;
-	h3 {margin-top: .5em;}
-	ul {
-		margin-left: 2em;
-		padding: .5em 0;
-		display:flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		list-style-type: disc;
-		li {padding:.25em 0;}
-	}
-	a {	margin: 0 auto;}
-	img {
-		width:100%;
-		max-width: 1000px;
-		border: $thin-border;
-		border-radius: $border-radius;
-		@include box-shadow;
 	}
 }
 
@@ -167,46 +136,7 @@ main {
 	p {padding: .5em 0;}
 }
 
-.runes-list {
-	display:flex;
-	justify-content: center;
-	width:100%;
-	flex:1;
-	@include box-shadow;
-	&.rune-top {
-		font-size: 16px;
-		li:first-child{border-top-left-radius: $border-radius;  @include box-shadow;}
-		li:last-child{border-top-right-radius: $border-radius;  @include box-shadow;}
-	}
-	&.rune-bottom {
-		li:first-child{border-bottom-left-radius: $border-radius; @include box-shadow;}
-		li:last-child{border-bottom-right-radius: $border-radius;  @include box-shadow;}
-	}
-	li {
-		border:1px solid black;
-		padding: .5em 0;
-		display:flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		flex: 1;
-		img {padding-bottom: .5em;}
-		&:last-of-type{color:white;}
-	}
-}
-
-.mastery-image {
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	margin: .75em 0;
-	img {
-		max-width: 100%;
-		@include border;
-  	@include box-shadow;
-	}
-}
+// SKILL ORDER FOR HOME PAGE //
 
 .skill-order {
 	display:flex;
@@ -238,42 +168,6 @@ main {
 	background: $fade-bg;
 }
 
-.item-container {
-	display:flex;
-	flex-wrap:wrap;
-	flex-direction:column;
-	justify-content:flex-start;
-	align-items:center;
-	background: $fade-bg;
-	border: $border;
-	border-radius: $border-radius;
-	@include box-shadow;
-	ul {
-		display:flex;
-		justify-content: center;
-		flex-wrap: wrap;
-		padding: .5em 0;
-		li {
-			font-weight: 700;
-			font-size: .9em;
-			display:flex;
-			text-align: center;
-			flex-direction: column;
-			padding: .5em 1em;
-			a {
-				padding: .5em;
-			}
-			img {
-				border-radius: $border-radius;
-				border: $thin-border;
-				max-width: 64px;
-				margin: 0 auto;
-				@include box-shadow;
-			}
-		}
-	}
-}
-
 button {
 	font-weight: 700;
 	color: $light;
@@ -302,7 +196,6 @@ button {
 	}
 
 	.quick-guide ul {flex-direction:row;}
-	.runes-list.top {font-size: 21px;}
 	.pros-and-cons {
 		flex-wrap:nowrap;
 		div{
@@ -319,12 +212,10 @@ button {
 }
 
 @media screen and (min-width: 1000px) {
-	.introduction p {max-width: 70%;}
 	.explanation {
 		max-width: 80%;
 		padding: .7em 1em;
 	}
-	.three-tree .explanation {max-width:100%;}
 	.content-container{max-width:80%;}
 }
 

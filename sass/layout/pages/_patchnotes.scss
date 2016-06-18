@@ -1,0 +1,26 @@
+
+//	STYLES FOR PATCH EVOLUTION	//
+
+.patch-container {
+	li {
+		display:flex;
+		flex-direction:column;
+		p:first-of-type {
+			text-align:center;
+			font-weight: 700;
+		}
+		div {margin:0 auto;}
+		img {
+			width: 64px;
+			height: 64px;
+			margin:0 auto;
+			border: $thin-border;
+			border-radius: $border-radius;
+			@include box-shadow;
+		}
+	}
+}
+
+.nerf{color:$runes-red;}
+.buff{color:darken($green-bg, 43%);}
+.neutral{color:#777;}

@@ -1,0 +1,25 @@
+//	STYLES FOR CDR AND YOU	//
+
+.cdr-container {
+  flex-direction:column;
+  flex-wrap:nowrap;
+	img {
+		border-radius: $border-radius;
+		width: 100%;
+		@include box-shadow;
+	}
+	div {
+		display:flex;
+    flex-direction:column;
+	}
+}
+
+@media screen and (min-width: 765px) {
+	.cdr-container {
+    flex-direction:row;
+		div {
+			max-width: 50%;
+			padding: 0 1em;
+		}
+	}
+}
