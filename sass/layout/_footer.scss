@@ -2,18 +2,18 @@
 
 .article-footer {
 	display:flex;
-  flex-direction:column;
   flex:1;
+  flex-direction:column;
 	.footer-container{
-		display:flex;
-    justify-content:center;
-    align-items:center;
-    flex: 1;
+		align-items:center;
 		background: $blue-bg;
+		display:flex;
+		flex: 1;
+    justify-content:center;
 		a {
-			text-decoration:none;
 			color:$dark;
-			transition: all .5s;
+			text-decoration:none;
+			@include transition;
 			&:hover {color:$light;}
 		}
 		i {display:none;}
@@ -21,33 +21,31 @@
 	}
 }
 
-
-
 footer {
+	align-items: center;
+	background: $dark;
 	display: flex;
   flex: 1;
   justify-content: flex-end;
-  align-items: center;
-	background: $dark;
 	a {
+		color:$white;
 		padding: .5em;
-		color:#eee;
-		transition: all .5s;
+		@include transition;
 		&:hover {color:$runes-light-blue;}
 	}
 	div {
+		align-items:center;
 		display:flex;
-    align-items:center;
 	}
 	span {
+		color: $white;
 		font-weight: 400;
 		padding: 0 1em 0 2em;
-		color: white;
 		a {
-			color: #eee;
+			color: $white;
 			font-weight:700;
-			text-decoration: none;
 			padding: 0 .2em;
+			text-decoration: none;
 		}
 	}
 }

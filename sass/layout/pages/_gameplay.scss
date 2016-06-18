@@ -1,35 +1,36 @@
 //	STYLES FOR GAMEPLAY VIDEO	//
 
 .video-block {
-	background: white;
+	background: $white;
 	border-radius: $border-radius;
 	border: $border;
+	margin: 1em 0;
 	max-width: 95%;
 	min-width: 95%;
-	margin: 1em 0;
 	@include box-shadow;
 	& > * {margin: .5em 1em;}
-	h3 {}
 	div {display:flex; justify-content: center;}
-	p {font-size: .9em;}
+	p {font-size: .9em;} 
 }
 
+// TURN YOUTUBE VIDEO INTO RESPONSIVE BLOCK //
+
 .embed-container {
-	position: relative;
-	padding-bottom: 56.25%;
 	height: 0;
-	overflow: hidden;
 	max-width: 100%;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
 }
 
 .embed-container iframe, .embed-container object, .embed-container embed {
+	height: 100%;
+	left: 0;
 	position: absolute;
 	top: 0;
-	left: 0;
 	width: 100%;
-	height: 100%;
 }
 
 @media screen and (min-width: 1000px) {
-	.video-block{min-width: 750px; max-width: 750px;}
+	.video-block{max-width: 750px; min-width: 750px;}
 }

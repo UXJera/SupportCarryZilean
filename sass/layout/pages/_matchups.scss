@@ -1,26 +1,25 @@
 //	STYLES FOR LANING MATCHUPS	//
 
 .tier-box {
-	@include border;
+	align-items: center;
 	display:flex;
 	flex-direction:column;
-	align-items: center;
-	padding: 0 1em;
 	margin-bottom: 1em;
+	padding: 0 1em;
 	width: 75%;
+	@include border;
 	@include box-shadow;
 	img {
-		@include border-radius;
 		margin: .3em;
-		max-width: 64px;
 		max-height: 64px;
+		max-width: 64px;
 		@include box-shadow-alt;
 	}
 	.stars img {
-		max-width: 35px;
-		max-height: 35px;
-		flex-basis: 25px;
 		box-shadow: none;
+		flex-basis: 25px;
+		max-height: 35px;
+		max-width: 35px;
 	}
 	div {text-align:center;}
 }
@@ -30,49 +29,44 @@
 .tier-3 {background:$red-light;}
 
 .champ-row {
+	align-items:center;
+	background: $runes-light-blue;
+	border: $border;
+	border-radius: $border-radius;
 	display:flex;
   flex-direction:column;
   justify-content:space-between;
-  align-items:center;
-	border: $border;
-	border-radius: $border-radius;
 	margin: .25em 0;
 	padding: .5em;
-	background: $runes-light-blue;
 	width:100%;
 	@include box-shadow;
 	&:nth-of-type(even) {background: lighten($runes-light-blue, 10%);}
-	> * {
-		margin: 0 .25em;
-	}
+	> * {margin: 0 .25em;}
 	h5 {flex:1;}
-	p{
-    flex:5;
-		font-size: .9em;
-	}
+	p {flex:5; font-size: .9em;}
 	div{
 		display:flex;
+		flex:1;
+		flex-basis: 200px;
 	  flex-wrap:wrap;
     justify-content:center;
-    flex-basis: 200px;
-    flex:1;
 		img {
-			max-width: 35px;
-			max-height: 35px;
-		  flex-basis: 25px;
 			box-shadow:none;
+			flex-basis: 25px;
+			max-height: 35px;
+			max-width: 35px;
 		}
 	}
 	img{
-    flex:1;
-		max-width: 64px;
-		max-height: 64px;
 		border-radius: $border-radius;
+    flex:1;
+		max-height: 64px;
+		max-width: 64px;
 		@include box-shadow-alt;
 	}
 	&.legend {
-		margin-bottom:0;
 		background:lighten($yellow, 20%);
+		margin-bottom:0;
 	}
 }
 

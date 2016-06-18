@@ -2,37 +2,37 @@
 
 
 header {
-	display:flex;
-	flex-direction:column;
-	width: 100%;
-	text-align: center;
 	background: $dark;
 	border-bottom: $thin-border;
+	display:flex;
+	flex-direction:column;
+	text-align: center;
+	width: 100%;
 }
 
 .main-nav ul {
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	flex-direction: column;
 	li {
+		background: $runes-blue;
+		flex: 1 0 auto;
 		min-width:20%;
 		position: relative;
-		background: $runes-blue;//$time-bomb-blue;
-		flex: 1 0 auto;
 		a {
-			display:flex;
-			justify-content:space-between;
 			align-items: center;
-			text-decoration: none;
 			color: white;
-			font-weight: 700;
+			display:flex;
 			font-size: 1.2em;
+			font-weight: 700;
+			justify-content:space-between;
+			text-decoration: none;
 			img {
-				order:1;
 				border-radius: 5px;
-				margin-right: 1em;
 				height: 36px;
+				margin-right: 1em;
+				order:1;
 				width: 36px;
 			}
 		}
@@ -47,49 +47,42 @@ header {
 	.brand {
 		h1 {order:0;}
 		span {padding-left:.3em;}
-		a {
-			color:white;
-		}
 	}
-	&.isOpen {display:none; }
+	&.isOpen {display:none;}
 }
 
 .main-nav .sub-menu {
-	position: absolute;
 	flex-direction: column;
+	position: absolute;
 	width: 100%;
 	li {
 		a {
 			border-left: $thin-border;
 			border-right: $thin-border;
 			display:flex;
-			justify-content: center;
-			font-size: 1.03em;
-			padding: .6rem 1rem;
 			flex: 1 0 auto;
+			font-size: 1.03em;
+			justify-content: center;
+			padding: .6rem 1rem;
 		}
-		&:last-child {
-			border-bottom: $thin-border;
-		}
+		&:last-child {border-bottom: $thin-border;}
 	}
 }
 
-.main-nav ul .toggle-on {
-	display: flex;
-}
+.main-nav ul .toggle-on {display: flex;}
 
 .mobile-nav {
+	align-items:center;
+	border-bottom: $thin-border;
 	background: $time-warp-blue-bg;
 	display:flex;
 	flex-direction:row;
 	justify-content: flex-end;
-	align-items:center;
 	padding: .5em 1em;
-	border-bottom: 1px solid #222;
 	a:after {
+		color:white;
 		content: "\f0c9";
 		font: 2.5em fontawesome;
-		color:white;
 		padding-right:.48em;
 	}
 }
@@ -98,17 +91,15 @@ header {
 	.main-nav ul ul li a {
 		padding-left: 2em;
 	}
-	.dropdown-toggle {
-		display: none;
-	}
+	.dropdown-toggle {display: none;}
 }
 
 .menu li a {
-	transition: all .5s;
-	display: block;
-	text-decoration: none;
 	color: white;
+	display: block;
 	padding: .33rem 1rem;
+	text-decoration: none;
+	@include transition;
 }
 
 .menu li a:hover,.menu li a:active {
@@ -120,22 +111,18 @@ header {
 		flex-direction: row;
 		li a {
 			justify-content: center;
-				img {
-					order:0;
-			}
+				img {order:0;}
 		}
 		&.isOpen {display:flex;}
 	}
-	.mobile-nav {
-		display:none;
-	}
+	.mobile-nav {display:none;}
 }
 
 
 @media screen and (min-width: 1000px) {
 	.main-nav ul {flex-direction: row;
 	.brand a {
-		color: $runes-blue;//$time-bomb-blue;
+		color: $runes-blue;
 		transition: background .5s ease-in 0s;
 		&:hover {
 			color:white;

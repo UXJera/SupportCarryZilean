@@ -1,9 +1,9 @@
 //	STYLES FOR MASTERY BREAKDOWN	//
 
 .mastery-image {
+	align-items: center;
 	display:flex;
 	justify-content: center;
-	align-items: center;
 	margin: .75em 0;
 	img {
 		max-width: 100%;
@@ -13,32 +13,31 @@
 }
 
 .mastery-container {
-  border: $border;
-	border-radius: $border-radius;
 	display: flex;
   flex-direction: column;
 	padding: 1em;
+	@include border;
 	@include box-shadow;
   ul {
+		align-items:stretch;
   	display: flex;
     flex-direction:column;
     justify-content:space-around;
-    align-items:stretch;
     li {
+			align-items:center;
+			background: $green-bg;
 			border: $border;
 			border-radius: $border-radius;
 			display:flex;
       flex-direction:column;
       justify-content: center;
-      align-items:center;
 			text-align:center;
-			background: $green-bg;
 			@include box-shadow-alt-2;
 			* {padding-bottom: .5em;}
 			p {padding: .5em;}
 			img {
-				padding-bottom:0;
 				margin-bottom: .5em;
+				padding-bottom:0;
 			}
 		}
 		.unused {
@@ -48,9 +47,8 @@
 	}
 	ul:nth-of-type(even){
 		li img {
-			border-radius: 10px;
-			border: 1px solid $dark;
 			max-width: 64px;
+			@include border-thin;
 		}
 	}
 }

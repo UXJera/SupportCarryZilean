@@ -1,35 +1,32 @@
 //	STYLES FOR ITEM OPTIMIZATION	//
 
 .item-container {
-	display:flex;
-	flex-wrap:wrap;
-	flex-direction:column;
-	justify-content:flex-start;
 	align-items:center;
 	background: $fade-bg;
 	border: $border;
 	border-radius: $border-radius;
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	justify-content:flex-start;
 	@include box-shadow;
 	ul {
 		display:flex;
-		justify-content: center;
 		flex-wrap: wrap;
+		justify-content: center;
 		padding: .5em 0;
 		li {
+			display:flex;
+			flex-direction: column;
 			font-weight: 700;
 			font-size: .9em;
-			display:flex;
-			text-align: center;
-			flex-direction: column;
 			padding: .5em 1em;
-			a {
-				padding: .5em;
-			}
+			text-align: center;
+			a {padding: .5em;}
 			img {
-				border-radius: $border-radius;
-				border: $thin-border;
 				max-width: 64px;
 				margin: 0 auto;
+				@include border-thin;
 				@include box-shadow;
 			}
 		}
@@ -38,49 +35,38 @@
 
 
 .item-exp {
-	display:flex;
-  flex-direction: column;
-	max-width: 60%;
-  flex:1;
 	background: $fade-bg;
-	border: $border;
-	border-radius: $border-radius;
+	display:flex;
+	flex:1;
+  flex-direction: column;
 	margin-bottom:1em;
+	max-width: 60%;
 	padding: 1em 3em;
+	@include border;
 	img {
+		@include border;
 		margin: 0 auto;
-		border: $border;
-		border-radius: $border-radius;
 	}
 	p {font-size:.95em;}
 	.explain-list {
-		list-style: disc;
 		display:flex;
     flex:1;
     flex-direction:column;
-    justify-content:space-between;
+    justify-content:space-between;.
+		list-style: disc;
 		li {
-			padding: .25em 0;
 			font-size:.9em;
+			padding: .25em 0;
 		}
 	}
 }
 
 .final-stats {
 	ul {
-		li {
-			img {
-				@include border;
-			}
-		}
 		li.item-box {
 			text-align:center;
 			h5 {justify-content: center;}
-			img {margin: 0 .3em; @include box-shadow;}
-		}
-		ul {
-			list-style-type: disc;
-			margin-left: 4em;
+			img {margin: 0 .3em; @include border; @include box-shadow;}
 		}
 	}
 	div {
@@ -88,12 +74,8 @@
 		flex-direction:row;
 		justify-content:center;
 		p {flex:1;}
-		p:first-of-type {
-			font-weight: 700;
-		}
-		p:nth-of-type(2) {
-			margin: 0 1em;
-		}
+		p:first-of-type {font-weight: 700;}
+		p:nth-of-type(2) {margin: 0 1em;}
 	}
 	.sub-list {
 		text-align:center;
@@ -103,56 +85,48 @@
 
 .item-cont-alt {
 	background: darken($time-bomb-blue-bg, 20%);
-	color:white;
-	ul li img {
-		@include box-shadow-alt;
-	}
+	color:$white;
+	ul li img {@include box-shadow-alt;}
 }
 
 ul.short-list {
 	padding:0;
-	li {
-		padding:0;
-	}
+	li {padding:0;}
 }
 
 .avoid {
 	background: lighten($red, 5%);
-	padding: 1em 0;
 	border:none;
+	padding: 1em 0;
 	.item-list{
-		text-align:left;
 		padding: 0 2em;
+		text-align:left;
 		> li {
 			margin:0 auto;
 		}
 		ul {
+			align-items:flex-start;
 			display:flex;
       flex:1;
       justify-content:space-between;
-      align-items:flex-start;
 			list-style: disc;
 		}
 			li {
-				display:flex;
-				text-align:left;
 				align-items:center;
-				padding: .25em 0;
+				display:flex;
 				font-weight: 400;
-				a img {
-					@include box-shadow-alt;
-				}
+				padding: .25em 0;
+				text-align:left;
+				a img {@include box-shadow-alt;}
 			}
 		}
 	p {
     align-self:center;
-		text-align:center;
 		font-weight: 400;
-		padding: 0;
 		max-width: 90%;
-			&:last-child {
-				padding-bottom: 1em;
-			}
+		padding: 0;
+		text-align:center;
+			&:last-child {padding-bottom: 1em;}
 		}
 }
 

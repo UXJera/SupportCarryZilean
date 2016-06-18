@@ -1,52 +1,46 @@
 //	STYLES FOR SKILLS, SPELLS, COMBOS AND TRICKS	//
 
 .skill-container{
-	margin: .5em 0;
 	display:flex;
+	flex: 1;
   flex-direction: row;
+	flex-wrap: wrap;
   justify-content: space-around;
-  flex-wrap: wrap;
-  flex: 1;
+	margin: .5em 0;
 	img {
-		border-radius: $border-radius;
-		border: $thin-border;
 		max-width: 64px;
+		@include border-thin;
 		@include box-shadow;
 	}
 }
 
 .spell-combo {
-	margin: .5em 0;
-	display:-webkit-box;
-	display:-webkit-flex;
-	display:-ms-flexbox;
+	align-content:center;
 	display:flex;
   flex-direction: row;
+	flex-wrap: wrap;
   justify-content: space-around;
-  align-content:center;
-  flex-wrap: wrap;
+	margin: .5em 0;
 	max-width: 90%;
 	img {
-		border-radius: $border-radius;
-		border: $thin-border;
-		max-width: 64px;
-		max-height: 64px;
 		margin: 0 .2em;
+		max-width: 64px;	max-height: 64px;
+		@include border-thin;
 		@include box-shadow;
 	}
 	div {
+		align-items:center;
 		display:flex;
 	  justify-content:center;
-	  align-items:center;
 		padding: 0 1em;
 	}
 }
 
 .skill-column {
+	align-items: center;
 	display:flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 	p {
 		padding: .3em 0;
 		font-size:.7em;
@@ -57,8 +51,7 @@
 		margin: .5em 0;
 		padding: .5em 2em;
 		background: $fade-bg;
-		border: 2px solid black;
-		border-radius: 10px;
+		@include border;
 		p{font-size:21px;}
 	}
 }

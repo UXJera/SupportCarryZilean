@@ -6,16 +6,14 @@
 		display:flex;
 		flex-direction:column;
 		p:first-of-type {
-			text-align:center;
 			font-weight: 700;
-		}
+			text-align:center;
+			}
 		div {margin:0 auto;}
 		img {
-			width: 64px;
-			height: 64px;
+			height: 64px; width: 64px;
 			margin:0 auto;
-			border: $thin-border;
-			border-radius: $border-radius;
+			@include border-thin;
 			@include box-shadow;
 		}
 	}

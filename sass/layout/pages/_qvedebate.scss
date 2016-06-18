@@ -1,23 +1,29 @@
 //	STYLES FOR Q vs E DEBATE	//
 
-.pros-and-cons .time-bomb, .pros-and-cons .time-warp {
-	color:white;
-	border:none;
-	@include box-shadow;
+.pros-and-cons img {
+	margin: 0 auto;
+	max-height:64px; max-width: 64px; 
+	@include border-thin;
 }
 
-.pros-and-cons .time-bomb {background: $time-bomb-blue-bg;}
-.pros-and-cons .time-warp {background: $time-warp-blue-bg;}
-
+.pros-and-cons {
+	.time-bomb, .time-warp {
+		border:none;
+		color:$white;
+		@include box-shadow;
+	}
+	.time-bomb {background: $time-bomb-blue-bg;}
+	.time-warp {background: $time-warp-blue-bg;}
+}
 
 .debate-winner {
-	display:flex;
-	flex-direction:column;
+	background:  $fade-bg;
 	border: $border;
 	border-radius: $border-radius;
-	max-width: 70%;
+	display:flex;
+	flex-direction:column;
 	justify-content:center;
-	padding: 1em;
 	margin-top: 1em;
-	background:  $fade-bg;
+	max-width: 70%;
+	padding: 1em;
 }

@@ -2,9 +2,9 @@
 
 .runes-list {
 	display:flex;
+	flex:1;
 	justify-content: center;
 	width:100%;
-	flex:1;
 	@include box-shadow;
 	&.rune-top {
 		font-size: 16px;
@@ -17,21 +17,24 @@
 	}
 	li {
 		border:1px solid black;
-		padding: .5em 0;
 		display:flex;
+		flex: 1;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
+		padding: .5em 0;
 		text-align: center;
-		flex: 1;
-		img {padding-bottom: .5em;}
-		&:last-of-type{color:white;}
+		img {
+			max-width: 46px; max-height: 46px;
+			margin: 0 auto;
+			padding-bottom: .5em;
+		}
+		&:last-of-type{color:$white;}
 	}
 }
 
 .rune-page-block {
 	a {text-decoration: none;}
-	h5{justify-content: center; color:black; transition: all .5s;
+	h5{justify-content: center; color:black; @include transition;
 		&:hover {color:#aaa;}
 	}
 }
@@ -42,27 +45,27 @@
 }
 
 .rune-container {
+	align-items:center;
 	display:flex;
+	flex:1;
   flex-direction:column;
-  align-items:center;
   justify-content:space-around;
-  flex:1;
 	ul {
 		border-radius: $border-radius;
 		display:flex;
+		flex:1;
+		flex-wrap:wrap;
     justify-content: space-around;
 		padding: .5em;
-    flex-wrap:wrap;
-    flex:1;
 		@include box-shadow;
 		li {
-			min-width: 200px;
+			align-items:center;
 			display:flex;
       flex-direction:column;
-      justify-content:center;
-      align-items:center;
-			padding: .5em 1rem;
 			font-size:.9em;
+      justify-content:center;
+      min-width: 200px;
+			padding: .5em 1rem;
 			img {max-width: 46px;}
 		}
 	}

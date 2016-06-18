@@ -6,12 +6,11 @@ $border: 2px solid $dark;
 $thin-border: 1px solid $dark;
 $border-radius: 10px;
 
-
 @mixin fullbg {
   min-height: 100vh;
   background-attachment: fixed;
-  background-size: cover;
   background-position:center;
+  background-size: cover;
 }
 
 @mixin border {
@@ -33,4 +32,8 @@ $border-radius: 10px;
 }
 @mixin box-shadow-alt-2 {
   box-shadow: 5px 5px 5px #111;
+}
+
+@mixin transition {
+  transition: all .5s;
 }
