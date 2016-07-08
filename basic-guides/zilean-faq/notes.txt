@@ -1,0 +1,21 @@
+Q: Is Zilean solo queue viable in Patch 6.x?
+
+A: Yes, as with most champions, having mastery of a champion will outweigh many of the downsides of a champion, as you know how to play around them. For many, playing "unfamiliar" champions have a small advantage.
+
+Q: Is Zilean pro-play viable?
+
+A: Yes and no. The current meta focuses on early picking supports that have hard engage (Braum/Alistar), although there are a few that favor better sustain champions (LCS Immortals).
+
+Many LCS teams prefer the tanky supports with engages and stuns, and take those support picks early. Those picks deny the opponent and also mask the composition for another round.
+
+In short, Zilean falls into the more passive/pure support that isn't favored by most teams.
+
+ Element's support, Sprattel, did play support Zilean in the 3rd week of the spring split of the EU LCS.
+
+http://matchhistory.euw.leagueoflegends.com/en/#match-details/TRLH3/1001490050?gameHash=68fa3ddd2b15551e&tab=overview
+
+
+Q: Who are you? And why should I trust what you're saying?
+
+A: **OP.GG LINK** I started maining Zilean as a support the patch that his Time Bombs were changed from Point-and-Click spells to Skillshots (Patch 5.4 in Feb of 2015).
+Before that, I was the lead analyst for CompLexity White (challenger team) and moved to CompLexity Black when they were making their run to get into LCS. I've been a content director at Cloth5.com, and have done many statistical analysis involving pick/ban decisions and game flow decision making. I've been playing League starting in season 2, and I've placed into High Platinum at my prime. If I had more time, I would aim for mid Diamond for Season 6.

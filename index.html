@@ -31,14 +31,14 @@
 			<div class="mobile-nav"><a class="nav-trigger"></a></div>
 			<ul class="primary-nav isOpen">
 				<li class="brand"><a href="/"><h1>SUPPORT <span>CARRY</span> </h1><img src="/img/Zilport.png" alt="Zilean face icon"></a></li>
-				<li><a href="#quick-guide"><img src="/img/skills/Q64.png" alt="Time bomb Icon">QUICK GUIDE</a></li>
-				<li><a class="nav-toggle" href="#" aria-haspopup="true"><img src="/img/skills/W64.png" alt="Rewind Icon">BEGINNER GUIDES</a>
+				<li class="blank-nav"></li>
+				<li><a class="nav-toggle" href="#" aria-haspopup="true"><img src="/img/skills/Q64.png" alt="Time bomb Icon">BASIC GUIDES</a>
 					<ul class="sub-menu">
-						<li><a href="/beginner-guides/runes-101/">Runes 101</a></li>
-						<li><a href="/beginner-guides/mastery-breakdown/">Mastery Breakdown</a></li>
-						<li><a href="/beginner-guides/spells-combos-tricks/">Spells, Combos, and Tricks</a></li>
-						<li><a href="/beginner-guides/what-to-buy-and-when/">What to Buy and When</a></li>
-						<li><a href="/beginner-guides/laning-matchups/">Laning Matchups</a></li>
+						<li><a href="/basic-guides/runes-101/">Runes 101</a></li>
+						<li><a href="/basic-guides/mastery-breakdown/">Mastery Breakdown</a></li>
+						<li><a href="/basic-guides/spells-combos-tricks/">Spells, Combos, and Tricks</a></li>
+						<li><a href="/basic-guides/what-to-buy-and-when/">What to Buy and When</a></li>
+						<li><a href="/basic-guides/laning-matchups/">Laning Matchups</a></li>
 					</ul>
 				</li>
 
@@ -59,6 +59,21 @@
 	<div class="patch-version">
 		<p>This guide has been updated for: <span> <a href="http://na.leagueoflegends.com/en/news/game-updates/patch/patch-613-notes" target="_blank">Patch 6.13</a></span></p>
 	</div>
+
+	<div class="quick-guide-menu quick-guide-main">
+		<div>
+			<ul>
+				<li class="thead">Quick Guides For:</li>
+			</ul>
+			<ul>
+				<li><a href="#runes"><img src="/img/runes/cdrs46.png">RUNES</a></li>
+				<li><a href="#masteries"><img src="img/masteries/cun312.png">MASTERIES</a></li>
+				<li><a href="#skills"><img src="img/skills/R64.png">SKILL ORDER</a></li>
+				<li><a href="#items"><img src="img/items/watchers64.png">ITEM BUILD</a></li>
+			</ul>
+		</div>
+	</div>
+
 	<div class="content-wrapper">
 		<div class="content-container">
 			<div class="introduction">
@@ -122,13 +137,23 @@
 				<p>At the core, Support Zilean needs two things: enough mana to cast spells and enough cooldown reduction to quickly recast spells. Many of the utility based items are cheap enough that so an optimal support build attained in a 30+ minute game.</p>
 				<p>By being able to control the tempo of battle through slows, stuns, and the occasional feigned death, Zilean is a powerful supportive champion.</p>
 				<p>The guides on this website focus on Zilean being the Supprot role, but many of the supportive ideologies can be carried over into the Mid and Top lane positions as well (the laning phase will be drastically different, but the general role within teamfighting is the same).</p>
-				<div id="quick-guide">
-					<h3>Quick Guide</h3>
-				</div>
+					<h3>The Quick Essentials</h3>
 		</div>
 	</div>
+
+	<div class="quick-guide-menu">
+		<div>
+			<ul>
+				<li class="quick-guide-active"><a><img src="/img/runes/cdrs46.png">RUNES</a></li>
+				<li><a href="#masteries"><img src="img/masteries/cun312.png">MASTERIES</a></li>
+				<li><a href="#skills"><img src="img/skills/R64.png">SKILL ORDER</a></li>
+				<li><a href="#items"><img src="img/items/watchers64.png">ITEM BUILD</a></li>
+			</ul>
+		</div>
+	</div>
+
   <div class="content-wrapper">
-		<div class="quick-guide" id="runes">
+		<div class="quick-guide mobile-quick-guide">
 			<ul>
 				<li><a class="active-item">Runes</a></li>
 				<li><a href="#masteries">Masteries</a></li>
@@ -136,7 +161,8 @@
 				<li><a href="#item-build">Item Build</a></li>
 			</ul>
 		</div>
-		<div class="content-container">
+
+		<div class="content-container" id="runes">
 			<h3>Runes</h3>
 			<h5>The Standard Support Mage Page</h5>
 			<ul class="runes-list rune-top">
@@ -159,7 +185,7 @@
 				<p>This is the most common page for support mages and this page works well into most matchups. The only matchups that it has trouble with are the heavy poke lanes, in which you'll want to take a full defensive page.</p>
 				<p>The hybrid penetration reds are the best fit since you'll want to be harassing with auto attacks, as well with Time Bomb. This gives you the best value for offensive red runes.</p>
 				<p>The defensive seals and quints give you enough armor and HP to be resilient to poke in lane. The extra AP is great for poking out enemy ADCs and taking control of the lane.</p>
-				<p>For a more in-depth reasoning on why I choose these runes specifically, <a href="/beginner-guides/runes-101/">Runes 101 Guide.</a></p>
+				<p>For a more in-depth reasoning on why I choose these runes specifically, <a href="/basic-guides/runes-101/">Runes 101 Guide.</a></p>
 			</div>
 			<h5>The Damage Heavy Runepage</h5>
 			<ul class="runes-list rune-top">
@@ -177,12 +203,25 @@
 				<button class="expand"><span>Show Explanation</span></button>
 				<div class="explanation">
 					<p>Sometimes, you just want to watch the world burn, or get that precious S+ ranking. This rune set focuses on maxing Time Bomb and trying to land as many Q's to poke out the enemy ADC. You want to focus out the ADC because generally they have lower health sustain than supports.</p>
-					<p>I like taking this page when I want to have fun, or if I know that I have a laning advantage over the opponent. To learn more about laning matchups, <a href="/beginner-guides/laning-matchups/">click here.</a></p>
+					<p>I like taking this page when I want to have fun, or if I know that I have a laning advantage over the opponent. To learn more about laning matchups, <a href="/basic-guides/laning-matchups/">click here.</a></p>
 				</div>
 		</div>
 	</div>
-	<div class="content-wrapper">
-		<div class="quick-guide" id="masteries">
+
+	<div class="quick-guide-menu">
+		<div>
+			<ul>
+				<li><a href="#runes"><img src="/img/runes/cdrs46.png">RUNES</a></li>
+				<li class="quick-guide-active"><a><img src="img/masteries/cun312.png">MASTERIES</a></li>
+				<li><a href="#skills"><img src="img/skills/R64.png">SKILL ORDER</a></li>
+				<li><a href="#items"><img src="img/items/watchers64.png">ITEM BUILD</a></li>
+			</ul>
+		</div>
+	</div>
+
+  <div class="content-wrapper">
+
+		<div class="quick-guide mobile-quick-guide">
 			<ul>
 				<li><a href="#runes">Runes</a></li>
 				<li><a class="active-item">Masteries</a></li>
@@ -190,18 +229,19 @@
 				<li><a href="#item-build">Item Build</a></li>
 			</ul>
 		</div>
-		<div class="content-container">
+
+		<div class="content-container" id="masteries">
 			<h3>Masteries</h3>
-			<h5>The Standard Support Mastery Page</h5>
+			<h5>The Standard Support Mastery Page<br>0/18/12</h5>
 			<div class="mastery-image">
 				<a href="/img/masteries/01812mastery.png" target="_blank"><img src="/img/masteries/01812mastery.png" alt="0/18/12 Zilean Masteries Patch 6.12"></img></a>
 			</div>
 			<button class="expand"><span>Show Explanation</span></button>
 			<div class="explanation">
-				<p>Out of all the masteries, picking up Thunderlord's is the best of all the trees, although Bond of Stone and Strength of Ages in the Resolve Tree are decent. For a detailed breakdown of each mastery talent, here's the <a href="/beginner-guides/mastery-breakdown/">Mastery Breakdown Guide.</a></p>
+				<p>Out of all the masteries, picking up Thunderlord's is the best of all the trees, although Bond of Stone and Strength of Ages in the Resolve Tree are decent. For a detailed breakdown of each mastery talent, here's the <a href="/basic-guides/mastery-breakdown/">Mastery Breakdown Guide.</a></p>
 				<p>This specific page is the standard page for most ranged supports in the bottom lane. It focuses on utility and survivability.</p>
 			</div>
-			<h5>The Teamfight Utility Page</h5>
+			<h5>The Teamfight Utility Page<br>6/18/6</h5>
 			<div class="mastery-image">
 				<a href="/img/masteries/061806mastery.png" target="_blank"><img src="/img/masteries/061806mastery.jpg" alt="06/18/06 Zilean Masteries Patch 6.5"></img></a>
 			</div>
@@ -212,8 +252,21 @@
 			</div>
 		</div>
 	</div></div>
-	<div class="content-wrapper">
-		<div class="quick-guide" id="skills">
+
+	<div class="quick-guide-menu">
+		<div>
+			<ul>
+				<li><a href="#runes"><img src="/img/runes/cdrs46.png">RUNES</a></li>
+				<li><a href="#masteries"><img src="img/masteries/cun312.png">MASTERIES</a></li>
+				<li class="quick-guide-active"><a><img src="img/skills/R64.png">SKILL ORDER</a></li>
+				<li><a href="#items"><img src="img/items/watchers64.png">ITEM BUILD</a></li>
+			</ul>
+		</div>
+	</div>
+
+  <div class="content-wrapper">
+
+		<div class="quick-guide mobile-quick-guide">
 			<ul>
 				<li><a href="#runes">Runes</a></li>
 				<li><a href="#masteries">Masteries</a></li>
@@ -221,7 +274,8 @@
 				<li><a href="#item-build">Item Build</a></li>
 			</ul>
 		</div>
-		<div class="content-container">
+
+		<div class="content-container" id="skills">
 			<h3>Skill Order</h3>
 			<h6>Level these skills in this order starting out:</h6>
 				<ul class="skill-order">
@@ -237,11 +291,11 @@
 				<h6>This skill order focuses on harassing the enemy with damage and stuns, but sacrifices the utility of the debilitating slow. This is the build I recommend if you are starting out playing Support Zilean.</h6>
 				<h5>Max Order</h5>
 				<ul class="skill-order">
+					<li>Chronoshift<img src="/img/skills/R64.png" alt="Chronoshift Icon"></img>R</li>
+					<li> > </li>
 					<li>Time Bomb<img src="/img/skills/Q64.png" alt="Time Bomb Icon"></img>Q</li>
 					<li> > </li>
 					<li>Rewind<img src="/img/skills/W64.png" alt="Rewind Icon"></img>W</li>
-					<li> > </li>
-					<li>Chronoshift<img src="/img/skills/R64.png" alt="Chronoshift Icon"></img>R</li>
 					<li> > </li>
 					<li>Time Warp<img src="/img/skills/E64.png" alt="Time Warp Icon"></img>E</li>
 				</ul>
@@ -270,18 +324,18 @@
 				<button class="expand"><span>Show Explanation</span></button>
 				<div class="explanation">
 					<p>For most players, Maxing Time Bomb on Zilean is the intuitive decision. It's his only damaging ability, the stun scales with levels, and it feels good when you land Double Bombs.</p>
-					<p>This is the build I pick into passive lanes and lanes with lots of poke damage. You want to max this in those types of lanes to keep the pressure somewhat even with poke, so you don't allow the enemy to have a major HP/Mana advantage over your lane.</p>
-					<p>The big negative I have with this build is that you WILL end up taking some CS from your Marksman when you go Double Bomb on the back line of the enemy creeps to land stuns onto enemies hiding behind minions. The <a href="/beginner-guides/spells-combos-tricks/"> Spells, Combos, and Tricks Guide </a> explains several techniques that you can do with Double Bombs.</p>
+					<p>Most of the time, this is the skill order I go with unless I know I am playing with a skilled AD Carry.</p>
+					<p>The big negative I have with this build is that you WILL end up taking some CS from your Marksman when you go Double Bomb on the back line of the enemy creeps to land stuns onto enemies hiding behind minions. The <a href="/basic-guides/spells-combos-tricks/"> Spells, Combos, and Tricks Guide </a> explains several techniques that you can do with Double Bombs.</p>
 				</div>
 				<h4>The Utility CC Route</h4>
 				<h6>This skill order focuses on having an incredibly strong slow that synergizes with jungle ganks and speed boosts for low-mobility AD Carries. I recommend going this route after having played a few games of Zilean and having voice communication with your Marksman. You can also announce to your Marksman early on that you plan on maxing slow, and they should understand that your damage output will be low and they will have to do most of the work.</h6>
 				<h5>Max Order</h5>
 				<ul class="skill-order">
+					<li>Chronoshift<img src="/img/skills/R64.png" alt="Chronoshift Icon"></img>R</li>
+					<li> > </li>
 					<li>Time Warp<img src="/img/skills/E64.png" alt="Time Warp Icon"></img>E</li>
 					<li> > </li>
 					<li>Rewind<img src="/img/skills/W64.png" alt="Rewind Icon"></img>W</li>
-					<li> > </li>
-					<li>Chronoshift<img src="/img/skills/R64.png" alt="Chronoshift Icon"></img>R</li>
 					<li> > </li>
 					<li>Time Bomb<img src="/img/skills/Q64.png" alt="Time Bomb Icon"></img>Q</li>
 				</ul>
@@ -309,14 +363,28 @@
 				</div>
 				<button class="expand"><span>Show Explanation</span></button>
 				<div class="explanation">
+					<p>This skill order works amazingly with a High Plat or higher AD Carry, but may not be the best choice in Bronze or Silver (due to the higher mechanical skill needed in higher elo as an ADC).</p>
 					<p>The goal of this build is to provide your lane partner and yourself with the ability to have a huge mobility boost or a debilitating slow on a single opponent.</p>
-					<p>At level 5 when you have 3 ranks into Time Warp (E), you can give a 70% speed boost or a 70% slow. There are many critical uses for this skill and you can read more specifics in the <a href="/advanced-guides/harnessing-the-power-of-ms/">Optimzing your Time Warp Guide.</a></p>
+					<p>At level 5 when you have 3 ranks into Time Warp (E), you can give a 70% speed boost or a 70% slow. There are many critical uses for this skill and you can discover applications by <a href="/advanced-guides/harnessing-the-power-of-ms/">Optimizing your Time Warp.</a></p>
 				</div>
 			<!--/div-->
 		</div>
 	</div>
-	<div class="content-wrapper">
-		<div class="quick-guide" id="item-build">
+
+	<div class="quick-guide-menu">
+		<div>
+			<ul>
+				<li><a href="#runes"><img src="/img/runes/cdrs46.png">RUNES</a></li>
+				<li><a href="#masteries"><img src="img/masteries/cun312.png">MASTERIES</a></li>
+				<li><a href="#skills"><img src="img/skills/R64.png">SKILL ORDER</a></li>
+				<li class="quick-guide-active"><a><img src="img/items/watchers64.png">ITEM BUILD</a></li>
+			</ul>
+		</div>
+	</div>
+
+  <div class="content-wrapper">
+
+		<div class="quick-guide mobile-quick-guide">
 			<ul>
 				<li><a href="#runes">Runes</a></li>
 				<li><a href="#masteries">Masteries</a></li>
@@ -324,7 +392,8 @@
 				<li><a class="active-item">Item Build</a></li>
 			</ul>
 		</div>
-		<div class="content-container">
+
+		<div class="content-container" id="items">
 			<h3>Item Build</h3>
 			<h4>The Standard Build</h4>
 			<p>This is the standard item build that focuses on providing utility. This build works well with either maxing Time Bomb (Q) or Time Warp (E).</p>
@@ -374,10 +443,10 @@
 				<button class="expand"><span>Show Explanation</span></button>
 				<div class="explanation">
 					<p>The items listed above are the most common buys for Support Zilean. I purposely avoid going to high ability power items and instead choose items with extra mana, cooldown reduction, and activatable items that provide more utility. Surprisingly, with this build you end up with about 250AP at 5 items while having plenty of team utility.</p>
-					<p>These items synergize well with Zilean, and I have a more detailed guide, <a href="/beginner-guides/what-to-buy-and-when/"> "What to Build and When"</a>, which explains why these items are solid choices, as well as which items are "noob-traps".</p>
+					<p>These items synergize well with Zilean, and I have a more detailed guide, <a href="/basic-guides/what-to-buy-and-when/"> "What to Build and When"</a>, which explains why these items are solid choices, as well as which items are "noob-traps".</p>
 				</div>
 				<h4>The "Blow Stuff Up" Build</h4>
-				<p>This is the damage build that works best with maxing Time Bomb (Q). This is very fun build because of the burst damage, but is far less effective if you fall behind in lane. This is the 5-item build, and you can find out <a href="/beginner-guides/what-to-buy-and-when/#bsu">more information here.</a></p>
+				<p>This is the damage build that works best with maxing Time Bomb (Q). This is very fun build because of the burst damage, but is far less effective if you fall behind in lane. This is the 5-item build, and you can find out <a href="/basic-guides/what-to-buy-and-when/#bsu">more information here.</a></p>
 				<div class="item-container item-cont-alt">
 					<ul class="item-list">
 						<li>Eye of the Watchers<a href="http://leagueoflegends.wikia.com/wiki/Eye_of_the_Watchers" target="_blank"><img src="/img/items/watchers64.png" alt="Eye of the Watchers Icon"></a></li>

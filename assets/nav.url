@@ -3,14 +3,14 @@
 	<div class="mobile-nav"><p></p><a class="nav-trigger"></a></div>
 	<ul class="primary-nav isOpen">
 		<li class="brand"><a href="/"><h1>SUPPORT <span>CARRY</span> </h1><img src="/img/Zilport.png" alt="Zilean face icon"></a></li>
-		<li><a href="/#quick-guide"><img src="/img/skills/Q64.png" alt="Time bomb Icon">QUICK GUIDE</a></li>
-		<li><a class="nav-toggle" href="#" aria-haspopup="true"><img src="/img/skills/W64.png" alt="Rewind Icon">BEGINNER GUIDES</a>
+		<li class="blank-nav"></li>
+		<li><a class="nav-toggle" href="#" aria-haspopup="true"><img src="/img/skills/Q64.png" alt="Time bomb Icon">BASIC GUIDES</a>
 			<ul class="sub-menu">
-				<li><a href="/beginner-guides/runes-101/">Runes 101</a></li>
-				<li><a href="/beginner-guides/mastery-breakdown/">Mastery Breakdown</a></li>
-				<li><a href="/beginner-guides/spells-combos-tricks/">Spells, Combos, and Tricks</a></li>
-				<li><a href="/beginner-guides/what-to-buy-and-when/">What to Buy and When</a></li>
-				<li><a href="/beginner-guides/laning-matchups/">Laning Matchups</a></li>
+				<li><a href="/basic-guides/runes-101/">Runes 101</a></li>
+				<li><a href="/basic-guides/mastery-breakdown/">Mastery Breakdown</a></li>
+				<li><a href="/basic-guides/spells-combos-tricks/">Spells, Combos, and Tricks</a></li>
+				<li><a href="/basic-guides/what-to-buy-and-when/">What to Buy and When</a></li>
+				<li><a href="/basic-guides/laning-matchups/">Laning Matchups</a></li>
 			</ul>
 		</li>
 

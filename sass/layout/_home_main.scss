@@ -14,15 +14,16 @@ main {
 
 .content-wrapper {
 	align-items:center;
-	background:$light-blue-bg;
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
 	height: 100%;
 	padding-bottom: .5em;
+	&:nth-of-type(odd){background:$light-blue-bg;}
 	&:nth-of-type(even){background:$light-bg;}
 	h3, h5 {
 		align-items:center;
+		justify-content: center;
 		display:flex;
 		img {
 			border: $thin-border;
@@ -88,39 +89,6 @@ main {
 	.cons {background: $red;}
 }
 
-.quick-guide {
-	padding-bottom: .5em;
-	width: 100%;
-	ul {
-		align-items:center;
-		display:flex;
-		flex-direction:column;
-		justify-content: center;
-		li {
-			background: $dark;
-			width: 100%;
-			a {
-				color: $light;
-				display:flex;
-				flex: 1;
-				justify-content: center;
-				padding: .25em 0;
-				text-decoration: none;
-				@include transition;
-				&:hover {
-					background: darken($yellow, 15%);
-					color: $time-warp-blue;
-				}
-			}
-			.active-item {
-				background: $yellow;
-				color: $time-warp-blue;
-				font-weight: 700;
-			}
-		}
-	}
-}
-
 .explanation {
 	background: $fade-bg;
 	border: $border;
@@ -182,6 +150,8 @@ button {
 	}
 }
 
+.blank-nav {display:none;}
+
 @media screen and (min-width: 765px) {
 	main {
 		background: url("/img/bg/zil.jpg");
@@ -205,6 +175,7 @@ button {
 }
 
 @media screen and (min-width: 1000px) {
+	.blank-nav {display:block;}
 	.explanation {
 		max-width: 80%;
 		padding: .7em 1em;
