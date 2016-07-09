@@ -38,7 +38,7 @@
   justify-content:space-between;
 	margin: .25em 0;
 	padding: .5em;
-	width:100%;
+	max-width:100%;
 	@include box-shadow;
 	&:nth-of-type(even) {background: lighten($runes-light-blue, 10%);}
 	> * {margin: 0 .25em;}
@@ -47,7 +47,6 @@
 	div{
 		display:flex;
 		flex:1;
-		flex-basis: 200px;
 	  flex-wrap:wrap;
     justify-content:center;
 		img {
@@ -73,5 +72,8 @@
 .support-matchup .champ-row p {flex:6;}
 
 @media screen and (min-width: 765px) {
-	.champ-row {flex-direction:row;}
+	.champ-row {
+		flex-direction:row;
+		div {flex-basis: 30px;}
+	}
 }

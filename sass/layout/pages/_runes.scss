@@ -42,6 +42,7 @@
 .rune-page-block a img {
 	@include box-shadow;
 	@include border-thin;
+	max-width: 100%;
 }
 
 .rune-container {

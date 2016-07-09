@@ -79,13 +79,21 @@ header {
 	flex-direction:row;
 	justify-content: flex-end;
 	padding: .5em 1em;
-	a:after {
+	.mobile-brand {
+		color: white;
+		margin-right:auto;
+		font-size: 1.3em;
+		text-decoration: none;
+		font-weight: 700;
+	}
+	a.hamburger:after {
 		color:white;
 		content: "\f0c9";
 		font: 2.5em fontawesome;
 		padding-right:.48em;
 	}
 }
+
 
 @media screen and (max-width: 600px){
 	.main-nav ul ul li a {
@@ -120,17 +128,10 @@ header {
 
 
 @media screen and (min-width: 1000px) {
-	.main-nav ul {flex-direction: row;
-	.brand a {
-		color: $runes-blue;
-		transition: background .5s ease-in 0s;
-		&:hover {
-			color:white;
-			transition: background .5s ease-out 2s;
-				h1 {transition: color 1s;
-					span {transition: all 1s ease-in;}
-				}
-			}
+	.main-nav ul {
+		flex-direction: row;
+		.brand a {
+			color: white;
 		}
 	}
 }

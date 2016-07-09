@@ -33,7 +33,7 @@
 
 .quick-guide-menu {
   display:none;
-  background:$fade-bg;
+  background:$light;
   ul {
     display:flex;
     flex-direction: column;
@@ -72,15 +72,14 @@
 .quick-guide-menu.quick-guide-main {
   padding: 1em 0;
   display:block;
-  div {max-width: 70vw; margin: 0 auto; @include box-shadow;}
+  div {max-width: 70vw; margin: 0 auto;}
   ul:nth-of-type(1) {
     li {border-radius: 10px 10px 0 0;}
   }
   ul:nth-of-type(2) {
-    li:nth-of-type(1) {border-radius: 0 0 0 10px;}
-    li:nth-of-type(4) {border-radius: 0 0 10px 0;}
+    li:nth-of-type(4) {border-radius: 0 0 10px 10px;}
   }
-  ul li {border: 1px solid black;}
+  ul li {border: 1px solid black; @include box-shadow;}
 }
 
 .quick-guide-main ul li {
@@ -91,10 +90,17 @@
 
 @media screen and (min-width: 765px) {
   .quick-guide-menu {
+		background:$fade-bg;
     display:block;
     width: 100vw;
     ul{flex-direction: row;}
   }
   .mobile-quick-guide {display:none;}
   .quick-guide  ul{flex-direction:row;}
+	.quick-guide-menu.quick-guide-main {
+	  ul:nth-of-type(2) {
+	    li:nth-of-type(1) {border-radius: 0 0 0 10px;}
+	    li:nth-of-type(4) {border-radius: 0 0 10px 0;}
+	  }
+	}
 }
