@@ -49,14 +49,11 @@ main {
 	display:flex;
 	font-size: .85em;
 	justify-content: center;
-	span {
-		padding-left: 1em;
-		a {
-			color: lightgreen;
-			text-decoration:none;
-			@include transition;
-			&:hover {color: darken(lightgreen, 20%)}
-		}
+	a {
+		color: lightgreen;
+		text-decoration:none;
+		@include transition;
+		&:hover {color: darken(lightgreen, 20%)}
 	}
 }
 
