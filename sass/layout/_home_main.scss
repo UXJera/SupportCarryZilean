@@ -46,14 +46,18 @@ main {
 .patch-version {
 	background: $dark;
 	color: $light;
-	display:flex;
 	font-size: .85em;
-	justify-content: center;
-	a {
-		color: lightgreen;
-		text-decoration:none;
-		@include transition;
-		&:hover {color: darken(lightgreen, 20%)}
+	p {
+		width: 100%;
+		text-align: center;
+		a {
+			padding-left: .25em;
+			font-weight: 700;
+			color: lightgreen;
+			text-decoration:none;
+			@include transition;
+			&:hover {color: darken(lightgreen, 20%)}
+		}
 	}
 }
 

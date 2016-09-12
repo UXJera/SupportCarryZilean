@@ -1,0 +1,5 @@
+  type: ["adc", "enemy-adc", "support"]
+  name:
+  image: (link)
+  rating: 1;
+  description: "This is a description"

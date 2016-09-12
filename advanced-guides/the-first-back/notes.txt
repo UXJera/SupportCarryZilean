@@ -1,0 +1,25 @@
+Article Flow:
+
+Intro - Talk about 
+
+This guide will not look into DPS, because that adds several layers of complexity to the equations (such as % skillshots landed, AP, enemy MR) that make it extremely difficult to determine which is better from a DPS standpoint.
+
+What we can look at is the number of total spells you can cast and how many more spells you can do through the duration of the lane.
+
+This article will also break down to certain times in the game when you ideally have item purchasing choices. If you are unfamiliar with the types of item Zilean builds, please read <item article> first then revisit this.
+
+Level 5 - First Buy Tear or Frostfang
+
+At 100% mana, you get:
+
+- Table of max output
+
+Level 5 - Staying in lane 5 waves (2.5 minutes) at 40% mana
+
+Level 5 - Staying in lane 3 waves (1.5 minutes) at 40% mana
+
+Level 7 - Returning to lane with Sightstone at 100% mana (Tear at 450 mana)
+
+Level 11 - Staying in lane 5 waves (2.5 minutes) at 50% mana <-- This is a typical midgame output
+
+Late Game Builds - 2.5 minute and 5 minute extended periods without backing
