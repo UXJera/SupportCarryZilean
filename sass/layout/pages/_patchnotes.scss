@@ -16,6 +16,12 @@
 			@include border-thin;
 			@include box-shadow;
 		}
+		&.mastery-icon-circle img {
+			height: 86px; width: 86px;
+			margin:0 auto;
+			border-radius: 50%;
+			border:none;
+		}
 	}
 }
 

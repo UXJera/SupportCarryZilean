@@ -45,12 +45,6 @@
 			color: #555;
 		}
 	}
-	ul:nth-of-type(even){
-		li img {
-			max-width: 64px;
-			@include border-thin;
-		}
-	}
 }
 
 @media screen and (min-width: 765px) {
