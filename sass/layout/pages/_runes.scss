@@ -8,6 +8,7 @@
 	@include box-shadow;
 	&.rune-top {
 		font-size: 16px;
+		margin-top: .5em;
 		li:first-child{border-top-left-radius: $border-radius;  @include box-shadow;}
 		li:last-child{border-top-right-radius: $border-radius;  @include box-shadow;}
 	}
@@ -33,16 +34,25 @@
 }
 
 .rune-page-block {
-	a {text-decoration: none;}
+	a {
+		text-decoration: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			@include box-shadow;
+			@include border-thin;
+			max-width: 75%;
+		}
+	}
 	h5{justify-content: center; color:black; @include transition;
-		&:hover {color:#aaa;}
+		&:hover {color:$yellow;}
 	}
 }
 
-.rune-page-block a img {
-	@include box-shadow;
-	@include border-thin;
-	max-width: 100%;
+.runes-pro-and-con {
+	display: flex;
+
 }
 
 .rune-container {

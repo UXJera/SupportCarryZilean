@@ -16,7 +16,7 @@
 
 		<li><a class="nav-toggle" href="#" aria-haspopup="true"><img src="/img/skills/E64.png" alt="Time Warp Icon">ADVANCED GUIDES</a>
 			<ul class="sub-menu">
-				<li><a href="/advanced-guides/cdr-and-you">CDR and You</a></li>
+				<li><a href="/advanced-guides/cdr-and-you/">CDR and You</a></li>
 				<li><a href="/advanced-guides/the-great-q-vs-e-debate/">The Great Q vs E Debate</a></li>
 				<li><a href="/advanced-guides/harnessing-the-power-of-ms/">Harnessing the Power of Movement Speed</a></li>
 				<li><a href="/advanced-guides/triple-bombs/">Triple Bombs and Chain Bombs</a></li>

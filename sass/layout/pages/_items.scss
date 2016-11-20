@@ -29,6 +29,12 @@
 				@include border-thin;
 				@include box-shadow;
 			}
+			p {
+				display: flex;
+				align-items: center;
+				height: 100%;
+				font-weight: 700;
+			}
 		}
 	}
 }

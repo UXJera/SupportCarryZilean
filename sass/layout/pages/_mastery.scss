@@ -12,6 +12,15 @@
 	}
 }
 
+.mastery-profile {
+	img {
+		max-width: 1000px;
+		width: 100%;
+		@include border-thin;
+		@include box-shadow;
+	}
+}
+
 .mastery-container {
 	display: flex;
   flex-direction: column;

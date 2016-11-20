@@ -103,6 +103,10 @@ main {
 	p {padding: .5em 0;}
 }
 
+.discussion {
+	margin-top: 1em;
+}
+
 // SKILL ORDER FOR HOME PAGE //
 
 .skill-order {
@@ -155,7 +159,7 @@ button {
 
 @media screen and (min-width: 765px) {
 	main {
-		background: url("/img/bg/zil.jpg");
+		background: url("/img/bg/zilxmas.jpg");
 		background-attachment: fixed;
 		background-size: cover;
 		min-height: 100vh;
@@ -176,6 +180,7 @@ button {
 }
 
 @media screen and (min-width: 1000px) {
+	.introduction .explanation p {max-width: 100%;}
 	.blank-nav {display:block;}
 	.explanation {
 		max-width: 80%;
