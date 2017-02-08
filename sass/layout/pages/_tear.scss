@@ -1,0 +1,25 @@
+.tear-container {
+  width: 50vw;
+  background:red;
+  min-height: 20vh;
+  @include border;
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  h4{
+    width: 100%;
+  }
+  .tear-img {
+    flex: 2;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+  .tear-list{
+    flex:4;
+    ul {
+      list-style: disc;;
+    }
+  }
+}
