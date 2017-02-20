@@ -23,3 +23,37 @@
     }
   }
 }
+
+.tear-pros-cons-container{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  .tear-pros-cons {
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    max-width: 45vw;
+    @include border;
+    @include box-shadow;
+    margin:2em;
+    padding: 0 .5em;
+    img {width:160px;margin:0 auto;}
+    padding: 1em;
+    h4{}
+    ul {
+      padding-left: 1em;
+      list-style: disc;
+      li{
+        a {
+          font-weight: 700;
+        }
+      }
+    }
+    &:nth-of-type(1){
+      background:red;
+    }
+    &:nth-of-type(2){
+      background:green;
+    }
+  }
+}
