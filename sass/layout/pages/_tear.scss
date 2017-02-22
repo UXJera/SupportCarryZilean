@@ -41,11 +41,15 @@
     padding: 1em;
     h4{}
     ul {
-      padding-left: 1em;
-      list-style: disc;
       li{
+        margin-top: .5em;
         a {
           font-weight: 700;
+          background:black;
+          padding: .25em .5em;
+          text-decoration: none;
+          color: yellow;
+          @include border-radius;
         }
       }
     }
