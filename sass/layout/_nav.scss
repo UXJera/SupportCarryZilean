@@ -2,7 +2,8 @@
 
 
 header {
-	background: $dark;
+	@include dark-gradient;
+	//background: darken($blue, 2.5%);
 	border-bottom: $thin-border;
 	display:flex;
 	flex-direction:column;
@@ -16,13 +17,13 @@ header {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	li {
-		background: $runes-blue;
+		//background: $runes-blue;
 		flex: 1 0 auto;
 		min-width:20%;
 		position: relative;
 		a {
 			align-items: center;
-			color: white;
+			color: $white;
 			display:flex;
 			font-size: 1.2em;
 			font-weight: 700;
@@ -45,8 +46,11 @@ header {
 		}
 	}
 	.brand {
-		h1 {order:0;}
-		span {padding-left:.3em;}
+		div {order:0;}
+		span {padding:0 .4em;}
+		img {
+			margin-left: .2em;
+		}
 	}
 	&.isOpen {display:none;}
 }
@@ -55,13 +59,14 @@ header {
 	flex-direction: column;
 	position: absolute;
 	width: 100%;
+	@include dark-gradient;
 	li {
 		a {
 			border-left: $thin-border;
 			border-right: $thin-border;
 			display:flex;
 			flex: 1 0 auto;
-			font-size: 1.03em;
+			font-size: 1.05em;
 			justify-content: center;
 			padding: .6rem 1rem;
 		}
@@ -73,21 +78,22 @@ header {
 
 .mobile-nav {
 	align-items:center;
-	border-bottom: $thin-border;
-	background: $time-warp-blue-bg;
+	border-bottom: 1px solid white;
+	@include dark-gradient;
 	display:flex;
 	flex-direction:row;
 	justify-content: flex-end;
 	padding: .5em 1em;
 	.mobile-brand {
-		color: white;
+		color: $white;
 		margin-right:auto;
 		font-size: 1.3em;
 		text-decoration: none;
 		font-weight: 700;
+		word-spacing: .5em;
 	}
 	a.hamburger:after {
-		color:white;
+		color:$white;
 		content: "\f0c9";
 		font: 2.5em fontawesome;
 		padding-right:.48em;
@@ -111,7 +117,7 @@ header {
 }
 
 .menu li a:hover,.menu li a:active {
-	background:$time-warp-blue;
+	background: $blue;
 }
 
 @media screen and (min-width: 600px) {
@@ -131,7 +137,7 @@ header {
 	.main-nav ul {
 		flex-direction: row;
 		.brand a {
-			color: white;
+			color: $white;
 		}
 	}
 }

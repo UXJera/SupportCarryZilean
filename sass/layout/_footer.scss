@@ -23,7 +23,7 @@
 
 footer {
 	align-items: center;
-	background: $dark;
+	@include dark-gradient;
 	display: flex;
   flex: 1;
   justify-content: flex-end;
@@ -31,7 +31,7 @@ footer {
 		color:$white;
 		padding: .5em;
 		@include transition;
-		&:hover {color:$runes-light-blue;}
+		&:hover {color:$blue-light;}
 	}
 	div {
 		align-items:center;

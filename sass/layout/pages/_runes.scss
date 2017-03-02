@@ -25,7 +25,6 @@
 		padding: .5em 0;
 		text-align: center;
 		img {
-			max-width: 46px; max-height: 46px;
 			margin: 0 auto;
 			padding-bottom: .5em;
 		}
@@ -77,10 +76,32 @@
       justify-content:center;
       min-width: 200px;
 			padding: .5em 1rem;
-			img {max-width: 46px;}
+			// img {max-width: 46px;}
 		}
 	}
 }
+
+// BACKGROUND COLORS //
+
+
+.red-runes {@include red-gradient;}
+.red-runes-light {@include red-lighten-gradient;}
+
+.yellow-runes {@include yellow-gradient;}
+.yellow-runes-light {@include yellow-lighten-gradient;}
+
+.blue-runes {@include blue-light-gradient;} //
+.blue-runes-light {@include blue-light-lighten-gradient;}
+
+.purple-runes {@include purple-gradient;}
+.purple-runes-light {@include purple-lighten-gradient;}
+
+// FOR RUNES PAGE -> INDIVIDUAL RUNE DISCUSSION //
+
+.red-rune-page > ul {@include red-gradient;}
+.yellow-rune-page > ul { @include yellow-gradient;}
+.blue-rune-page >  ul { @include blue-light-gradient;}
+.purple-rune-page >  ul { @include purple-gradient; color:white;}
 
 @media screen and (min-width: 765px) {
 	.runes-list.top {font-size: 21px;}

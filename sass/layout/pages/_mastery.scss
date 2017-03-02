@@ -34,7 +34,7 @@
     justify-content:space-around;
     li {
 			align-items:center;
-			background: $green-bg;
+			background: $green;
 			border: $border;
 			border-radius: $border-radius;
 			display:flex;
@@ -51,9 +51,29 @@
 		}
 		.unused {
 			background: #bbb;
-			color: #555;
+			color: #444;
 		}
 	}
+}
+
+//  BG IMG FOR MASTERY PAGE //
+
+.ferocity {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #000000 , #e74c3c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #000000 , #e74c3c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.cunning {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #000000 , #4b6cb7); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #000000 , #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.resolve {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #000000 , #093028); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #000000 , #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 @media screen and (min-width: 765px) {

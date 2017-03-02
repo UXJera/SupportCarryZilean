@@ -3,7 +3,8 @@
 * {
 	font-size:16px; //21
 	line-height:24px; //32
-	letter-spacing: -.003em;
+	letter-spacing: -.015em;
+	word-spacing: .125em;
 }
 
 html{
@@ -13,8 +14,6 @@ html{
 
 body {
 	font-family: Lato, sans-serif;
-	//display:flex;
-  //flex:1;
   flex-wrap:wrap;
   flex-direction: column;
 	min-height: 100vh;
@@ -40,7 +39,7 @@ h2, h3, h4, h5 {
 
 h2 {font-size:1.85em; padding-top:.5em;}
 h3 {font-size:1.65em;}
-h4 {font-size: 1.35em;}
+h4 {font-size: 1.35em; display: flex; align-items: center;}
 h5 {font-size: 1.15em;}
 h6 {font-size: 1.05em; text-align: center;}
 
@@ -51,6 +50,6 @@ p {padding: .5em 0;}
 	* {
 		font-size:21px;
 		line-height:32px;
-		letter-spacing: -.003em;
+		letter-spacing: -.025em;
 	}
 }

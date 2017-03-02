@@ -2,7 +2,7 @@
 
 .item-container {
 	align-items:center;
-	background: $fade-bg;
+	@include white-gradient;
 	border: $border;
 	border-radius: $border-radius;
 	display:flex;
@@ -67,6 +67,29 @@
 	}
 }
 
+.stats-box {
+	width: 100%;
+	background:$fade-bg;
+	margin-bottom: 2em;
+	@include border-shadow;
+	div {
+		display:flex;
+		align-items: center;
+		justify-content: space-around;
+		flex:1;
+		margin: .5em 0;
+		p {
+			flex:1;
+			justify-content: center;
+			padding: 0;
+			text-align:center;
+		}
+	}
+	div:nth-of-type(1) {
+		p {font-weight: 700;}
+	}
+}
+
 .final-stats {
 	ul {
 		li.item-box {
@@ -90,8 +113,15 @@
 }
 
 .item-cont-alt {
-	background: darken($time-bomb-blue-bg, 20%);
-	color:$white;
+	@include blue-dark-gradient;
+	ul li img {@include box-shadow-alt;}
+}
+
+.lcs-container {
+	background: #fceabb; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #f8b500 , #fceabb); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #f8b500 , #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	//background: opacify($yellow-bg, .15);
 	ul li img {@include box-shadow-alt;}
 }
 
@@ -100,43 +130,34 @@ ul.short-list {
 	li {padding:0;}
 }
 
-.avoid {
-	background: lighten($red, 5%);
-	border:none;
-	padding: 1em 0;
-	.item-list{
-		padding: 0 2em;
-		text-align:left;
-		> li {
-			margin:0 auto;
-		}
-		ul {
-			align-items:flex-start;
+.avoid-items {
+	display:flex;
+	flex-direction: column;
+	padding: .5em 2em;
+	div{
+		padding-bottom: 1em;
+		a {
+			justify-content: center;
 			display:flex;
-      flex:1;
-      justify-content:space-between;
-			list-style: disc;
 		}
-			li {
-				align-items:center;
-				display:flex;
-				font-weight: 400;
-				padding: .25em 0;
-				text-align:left;
-				a img {@include box-shadow-alt;}
-			}
+		img {
+			@include border-shadow;
 		}
-	p {
-    align-self:center;
-		font-weight: 400;
-		max-width: 90%;
-		padding: 0;
-		text-align:center;
-			&:last-child {padding-bottom: 1em;}
-		}
+	}
+}
+
+.avoid {
+	background: lighten($red, 15%);
 }
 
 .special-item {
 	background:$dark; color:#ddd;
 	span{color:#fff;}
+}
+
+
+@media screen and (min-width: 1000px) {
+	.stats-box {
+		width: 75%;
+	}
 }

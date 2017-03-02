@@ -3,12 +3,13 @@
 span { font-weight: 700;}
 
 main {
+	//@include blue-light-gradient;
 	background: $dark;
-	min-height: 90vh;
+	//min-height: 90vh;
 	h1 {
 		font-size: 1.8em;
 		font-weight: 700;
-		padding: .5em 0 0 0;
+		padding: 1em 0 .5em;
 	}
 }
 
@@ -21,6 +22,10 @@ main {
 	padding-bottom: .5em;
 	&:nth-of-type(odd){background:$light-blue-bg;}
 	&:nth-of-type(even){background:$light-bg;}
+	&.home-wrapper {
+		&:nth-of-type(2n){background:$light-blue-bg;}
+		&:nth-of-type(4n){background:$light-bg;}
+	}
 	h3, h5 {
 		align-items:center;
 		justify-content: center;
@@ -45,18 +50,22 @@ main {
 
 .patch-version {
 	background: $dark;
-	color: $light;
+	@include white-gradient;
+	color: $dark;
+	font-weight: 700;
 	font-size: .85em;
+	border-top: 1px solid $dark;
+	border-bottom: 1px solid $dark;
 	p {
 		width: 100%;
 		text-align: center;
 		a {
 			padding-left: .25em;
 			font-weight: 700;
-			color: lightgreen;
+			color: darken($green, 20%);
 			text-decoration:none;
 			@include transition;
-			&:hover {color: darken(lightgreen, 20%)}
+			&:hover {color: $red;}
 		}
 	}
 }
@@ -86,12 +95,12 @@ main {
 		max-height:64px;
 		@include border-thin;
 	}
-	.pros {background: $green-bg;}
-	.cons {background: $red;}
+	.pros {@include green-gradient;}
+	.cons {@include red-gradient;}
 }
 
 .explanation {
-	background: $fade-bg;
+	@include white-gradient;
 	border: $border;
 	border-radius: $border-radius;
 	display: none;
@@ -105,6 +114,14 @@ main {
 
 .discussion {
 	margin-top: 1em;
+}
+
+// RUNES CONTAINER FOR HOME PAGE //
+
+.home-runes-container {
+	display:flex;
+	flex-direction: column;
+	width: 100%;
 }
 
 // SKILL ORDER FOR HOME PAGE //
@@ -133,10 +150,31 @@ main {
 	}
 }
 
+
+.skill-order-gfx {
+	align-items: center;
+	display:flex;
+	justify-content: center;
+	margin: .75em 0;
+	img {
+		max-width: 100%;
+  	@include box-shadow;
+	}
+}
+
 .skill-hide {
 	background: $fade-bg;
 	display:none;
 	@include border;
+}
+
+// GENERIC REUSABLE CLASSES //
+
+.text-center {text-align: center;}
+
+.img-box {
+	@include border-shadow;
+	margin: 0 1em;
 }
 
 button {
@@ -175,7 +213,7 @@ button {
 	}
 	.max-order {
 		margin: 0 auto;
-		max-width: 60%; 
+		max-width: 60%;
 	}
 }
 

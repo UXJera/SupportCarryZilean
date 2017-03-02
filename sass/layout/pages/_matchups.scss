@@ -25,68 +25,132 @@
 	div {text-align:center;}
 }
 
-.tier-1 {background: $yellow-light;}
-.tier-2 {background:$fade-bg;}
-.tier-3 {background:$red-light;}
+.tier-1 {@include blue-light-lighten-gradient;}
+.tier-2 {@include yellow-gradient;}
+.tier-3 {@include red-dark-gradient;}
 
-.champ-row {
-	align-items:center;
-	background: $runes-light-blue;
-	border: $border;
-	border-radius: $border-radius;
-	display:flex;
-  flex-wrap:wrap;
-  justify-content:space-between;
-	margin: .25em 0;
-	padding: .5em;
-	max-width:100%;
-	@include box-shadow;
-	&:nth-of-type(even) {background: $fade-bg;}
-	> * {margin: 0 .25em;}
-	h5 {flex:1;}
-	p {flex:5; font-size: .9em;}
-	div:nth-of-type(1) {
+// .champ-row {
+// 	align-items:center;
+// 	background: $blue-light;
+// 	border: $border;
+// 	border-radius: $border-radius;
+// 	display:flex;
+//   flex-wrap:wrap;
+//   justify-content:space-between;
+// 	margin: .25em 0;
+// 	padding: .5em;
+// 	max-width:100%;
+// 	@include box-shadow;
+// 	&:nth-of-type(even) {background: $fade-bg;}
+// 	> * {margin: 0 .25em;}
+// 	h5 {flex:1;}
+// 	p {flex:5; font-size: .9em;}
+// 	div:nth-of-type(1) {
+// 		flex-direction: column;
+// 		align-items: center;
+// 		text-align: center;
+// 	}
+// 	div:nth-of-type(2){
+// 		display:flex;
+// 		flex:1;
+// 	  flex-wrap:wrap;
+//     justify-content:center;
+// 		img {
+// 			box-shadow:none;
+// 			flex-basis: 25px;
+// 			max-height: 35px;
+// 			max-width: 35px;
+// 		}
+// 	}
+//
+// 	img{
+// 		border-radius: $border-radius;
+//     flex:1;
+// 		max-height: 64px;
+// 		max-width: 64px;
+// 		@include box-shadow-alt;
+// 	}
+// 	&.legend {
+// 		background:lighten($yellow, 20%);
+// 		margin-bottom:0;
+// 	}
+// }
+
+// .support-matchup .champ-row p {flex:6;}
+//
+// @media screen and (max-width: 765px) {
+// 	.support-matchup .champ-row p {
+// 		flex-basis: 300px;
+// 	}
+// }
+//
+// @media screen and (min-width: 765px) {
+// 	.champ-row {
+// 		flex-direction:row;
+// 		div:nth-of-type(1) {flex-basis: 120px;}
+// 	}
+// }
+
+// TEST AREA FOR NEW LANE MATCHUPS
+
+.support-difficulty-container {
+	@include border-shadow;
+	margin-top: 1em;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 1em;
+	.champion-section {flex:1}
+	.strategy-section{flex:3}
+	.champion-section, .strategy-section{
+		display:flex;
 		flex-direction: column;
 		align-items: center;
-		text-align: center;
+	p {text-align: center;}
+	p, li {color: $dark;}
+	img {
+		@include border-shadow-dark;
 	}
-	div:nth-of-type(2){
-		display:flex;
-		flex:1;
-	  flex-wrap:wrap;
-    justify-content:center;
-		img {
-			box-shadow:none;
-			flex-basis: 25px;
-			max-height: 35px;
-			max-width: 35px;
+	.difficulty {
+		padding-top: 1em;
+		ul {
+			display:flex;
+			justify-content: center;
+		}
+			li.star {
+				content: url('/img/etc/star.svg');
+				height:50px;
+				width:50px;
+			}
 		}
 	}
+}
 
-	img{
-		border-radius: $border-radius;
-    flex:1;
-		max-height: 64px;
-		max-width: 64px;
-		@include box-shadow-alt;
+.diff-1{@include blue-light-lighten-gradient;}
+.diff-2{@include green-gradient;}
+.diff-3{@include yellow-gradient;}
+.diff-4{@include orange-gradient;}
+.diff-5{@include red-dark-gradient;}
+
+.sort-order-box {
+	display:flex;
+	align-items: center;
+	button {margin: 0 .5em;}
+	.sort-order:after {
+		font-family: "FontAwesome";
+		font-size: 1.5em;
+		content: '\f0de';   // BLACK UP-POINTING TRIANGLE.
 	}
-	&.legend {
-		background:lighten($yellow, 20%);
-		margin-bottom:0;
+	.sort-order.reverse:after {
+		content: '\f0dd';   // BLACK DOWN-POINTING TRIANGLE
 	}
 }
 
-.support-matchup .champ-row p {flex:6;}
 
-@media screen and (max-width: 765px) {
-	.support-matchup .champ-row p {
-		flex-basis: 300px;
-	}
-}
+
 
 @media screen and (min-width: 765px) {
-	.champ-row {
+	.support-difficulty-container {
 		flex-direction:row;
-		div:nth-of-type(1) {flex-basis: 120px;}
 	}
 }

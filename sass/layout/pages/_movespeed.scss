@@ -11,14 +11,14 @@ ul.faq {
 	li {
 		padding: .5em 1em;
 		&:nth-of-type(odd) {
-			background:$time-warp-blue-bg;
+			@include time-warp-gradient;
 			color:$white;
 			font-size: 1.05em;
 			font-weight: 700;
 			padding: 1em 3em;
 		}
 		&:nth-of-type(even) {
-			background:$fade-light-bg;
+			@include white-gradient;
 			padding-bottom: 3em;
 		}
 	}
@@ -37,16 +37,16 @@ ul.faq {
 		font-weight: 700;
 		justify-content:space-between;
 		padding: .25em .5em;
-		&:nth-of-type(odd) {background:$time-warp-blue-bg;}
-		&:nth-of-type(even) {background: $time-warp-blue;}
+		&:nth-of-type(odd) {@include time-bomb-gradient;}
+		&:nth-of-type(even) {@include time-warp-gradient;}
 		&.thead {
 			background: $white;
-			color:black;
+			color:$dark;
 			span {padding-left: 0;padding-right:0;}
 		}
 	}
 	span {
-		color:lighten($runes-red, 15%);
+		color:$red;
 		margin-left: auto;
 		padding-left: .5em;
 		padding-right: 1.5em;
