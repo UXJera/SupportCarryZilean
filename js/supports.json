@@ -1,0 +1,236 @@
+[
+ {
+   "index": 1,
+   "name": "alistar",
+   "difficulty": 1,
+   "stars": [1],
+   "starter": "spellthief",
+   "diffExp": ["Alistar is an easy matchup because of the predictability of his combo. He can be quite tanky, but he is vulnerable to poke."],
+   "weakness": ["Low damage by Double Bombing enemy ADC", "High mana costs, unreliable sustain", "Predictable all-in playstyle"]
+ },
+ {
+   "index": 2,
+   "name": "annie",
+   "difficulty": 2,
+   "stars": [1,2],
+   "starter": "spellthief",
+   "diffExp": ["Annie is a fairly predictable lane and should only be dangerous if you don't have side bush vision of her."],
+   "weakness": ["Needs to be 3 to get off multiple stuns", "Lower base damage, needs AP to be a threat out of lane", "Cannot disengage well, an easy poke target"]
+ },
+ {
+   "index": 3,
+   "name": "bard",
+   "difficulty": 4,
+   "stars": [1,2,3,4],
+   "starter": "spellthief",
+   "diffExp": ["Bard is a tough match-up because he has CC and decent sustain for his ADC, meaning target selection is difficult."],
+   "weakness": ["Higher mana costs, runs out of mana quick if poked enough","Has to roam to pick up charms for mana, punish enemy ADC", "Needs 2 targets to reliably land snares, so be aware of positioning"]
+ },
+ {
+   "index": 4,
+   "name": "blitzcrank",
+   "difficulty": 4,
+   "stars": [1,2,3,4],
+   "starter": "spellthief",
+   "diffExp": ["Blitzcrank is hard if you or your ADC cannot dodge skillshots. Although you can use your ultimate to save someone he hooks, be aware of your team's positioning to see if you can follow up to save the person grabbed."],
+   "weakness": ["Dependent on landing hooks","Long cooldown between hooks","Tends to roam frequently, making it easy to punish enemy ADC"]
+ },
+ {
+   "index": 5,
+   "name": "brand",
+   "difficulty": 3,
+   "stars": [1,2,3],
+   "starter": "coin",
+   "diffExp": ["Brand is another skill-shot champion that relies on landing combos. Having better sustain or more efficient poke is crucial when laning against Brand."],
+   "weakness": ["High mana costs and needs to chain spells","Dodging his stun greatly lowers damage output","Fragile and has to position away from minions to land his skillshots"]
+ },
+ {
+   "index": 6,
+   "name": "braum",
+   "difficulty": 3,
+   "stars": [1,2,3],
+   "starter": "spellthief",
+   "diffExp": ["Braum can be challenging because he can stop Double Bombs, but they actually attach to him. Watch out for when he comes forward after landing his Q."],
+   "weakness": ["Needs to land autos or Q in order to trigger stun","Double Bombs automatically attach to Braum shield if he uses it","Hard to disengage if he doesn't land a stun"]
+ },
+ {
+   "index": 7,
+   "name": "ivern",
+   "difficulty": 2,
+   "stars": [1,2],
+   "starter": "spellthief",
+   "diffExp": ["Ivern is similar to Janna, but weaker in most regards. Ivern's ultimate is a very good Double Bomb target to prevent a majority of Ivern's capability."],
+   "weakness": ["High mana costs and cannot sustain many spells in lane","Always wants to be in a bush or side brush, so easy to locate","Ivern is reliant on Daisy for post-6 all-ins, so focus down Daisy"]
+ },
+ {
+   "index": 8,
+   "name": "janna",
+   "difficulty": 4,
+   "stars": [1,2,3,4],
+   "starter": "coin",
+   "diffExp": ["Janna shields will absorb more damage than your Time Bomb at all ranks, so this forces the lane to play passively." ],
+   "weakness": ["Low damage output and relies on ADC","Janna will run out of mana if she uses too many spells","Tends to babysit and not leave her ADC"]
+ },
+ {
+   "index": 9,
+   "name": "karma",
+   "difficulty": 5,
+   "stars": [1,2,3,4,5],
+   "starter": "coin",
+   "diffExp": ["Karma is one of the most difficult lanes to go against because of her mobility, shields, and incredible poke."],
+   "weakness": ["Can run out of mana if spams too much","Doesn't have a level 6 powerspike", "Can push wave, forcing a passive playstyle"]
+ },
+ {
+   "index": 10,
+   "name": "leona",
+   "difficulty": 5,
+   "stars": [1,2,3,4,5],
+   "starter": "coin",
+   "diffExp": ["Leona is the toughest engage-tank champions you will face. Be cautious on how aggressively you play."],
+   "weakness": ["Only goes 1 direction for all-in","Loses threat if she falls behind","Wants to sit in side brush and wait for misposition"]
+ },
+ {
+   "index": 11,
+   "name": "lulu",
+   "difficulty": 4,
+   "stars": [1,2,3,4],
+   "starter": "spellthief",
+   "diffExp": ["Lulu is a strong sustain champion with decent poke. Lulu can fend off damage well, but other supports are better at it."],
+   "weakness": ["Can either have strong shields or poke","Poke does less damage if it goes through a unit", "Weak laning pre-6 compared to Zilean"]
+ },
+ {
+   "index": 12,
+   "name": "lux",
+   "difficulty": 3,
+   "stars": [1,2,3],
+   "starter": "spellthief",
+   "diffExp": ["Lux can be challenging depending on if the enemy lane consists of 2 long-range poke heavy champions."],
+   "weakness": ["High mana costs, runs out if spams","Low health and base resists","Low base HP and base armor"]
+ },
+ {
+   "index": 13,
+   "name": "nami",
+   "difficulty": 5,
+   "stars": [1,2,3,4,5],
+   "starter": "coin",
+   "diffExp": ["Nami is the hardest sustain match-up because of her healing and incredible CC."],
+   "weakness": ["Normally plays aggressively", "Heal becomes expensive at higher ranks",  "Needs ADC to follow up on poke"]
+ },
+ {
+   "index": 14,
+   "name": "morgana",
+   "difficulty": 4,
+   "stars": [1,2,3,4],
+   "starter": "spellthief",
+   "diffExp": ["Morgana is strong against Zilean because of her Black Shield negates Double Bomb and her long duration root."],
+   "weakness": ["Long 20-second CD on Black Shield","Dodging binds is easy with speed ups","Needs to get close to land ultimate"]
+ },
+ {
+   "index": 15,
+   "name": "nautilus",
+   "difficulty": 1,
+   "stars": [1],
+   "starter": "spellthief",
+   "diffExp": ["Nautilus is an easy match-up if you focus on poking down the enemy ADC and slowing Nautilus if he is out of position."],
+   "weakness": ["Needs ADC to follow-up", "Has trouble backing out of fights","Needs gold to become a big tank threat"]
+ },
+ {
+   "index": 16,
+   "name": "poppy",
+   "difficulty": 2,
+   "stars": [1,2],
+   "starter": "spellthief",
+   "diffExp": ["Poppy can be difficult you misposition. Otherwise she is easy to lane against."],
+   "weakness": ["Relies on mispositions and walls","Has to be in close to be a threat","Lower income makes it not as big of a threat"]
+ },
+ {
+   "index": 17,
+   "name": "sona",
+   "difficulty": 4,
+   "stars": [1,2,3,4],
+   "starter": "coin",
+   "diffExp": ["Sona is a challenge because she can sustain and has stronger poke than Zilean."],
+   "weakness": ["Low base HP","High mana costs limit her poke and sustain","Can misposition trying to poke"]
+ },
+ {
+   "index": 18,
+   "name": "soraka",
+   "difficulty": 3,
+   "stars": [1,2,3],
+   "starter": "spellthief",
+   "diffExp": ["Soraka can either be played aggressively (if you target Soraka) or passively. Overall this is a pretty easy lane."],
+   "weakness": ["Either plays aggressively or passively","Maxes heal or poke 1st", "Vulnerable to being poked out"]
+ },
+ {
+   "index": 19,
+   "name": "tahmkench",
+   "difficulty": 4,
+   "stars": [1,2,3,4],
+   "starter": "spellthief",
+   "diffExp": ["Tahm Kench can negate the damage from Time Bomb, and is strong if he gets into melee. Don't let him get into melee."],
+   "weakness": ["Higher mana costs, runs out of mana quick if he uses too many spells","Wants to get in melee range to be offensive","Vulnerable to slows and stuns"]
+ },
+ {
+   "index": 20,
+   "name": "taric",
+   "difficulty": 2,
+   "stars": [1,2],
+   "starter": "spellthief",
+   "diffExp": ["Taric is an easy lane because he cannot pressure without getting into an awkward position."],
+   "weakness": ["Low impact because needs awkward positioning to land stuns","High mana costs and duration of heals","Easy to kite and lockdown"]
+ },
+ {
+   "index": 21,
+   "name": "thresh",
+   "difficulty": 4,
+   "stars": [1,2,3,4],
+   "starter": "spellthief",
+   "diffExp": ["Thresh is a common match-up and can be decided on whether or not you can dodge hooks and flays."],
+   "weakness": ["Has to position around the wave to land hooks","Needs ADC to follow-up to his hooks for effective trades","Can be punished for failing all-ins or missing hooks"]
+ },
+ {
+   "index": 22,
+   "name": "trundle",
+   "difficulty": 1,
+   "stars": [1],
+   "starter": "spellthief",
+   "diffExp": ["Trundle is a very easy match-up because Zilean can prey upon his immobility and predictable, passive playstyle."],
+   "weakness": ["Has to be in melee range to deal meaningful damage","Tends to max Pillar first, resulting in a passive lane","Tries to pin people between walls or to cut escape paths"]
+ },
+ {
+   "index": 23,
+   "name": "velkoz",
+   "difficulty": 2,
+   "stars": [1,2],
+   "starter": "spellthief",
+   "diffExp": ["Vel'Koz is a poke mage that can be annoying, but isn't too difficult. His damage is a bit higher compared to Zilean."],
+   "weakness": ["Spell combo is expensive and can OOM quickly","Poke is predictible and can be avoided with distance","Fragile and dies easy if out of position"]
+ },
+ {
+   "index": 24,
+   "name": "zyra",
+   "difficulty": 4,
+   "stars": [1,2,3,4],
+   "starter": "coin",
+   "diffExp": ["Zyra is a strong pick into Zilean because it zones the opposing lane so far back with plants."],
+   "weakness": ["Stepping on plants lowers her poke potential","Low base HP and base armor","Runs out of mana if too aggressive with spells"]
+ },
+ {
+   "index": 25,
+   "name": "malzahar",
+   "difficulty": 2,
+   "stars": [1,2],
+   "starter": "spellthief",
+   "diffExp": ["Malzahar is an easy match up for Zilean because a single Bomb can proc his shield and can save whoever Malzahar targets with ult."],
+   "weakness": ["Damage contingent on Voidlings melee attacks","Spellshield can be popped easily","Wastes ult if Zilean ults the same target"]
+ },
+ {
+   "index": 26,
+   "name": "missfortune",
+   "difficulty": 3,
+   "stars": [1,2,3],
+   "starter": "spellthief",
+   "diffExp": ["Miss Fortune has good poke, but can be punished easily if she gets out of position."],
+   "weakness": ["Has mana issues if she spams Make It Rain", "Can get out of position when trying to poke", "Spells cost a fair amount of mana"]
+ }
+]

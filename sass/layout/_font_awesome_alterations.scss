@@ -1,0 +1,9 @@
+i.fa-2x, i.fa-3x {
+  display:flex;
+  align-items: center;
+  height:100%;
+}
+
+.fa-exclamation {color:$red;}
+
+footer .fa-2x {display:inline-block;}

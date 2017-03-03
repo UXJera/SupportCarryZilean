@@ -18,14 +18,12 @@
 	}
 	li {
 		border:1px solid black;
-		display:flex;
+		@include flex-col;
 		flex: 1;
-		flex-direction: column;
 		justify-content: center;
 		padding: .5em 0;
 		text-align: center;
 		img {
-			max-width: 46px; max-height: 46px;
 			margin: 0 auto;
 			padding-bottom: .5em;
 		}
@@ -37,8 +35,7 @@
 	a {
 		text-decoration: none;
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		@include content-center;
 		img {
 			@include box-shadow;
 			@include border-thin;
@@ -56,10 +53,9 @@
 }
 
 .rune-container {
-	align-items:center;
-	display:flex;
+	@include flex-col;
 	flex:1;
-  flex-direction:column;
+  align-items:center;
   justify-content:space-around;
 	ul {
 		border-radius: $border-radius;
@@ -70,23 +66,41 @@
 		padding: .5em;
 		@include box-shadow;
 		li {
-			align-items:center;
-			display:flex;
-      flex-direction:column;
+			@include flex-col;
+      @include content-center;
 			font-size:.9em;
-      justify-content:center;
       min-width: 200px;
 			padding: .5em 1rem;
-			img {max-width: 46px;}
 		}
 	}
 }
 
+// BACKGROUND COLORS //
+
+
+.red-runes {@include red-gradient;}
+.red-runes-light {@include red-lighten-gradient;}
+
+.yellow-runes {@include yellow-gradient;}
+.yellow-runes-light {@include yellow-lighten-gradient;}
+
+.blue-runes {@include blue-light-gradient;} //
+.blue-runes-light {@include blue-light-lighten-gradient;}
+
+.purple-runes {@include purple-gradient;}
+.purple-runes-light {@include purple-lighten-gradient;}
+
+// FOR RUNES PAGE -> INDIVIDUAL RUNE DISCUSSION //
+
+.red-rune-page > ul {@include red-gradient;}
+.yellow-rune-page > ul { @include yellow-gradient;}
+.blue-rune-page >  ul { @include blue-light-gradient;}
+.purple-rune-page >  ul { @include purple-gradient; color:white;}
+
 @media screen and (min-width: 765px) {
 	.runes-list.top {font-size: 21px;}
 	.rune-page-block {
-		display:flex;
-		flex-direction:row;
+		@include flex-row;
 		a {
 			padding: 0 2.5%;
 		}

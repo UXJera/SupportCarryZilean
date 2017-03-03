@@ -1,37 +1,147 @@
 //			SASS MAIN COLOR SHORTHANDS		//
 
-$runes-red: #FF4747;
-$runes-light-red: lighten( #FF4747, 20%);
-$runes-yellow: #FFF24F;
-$runes-light-yellow: lighten(#FFF24F, 20%);
-$runes-blue: #00A8E8;
-$runes-light-blue: lighten(#00A8E8, 20%);
-$runes-purple: #E24FE2;
-$runes-light-purple: lighten(#E24FE2, 20%);
-
-
 $time-bomb-blue: #549aa8;
 $time-warp-blue: #2010a9;
+$time-bomb-blue-bg: lighten(rgba(28, 93, 153, .8), 10%);
+$time-warp-blue-bg: lighten(rgba(32, 16, 169, .8), 15%);
 
-$nav-blue: #639fab;
+// GRADIENTS FOR BACKGROUND CONTAINERS //
+// From: https://uigradients.com //
+
+@mixin white-gradient {
+  background: #ECE9E6; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin grey-gradient {
+  background: #abbaab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #abbaab , #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #abbaab , #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin red-gradient {
+  background: #f85032; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #e73827, #f85032); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #e73827, #f85032); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin red-lighten-gradient {
+  background: #f85032; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, lighten(#e73827, 10%), lighten(#f85032, 10%)); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, lighten(#e73827, 10%), lighten(#f85032, 10%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin red-dark-gradient {
+  background: #F00000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, lighten(#F00000, 10%) , lighten(#e73827, 5%)); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, lighten(#F00000, 20%) , lighten(#e73827, 5%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin orange-gradient {
+  background: #E44D26; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, lighten(#E44D26, 5%) , lighten(#F16529, 5%)); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, lighten(#E44D26, 5%) , lighten(#F16529, 5%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin yellow-gradient {
+  background: #ffb347; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ffb347 , #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ffb347 , #ffcc33); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin yellow-lighten-gradient {
+  background: #ffb347; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, lighten(#ffb347, 20%) , lighten(#ffcc33, 20%)); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, lighten(#ffb347, 20%) , lighten(#ffcc33, 20%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin green-gradient {
+  background: #56ab2f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #62c633 , #64f38c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #62c633 , #64f38c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin blue-light-gradient {
+  background: #00c6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0072ff, #00c6ff ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0072ff, #00c6ff ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin blue-light-lighten-gradient {
+  background: #00c6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, lighten(#0072ff, 25%), lighten(#00c6ff, 25%) ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, lighten(#0072ff, 25%), lighten(#00c6ff, 25%) ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin blue-dark-gradient {
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,#004e92  ,#000428 ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #004e92  ,#000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color:$white;
+}
+
+@mixin purple-gradient {
+  background: #41295a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #2F0743 , #41295a ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #2F0743 , #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin purple-lighten-gradient {
+  background: #41295a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, lighten(#2F0743, 15%) , lighten(#41295a, 15%) ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, lighten(#2F0743, 15%) , lighten(#41295a, 15%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin dark-gradient {
+  background: #141E30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #141E30 , #243B55); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #141E30 , #243B55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin time-bomb-gradient {
+  background: $time-bomb-blue-bg; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, darken($time-bomb-blue-bg, 20%) , $time-bomb-blue-bg); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, darken($time-bomb-blue-bg, 20%)  , $time-bomb-blue-bg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin time-warp-gradient {
+  background: $time-warp-blue-bg; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, darken($time-warp-blue-bg, 40%) , $time-warp-blue-bg); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, darken($time-warp-blue-bg, 40%)  , $time-warp-blue-bg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin lcs-gradient {
+  background: #fceabb; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #f8b500 , #fceabb); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #f8b500 , #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	//background: opacify($yellow-bg, .15);
+	ul li img {@include box-shadow-alt;}
+}
+
+@mixin scz-gradient {
+  background: #B2FEFA; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #B2FEFA , #0ED2F7); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #B2FEFA , #0ED2F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+$dark: #222;
 $light: #bbcde5;
+
 $red: #FF4747;
 $red-light: lighten($red, 20%);
 $yellow: #edc236;
 $yellow-light:lighten($yellow, 20%);
+$green: #64f38c;
+$blue: #00A8E8;
+$blue-light: lighten($blue, 25%);
 $light-blue: darken(#bbcde5, 10%);
-$dark: #222;
-//$blue-bg: rgba(99, 159, 171, .92);
-//$light-blue-bg: rgba(140, 232, 255, .95);
-//$light-bg: rgba(191, 238, 255, .95);
+
 $blue-bg: rgba(99, 159, 171, .92);
 $light-blue-bg: rgba(140, 232, 255, .9);
 $light-bg: rgba(191, 238, 255, .9);
 $fade-bg:  rgba(255, 255, 255, .5);
 $fade-light-bg: rgba(255, 255, 255, .3);
-$green-bg: lighten(rgba(87, 255, 87, .9), 10%);
-$time-bomb-blue-bg: lighten(rgba(28, 93, 153, .8), 10%);
-$time-warp-blue-bg: lighten(rgba(32, 16, 169, .8), 15%);
 $yellow-bg: rgba(237, 194, 54, .5);
 $white: #eee;
 
@@ -39,32 +149,12 @@ $white: #eee;
 
 //  BG COLORS FOR RUNES ON HOME PAGE AND RUNES 101  //
 
-.red {background: $red;}
-.light-red {background: $red-light;}
+// FOR SPELLS PAGE -> BASIC COLORS //
 
-.yellow {background: $yellow;} //#FFF24F
-.light-yellow {background: $yellow-light;}
-
-.blue {background: #00A8E8;} //
-.light-blue {background: lighten(#00A8E8, 20%);}
-
-.purple {background: $time-warp-blue;}
-.light-purple {background: lighten($time-warp-blue, 20%);}
-
-.red-runes > ul { background: $red;}
-.yellow-runes > ul { background: $runes-yellow;}
-.blue-runes >  ul { background: $runes-blue;}
-.purple-runes >  ul { background: $time-warp-blue-bg; color:white;}
-
-//  BG IMG FOR MASTERY PAGE //
-
-.cunning {background: #36213C;}//background:url('/img/masteries/cunning-bg.png');}
-.ferocity {background: #321000;}//background:url('/img/masteries/ferocity-bg.png');}
-.resolve {background: #152530;}//background:url('/img/masteries/resolve-bg.png');}
+.red-text {color:red;}
+.yellow-text{color:darken(yellow, 15%);}
+.blue-text{color:blue;}
 
 .cunning, .ferocity, .resolve {
-  min-height: 100vh;
-  background-attachment: fixed;
-  background-size: cover;
   > h4, h6 {color: #eee;}
 }

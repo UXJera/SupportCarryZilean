@@ -34,6 +34,18 @@ $border-radius: 10px;
   box-shadow: 5px 5px 5px #111;
 }
 
+@mixin border-shadow {
+  border-radius: $border-radius;
+  border: $border;
+  box-shadow: 5px 5px 5px #888;
+}
+
+@mixin border-shadow-dark {
+  border-radius: $border-radius;
+  border: $border;
+  box-shadow: 5px 5px 5px #333;
+}
+
 @mixin transition {
   transition: all .5s;
 }

@@ -1,9 +1,8 @@
 //	STYLES FOR MASTERY BREAKDOWN	//
 
 .mastery-image {
-	align-items: center;
 	display:flex;
-	justify-content: center;
+	@include content-center;
 	margin: .75em 0;
 	img {
 		max-width: 100%;
@@ -22,24 +21,19 @@
 }
 
 .mastery-container {
-	display: flex;
-  flex-direction: column;
+	@include flex-col;
 	padding: 1em;
 	@include border;
 	@include box-shadow;
   ul {
+  	@include flex-col;
 		align-items:stretch;
-  	display: flex;
-    flex-direction:column;
     justify-content:space-around;
     li {
-			align-items:center;
-			background: $green-bg;
-			border: $border;
-			border-radius: $border-radius;
-			display:flex;
-      flex-direction:column;
-      justify-content: center;
+			background: $green;
+			@include border;
+			@include flex-col;
+      align-items: center;
 			text-align:center;
 			@include box-shadow-alt-2;
 			* {padding-bottom: .5em;}
@@ -51,9 +45,29 @@
 		}
 		.unused {
 			background: #bbb;
-			color: #555;
+			color: #444;
 		}
 	}
+}
+
+//  BG IMG FOR MASTERY PAGE //
+
+.ferocity {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #000000 , #e74c3c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #000000 , #e74c3c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.cunning {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #000000 , #4b6cb7); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #000000 , #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.resolve {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #000000 , #093028); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #000000 , #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 @media screen and (min-width: 765px) {

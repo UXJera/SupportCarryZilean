@@ -1,13 +1,17 @@
-.tear-container {
+.tear-pro {@include blue-light-gradient;}
+.tear-con {@include red-gradient;}
+
+.tear-container-banner {
   width: 50vw;
-  background:red;
+  color:white;
+  background:$time-warp-blue;
   min-height: 20vh;
   @include border;
-  display:flex;
-  flex-direction:row;
+  @include flex-row;
   flex-wrap: wrap;
   h4{
     width: 100%;
+    // Not flush with rest of text
   }
   .tear-img {
     flex: 2;
@@ -19,22 +23,49 @@
   .tear-list{
     flex:4;
     ul {
-      list-style: disc;;
+      list-style: disc;
+      li {
+        font-size: 1.1em;
+        padding:.25em 0;
+      }
     }
   }
 }
 
-.tear-pros-cons-container{
+.tear-img-small {
   display:flex;
-  flex-direction:row;
+  align-items: center;
+  img {
+    height: 64px; width: 64px;
+    margin:0 auto;
+    @include border-thin;
+    @include box-shadow-alt;
+    margin: 0 2.5em;
+  }
+}
+
+.tear-build-container {
+  margin-bottom: .5em;
+  padding: 1em .5em;
+  @include flex-row;
+  align-items: center;
+  @include border-shadow;
+  img {
+    height: 64px; width: 64px;
+    margin:0 auto;
+    @include border-thin;
+    margin: 0 .5em;
+  }
+}
+
+.tear-pros-cons-container{
+  @include flex-row;
   justify-content: center;
   .tear-pros-cons {
-    display:flex;
-    flex-direction:column;
+    @include flex-col;
     flex:1;
     max-width: 45vw;
-    @include border;
-    @include box-shadow;
+    @include border-shadow;
     margin:2em;
     padding: 0 .5em;
     img {width:160px;margin:0 auto;}
@@ -42,22 +73,23 @@
     h4{}
     ul {
       li{
-        margin-top: .5em;
+        margin-top: 1em;
         a {
           font-weight: 700;
           background:black;
           padding: .25em .5em;
+          margin-right: .25em;
           text-decoration: none;
-          color: yellow;
+          color: $yellow;
+          @include box-shadow-alt;
           @include border-radius;
+          @include transition;
+          &:hover {
+            background: $green;
+            color: black;
+          }
         }
       }
-    }
-    &:nth-of-type(1){
-      background:red;
-    }
-    &:nth-of-type(2){
-      background:green;
     }
   }
 }

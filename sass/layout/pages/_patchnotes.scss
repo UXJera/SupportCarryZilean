@@ -3,8 +3,7 @@
 
 .patch-container {
 	li {
-		display:flex;
-		flex-direction:column;
+		@include flex-col;
 		p:first-of-type {
 			font-weight: 700;
 			text-align:center;
@@ -25,6 +24,6 @@
 	}
 }
 
-.nerf{color:$runes-red;}
-.buff{color:darken($green-bg, 43%);}
+.nerf{color:$red;}
+.buff{color:darken($green, 43%);}
 .neutral{color:#777;}

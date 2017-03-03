@@ -1,13 +1,11 @@
 .introduction {
-	align-items:center;
-	display:flex;
-	flex-direction:column;
+	@include flex-col;
 	flex-wrap: wrap;
 	justify-content:flex-start;
+	align-items:center;
 	h3 {margin-top: .5em;}
 	ul {
-		display:flex;
-		flex-direction: column;
+		@include flex-col;
 		flex-wrap: wrap;
 		list-style-type: disc;
 		margin-left: 2em;
@@ -16,8 +14,7 @@
 	}
 	a {	margin: 0 auto;}
 	img {
-		border: $thin-border;
-		border-radius: $border-radius;
+		@include border-thin;
 		max-width: 1000px;
 		width:100%;
 		@include box-shadow;
@@ -25,10 +22,8 @@
 }
 
 .summary {
-	align-items:center;
-	display:flex;
-	flex-direction: column;
-  justify-content:center;
+	@include flex-col;
+	@include content-center;
 	img {max-width: 100%;}
 }
 

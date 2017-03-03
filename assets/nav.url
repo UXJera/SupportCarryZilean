@@ -2,7 +2,11 @@
 <nav role="navigation" class="main-nav menu">
 	<div class="mobile-nav"><a href="/#" class="mobile-brand">SUPPORT CARRY ZILEAN</a><a class="nav-trigger hamburger"></a></div>
 	<ul class="primary-nav isOpen">
-		<li class="brand no-mobile"><a href="/"><h1>SUPPORT <span>CARRY</span> </h1><img src="/img/Zilport.png" alt="Zilean face icon"></a></li>
+		<li class="brand no-mobile">
+			<a href="/">
+			<div>SUPPORT <span>CARRY</span></div>
+			<img src="/img/Zilport.png" alt="Zilean face icon">
+		</a></li>
 		<li class="blank-nav"></li>
 		<li><a class="nav-toggle" href="#" aria-haspopup="true"><img src="/img/skills/Q64.png" alt="Time bomb Icon">BASIC GUIDES</a>
 			<ul class="sub-menu">
