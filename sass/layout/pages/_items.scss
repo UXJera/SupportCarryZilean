@@ -37,6 +37,9 @@
 			}
 		}
 	}
+	.multi-item {
+		display:flex;
+	}
 }
 
 
@@ -123,6 +126,12 @@
 	background: linear-gradient(to left, #f8b500 , #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	//background: opacify($yellow-bg, .15);
 	ul li img {@include box-shadow-alt;}
+}
+
+.scz-container {
+	background: #B2FEFA; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #B2FEFA , #0ED2F7); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #B2FEFA , #0ED2F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 ul.short-list {
