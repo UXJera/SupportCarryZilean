@@ -111,6 +111,20 @@ $time-warp-blue-bg: lighten(rgba(32, 16, 169, .8), 15%);
   background: linear-gradient(to left, darken($time-warp-blue-bg, 40%)  , $time-warp-blue-bg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+@mixin lcs-gradient {
+  background: #fceabb; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #f8b500 , #fceabb); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #f8b500 , #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	//background: opacify($yellow-bg, .15);
+	ul li img {@include box-shadow-alt;}
+}
+
+@mixin scz-gradient {
+  background: #B2FEFA; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #B2FEFA , #0ED2F7); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #B2FEFA , #0ED2F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 $dark: #222;
 $light: #bbcde5;
 

@@ -18,10 +18,8 @@
 
 .debate-winner {
 	@include white-gradient;
-	border: $border;
-	border-radius: $border-radius;
-	display:flex;
-	flex-direction:column;
+	@include border;
+	@include flex-col;
 	justify-content:center;
 	margin-top: 1em;
 	max-width: 70%;

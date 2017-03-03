@@ -1,14 +1,13 @@
 //	STYLES FOR ITEM OPTIMIZATION	//
 
 .item-container {
-	align-items:center;
+
 	@include white-gradient;
-	border: $border;
-	border-radius: $border-radius;
-	display:flex;
-	flex-direction:column;
+	@include border;
+	@include flex-col;
 	flex-wrap:wrap;
 	justify-content:flex-start;
+	align-items:center;
 	@include box-shadow;
 	ul {
 		display:flex;
@@ -16,8 +15,7 @@
 		justify-content: center;
 		padding: .5em 0;
 		li {
-			display:flex;
-			flex-direction: column;
+			@include flex-col;
 			font-weight: 700;
 			font-size: .9em;
 			padding: .5em 1em;
@@ -45,9 +43,8 @@
 
 .item-exp {
 	background: $fade-bg;
-	display:flex;
+  @include flex-col;
 	flex:1;
-  flex-direction: column;
 	margin-bottom:1em;
 	max-width: 60%;
 	padding: 1em 3em;
@@ -58,9 +55,8 @@
 	}
 	p {font-size:.95em;}
 	.explain-list {
-		display:flex;
+		@include flex-col;
     flex:1;
-    flex-direction:column;
     justify-content:space-between;.
 		list-style: disc;
 		li {
@@ -102,8 +98,7 @@
 		}
 	}
 	div {
-		display:flex;
-		flex-direction:row;
+		@include flex-row;
 		justify-content:center;
 		p {flex:1;}
 		p:first-of-type {font-weight: 700;}
@@ -120,19 +115,9 @@
 	ul li img {@include box-shadow-alt;}
 }
 
-.lcs-container {
-	background: #fceabb; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #f8b500 , #fceabb); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #f8b500 , #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	//background: opacify($yellow-bg, .15);
-	ul li img {@include box-shadow-alt;}
-}
+.lcs-container {@include lcs-gradient;}
 
-.scz-container {
-	background: #B2FEFA; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #B2FEFA , #0ED2F7); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #B2FEFA , #0ED2F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+.scz-container {@include scz-gradient;}
 
 ul.short-list {
 	padding:0;
@@ -140,8 +125,7 @@ ul.short-list {
 }
 
 .avoid-items {
-	display:flex;
-	flex-direction: column;
+	@include flex-col;
 	padding: .5em 2em;
 	div{
 		padding-bottom: 1em;

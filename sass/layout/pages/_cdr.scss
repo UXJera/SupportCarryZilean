@@ -9,8 +9,7 @@
 		@include box-shadow;
 	}
 	div {
-		display:flex;
-    flex-direction:column;
+		@include flex-col;
 	}
 }
 

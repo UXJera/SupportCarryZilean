@@ -2,10 +2,8 @@
 	padding-bottom: .5em;
 	width: 100%;
 	ul {
-		align-items:center;
-		display:flex;
-		flex-direction:column;
-		justify-content: center;
+		@include flex-col;
+		@include content-center;
 		@include dark-gradient;
 		li {
 			width: 100%;
@@ -35,8 +33,7 @@
   display:none;
   background:$light;
   ul {
-    display:flex;
-    flex-direction: column;
+    @include flex-col;
     margin: 0 auto;
     text-align: center;
 		@include time-bomb-gradient;
@@ -47,14 +44,19 @@
       justify-content: center;
       flex:1;
       overflow: hidden;
-      img {max-width: 60px; min-width: 60px; border-radius: 5px; margin: .25em; margin-bottom:.5em;}
+      img {
+				max-width: 60px;
+				min-width: 60px;
+				border-radius: 5px;
+				margin: .25em;
+				margin-bottom:.5em;
+			}
       &.quick-guide-active {
         background: transparentize($yellow, .15);
           a { color: $dark;}
         }
       a {
-        display:flex;
-        flex-direction: column;
+        @include flex-col;
         align-items: center;
         flex: 1;
         text-align: center;

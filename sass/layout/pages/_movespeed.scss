@@ -2,8 +2,7 @@
 //	STYLES FOR MOVEMENTSPEED ARTICLE	//
 
 ul.faq {
-	border-radius: $border-radius;
-	border: $border;
+	@include border;
 	margin-left: 0;
 	overflow:hidden;
 	padding:0;
@@ -25,14 +24,11 @@ ul.faq {
 }
 
 .ms-list {
-	border: $border;
-	border-radius:$border-radius;
+	@include border-shadow;
 	overflow:hidden;
-	@include box-shadow;
 	li {
 		color:$white;
-		display:flex;
-		flex-direction: row;
+		@include flex-row;
 		font-size: .85em;
 		font-weight: 700;
 		justify-content:space-between;
@@ -54,24 +50,20 @@ ul.faq {
 }
 
 .range-block {
-	display:flex;
-	flex-direction:column;
+	@include flex-col;
 	width: 100%;
 }
 
 .slider-block {
-	display:flex;
-	flex-direction:column;
+	@include flex-col;
 	width: 100%;
 	div {
-		display:flex;
-		flex-direction:row;
+		@include flex-row;
 		flex-wrap:wrap;
 		justify-content: space-around;
 		text-align:center;
 		p {
-			border:$border;
-			border-radius:$border-radius;
+			@include border;
 			font-weight: 700;
 			margin: .5em 0;
 			padding: 1em;

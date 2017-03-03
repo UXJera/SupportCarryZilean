@@ -1,15 +1,13 @@
 //		FOOTER STYLINGS		//
 
 .article-footer {
-	display:flex;
+	@include flex-col;
   flex:1;
-  flex-direction:column;
 	.footer-container{
-		align-items:center;
+		@include content-center;
 		background: $blue-bg;
 		display:flex;
 		flex: 1;
-    justify-content:center;
 		a {
 			color:$dark;
 			text-decoration:none;

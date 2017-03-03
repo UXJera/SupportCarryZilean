@@ -7,8 +7,7 @@
   background:$time-warp-blue;
   min-height: 20vh;
   @include border;
-  display:flex;
-  flex-direction:row;
+  @include flex-row;
   flex-wrap: wrap;
   h4{
     width: 100%;
@@ -48,8 +47,7 @@
 .tear-build-container {
   margin-bottom: .5em;
   padding: 1em .5em;
-  display:flex;
-  flex-direction: row;
+  @include flex-row;
   align-items: center;
   @include border-shadow;
   img {
@@ -61,16 +59,13 @@
 }
 
 .tear-pros-cons-container{
-  display:flex;
-  flex-direction:row;
+  @include flex-row;
   justify-content: center;
   .tear-pros-cons {
-    display:flex;
-    flex-direction:column;
+    @include flex-col;
     flex:1;
     max-width: 45vw;
-    @include border;
-    @include box-shadow;
+    @include border-shadow;
     margin:2em;
     padding: 0 .5em;
     img {width:160px;margin:0 auto;}

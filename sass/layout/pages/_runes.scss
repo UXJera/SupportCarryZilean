@@ -18,9 +18,8 @@
 	}
 	li {
 		border:1px solid black;
-		display:flex;
+		@include flex-col;
 		flex: 1;
-		flex-direction: column;
 		justify-content: center;
 		padding: .5em 0;
 		text-align: center;
@@ -36,8 +35,7 @@
 	a {
 		text-decoration: none;
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		@include content-center;
 		img {
 			@include box-shadow;
 			@include border-thin;
@@ -55,10 +53,9 @@
 }
 
 .rune-container {
-	align-items:center;
-	display:flex;
+	@include flex-col;
 	flex:1;
-  flex-direction:column;
+  align-items:center;
   justify-content:space-around;
 	ul {
 		border-radius: $border-radius;
@@ -69,14 +66,11 @@
 		padding: .5em;
 		@include box-shadow;
 		li {
-			align-items:center;
-			display:flex;
-      flex-direction:column;
+			@include flex-col;
+      @include content-center;
 			font-size:.9em;
-      justify-content:center;
       min-width: 200px;
 			padding: .5em 1rem;
-			// img {max-width: 46px;}
 		}
 	}
 }
@@ -106,8 +100,7 @@
 @media screen and (min-width: 765px) {
 	.runes-list.top {font-size: 21px;}
 	.rune-page-block {
-		display:flex;
-		flex-direction:row;
+		@include flex-row;
 		a {
 			padding: 0 2.5%;
 		}
