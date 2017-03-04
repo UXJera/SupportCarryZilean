@@ -1,4 +1,4 @@
-.controller('movespeedController', ['$scope', function($scope) {
+sczApp.controller('movespeedController', ['$scope', function($scope) {
   $scope.slider_range = {
     value: 325,
     options: {
@@ -140,7 +140,7 @@
         $scope.swiftiesData.rank3 = limiter(rank3);
         $scope.swiftiesData.rank4 = limiter(rank4);
         $scope.swiftiesData.rank5 = limiter(rank5);
-      },
+      }
     }
   };
 
@@ -151,4 +151,4 @@
     rank4: 169,
     rank5: 152,
   };
-}
+});

@@ -1,1 +1,1 @@
-var sczApp = angular.module("sczApp",[]);
+var sczApp = angular.module("sczApp",["rzModule"]);
