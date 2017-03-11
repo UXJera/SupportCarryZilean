@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="//www.w3.org/1999/xhtml" lang="en" ng-app="myApp">
+<html xmlns="//www.w3.org/1999/xhtml" lang="en" ng-app="msApp">
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
@@ -65,7 +65,7 @@
 				<p>Movement speed equals the amount of units you travel in a single second.</p>
 				<p>To get a better understanding of how movement speed is relative to spell ranges, here is a list indicating the range of each.</p>
 			</div>
-			<div class="range-block" ng-controller="MyController">
+			<div class="range-block" ng-controller="MsController">
 				<ul class="ms-list">
 					<li class="thead"><h3>At {{ rangeData.ms }} Movement Speed, it takes this long to travel this distance</h3></li>
 					<li class="thead"><rzslider rz-slider-model="slider_range.value" rz-slider-options="slider_range.options"></rzslider></li>
@@ -95,7 +95,7 @@
 	<div class="content-wrapper">
 		<div class="content-container">
 			<h4>Speeding Things Up A Bit</h4>
-			<div class="slider-block" ng-controller="MyController">
+			<div class="slider-block" ng-controller="MsController">
 				<rzslider rz-slider-model="slider_speed.value" rz-slider-options="slider_speed.options"></rzslider>
 					<div class="speedup">
 						<p> Rank 1 <br> {{ speedData.rank1 }}</p>
@@ -124,7 +124,7 @@
 	<div class="content-wrapper">
 		<div class="content-container">
 			<h4>Slowing Things Down A Lot</h4>
-			<div class="slider-block" ng-controller="MyController">
+			<div class="slider-block" ng-controller="MsController">
 				<rzslider rz-slider-model="slider_slow.value" rz-slider-options="slider_slow.options"></rzslider>
 				<div class="slowdown">
 					<p> Rank 1 </br> {{ slowData.rank1 }}</p>
@@ -144,7 +144,7 @@
 	<div class="content-wrapper">
 		<div class="content-container">
 			<h4>Those Pesky Boots of Swiftness</h4>
-			<div class="slider-block" ng-controller="MyController">
+			<div class="slider-block" ng-controller="MsController">
 				<rzslider rz-slider-model="slider_swifties.value" rz-slider-options="slider_swifties.options"></rzslider>
 					<div class="swifties">
 						<p> Rank 1 </br> {{ swiftiesData.rank1 }}</p>
