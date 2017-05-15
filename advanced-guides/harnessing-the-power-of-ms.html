@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns="//www.w3.org/1999/xhtml" lang="en" ng-app="msApp">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>Harnessing the Power of Movespeed | Support Carry Zilean</title>
+
+	<meta name="author" content="Jera"></meta>
+	<meta name="description" content="Movespeed is a complex concept with regards to slows and speed ups. Here are the numbers to clarify what actually happens."></meta>
+	<meta name="robots" content="noarchive, noimageindex" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/angularjs-slider/2.5.0/rzslider.min.css
+">
+	<link rel="shortcut icon" href="/favicon/favicon.ico">
+
+	<script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angularjs-slider/2.5.0/rzslider.min.js"></script>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-72638737-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+
+</head>
+<body>
+
+<div ng-include src="'/assets/nav.url'"></div>
+
+<main>
+	<div class="content-wrapper">
+		<h1>Harnessing the Power of Movespeed</h1>
+    <div class="content-container">
+			<div class="introduction">
+				<p>Movement Speed is one of the more mysterious quantities in League of Legends, and most view the stat as an arbitrary number of "how fast you go" and a relative measure between two champions.</p>
+				<p>In reality, <span>Movement Speed is the number of units you travel per second.</span> For instance, a your standard ADC moves 325 units per second without boots, and most supports move at 335 units per second.</p>
+				<h4>Movement Speed FAQ</h4>
+				<ul class="faq">
+					<li>If my current movement speed is 390, and I get a buff of 99%, why isn'y my movement speed 799 (390 * 1.99)?</li>
+					<li>Since movement speed buffs are stackable, Riot implemented scalar limitations so that movement speed buffs don't get out of control.</li>
+					<li>The 99% slow doesn't stop them, but only drops their movement speed to 112, even though 99% of 390 is 39. Why are these numbers not the same?</li>
+					<li>Similar to how movement speed increases work, slows are also scaled at a certain point. Since slows are no longer multiplicative, the theoretical minimum of slow caps at 110 movement speed.</li>
+					<li>If I'm being chased, should I speed myself or should I slow them?</li>
+					<li>Most cases, it's better to speed yourself up because you are guaranteed 2.5 seconds of movement speed, versus a possible slow reduction if the enemy has any Tenacity or Slow Resistance in their masteries. Also, if there are multiple enemies in the area, you can only slow 2 of them instantly(with 35% CDR), so speeding yourself up is safer.<br>It is better to slow the enemy if you have teammates close by who can punish the overextend.</li>
+					<li>How do Mercury's Treads and Boots of Swiftness affect being slowed by Zilean?</li>
+					<li>The Mercury's Treads reduce the duration of the slow, but not it's potency. This means that Zilean's slow goes from 2.5 seconds to 2 seconds.<br>
+					Boots of Swiftness still have the same duration, but the potency of the slow is greatly reduced. For example, a Rank 5 Time Warp only slows down to 162 movement speed, when it would normally reduce it to 112.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrapper">
+		<div class="content-container">
+			<h4>Relative Movement Speed to Unit Range</h4>
+			<div class="lg-cont">
+				<p>Movement speed equals the amount of units you travel in a single second.</p>
+				<p>To get a better understanding of how movement speed is relative to spell ranges, here is a list indicating the range of each.</p>
+			</div>
+			<div class="range-block" ng-controller="movespeedController">
+				<ul class="ms-list">
+					<li class="thead"><h3>At {{ rangeData.ms }} Movement Speed, it takes this long to travel this distance</h3></li>
+					<li class="thead"><rzslider rz-slider-model="slider_range.value" rz-slider-options="slider_range.options"></rzslider></li>
+					<li>To travel from one fountain to the other  <span>19000 units</span>  {{ rangeData.nexus }} seconds </li>
+					<li>Range of Rank 3 Xerath Ultimate (and Twisted Fate Ultimate)  <span>5600 units</span> {{ rangeData.tf }} seconds</li>
+					<li>Rank 3 Nocturne Ultimate  <span>4000 units</span>  {{ rangeData.noc }} seconds</li>
+					<li>Max Range Lux Ultimate  <span>3400 units</span> {{ rangeData.lux }} seconds</li>
+					<li>Rank 1 Nocturne Ultimate  <span>2500 units</span>  {{ rangeData.noc2 }} seconds</li>
+					<li>Max Range Nidalee Spear  <span>1500 units</span>   {{ rangeData.nidalee }} seconds</li>
+					<li>Champion Vision  <span>1200 units</span>   {{ rangeData.vision }} seconds</li>
+					<li>Zilean Bomb Range  <span>900 units</span>   {{ rangeData.zilb }} seconds</li>
+					<li>Turret Attack Range  <span>775 units</span>  {{ rangeData.turretaa }} seconds</li>
+					<li>Caitlyn Auto Attack Range  <span>650 units</span>  {{ rangeData.caitaa }} seconds</li>
+					<li>Zilean Auto Attack Range  <span>550 units</span> {{ rangeData.zilaa }} seconds</li>
+					<li>Flash (Summoner Spell)  <span>425 units</span>   {{ rangeData.flash }} seconds</li>
+					<li>Juggernaut Auto Attack Range  <span>175 units</span>   {{ rangeData.jug }} seconds</li>
+					<li>Melee Auto Attack Range  <span>125 units</span> {{ rangeData.melee }} seconds</li>
+					<li>1 Teemo  <span>100 units</span>  {{ rangeData.teemo }} seconds</li>
+				</ul>
+			</div>
+			<div class="lg-cont">
+				<p>Movement speed is more than just a relative measure between champions, it also can be useful to calculate the range of abilities through movement speed.</p>
+				<p>Now that we've touched on movement speed and range, let's discuss how much of a difference Zilean's speed boost benefits the team.</p>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrapper">
+		<div class="content-container">
+			<h4>Speeding Things Up A Bit</h4>
+			<div class="slider-block" ng-controller="movespeedController">
+				<rzslider rz-slider-model="slider_speed.value" rz-slider-options="slider_speed.options"></rzslider>
+					<div class="speedup">
+						<p> Rank 1 <br> {{ speedData.rank1 }}</p>
+						<p> Rank 2 <br> {{ speedData.rank2 }}</p>
+						<p> Rank 3 <br> {{ speedData.rank3 }}</p>
+						<p> Rank 4 <br> {{ speedData.rank4 }}</p>
+						<p> Rank 5 <br> {{ speedData.rank5 }}</p>
+					</div>
+			</div>
+			<div class="lg-cont">
+				<p>Movement speed is calculated by a long formula, which is shown below.</p>
+				<ul class="bump-right">
+					<li>[Base Movement Speed + Flat Movement Speed Bonuses (boots)] *</li>
+					<li>[1 + <a href="//leagueoflegends.wikia.com/wiki/Movement_speed#Multiplicative_speed_boosts" target="_blank"> Additional Percentage Movement Bonuses</a>] *</li>
+					<li>[1 + First Multiplicative Percentage Movement Bonus (Zilean Time Warp)] *</li>
+					<li>[1 + Any Further Multiplicative Percentage Movement Bonuses] *</li>
+					<li>[1 - Highest Slow Ratio * Slow Resist Ratio]</li>
+				</ul>
+				<p>Another formula to note is that there are three movement speed "caps", two speed ups and one slow down.</p>
+				<p>The first movement speed cap is between 415 and 490 movement speed, where it is only 80% effective. That means you spend 90 Movement Speed to gain 75.</p>
+				<p>The second cap is everything over 490, and that cap you only get 50% efficiency. This is the reason why Zilean caps out around 620 movement speed, while the base math should be closer to 780.</p>
+				<p>The big take away is once your movement speed is over 490, its scaling is halved.</p>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrapper">
+		<div class="content-container">
+			<h4>Slowing Things Down A Lot</h4>
+			<div class="slider-block" ng-controller="movespeedController">
+				<rzslider rz-slider-model="slider_slow.value" rz-slider-options="slider_slow.options"></rzslider>
+				<div class="slowdown">
+					<p> Rank 1 </br> {{ slowData.rank1 }}</p>
+					<p> Rank 2 </br> {{ slowData.rank2 }}</p>
+					<p> Rank 3 </br> {{ slowData.rank3 }}</p>
+					<p> Rank 4 </br> {{ slowData.rank4 }}</p>
+					<p> Rank 5 </br> {{ slowData.rank5 }}</p>
+				</div>
+			</div>
+			<div class="lg-cont">
+				<p>Slow is a very powerful tool, and even though the illusion of 99% movement speed reduction would drop mobility to next to 0, it isn't quite that way.</p>
+				<p>The third movement speed cap is on slows that reduce mobility below 220, from there the movement speed is halved.</p>
+				<p>Since stacking slow was taken out of the game, the maximum slow ratio is 99%, the movement speed floor is 112, which is still a debilitating slow.</p>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrapper">
+		<div class="content-container">
+			<h4>Those Pesky Boots of Swiftness</h4>
+			<div class="slider-block" ng-controller="movespeedController">
+				<rzslider rz-slider-model="slider_swifties.value" rz-slider-options="slider_swifties.options"></rzslider>
+					<div class="swifties">
+						<p> Rank 1 </br> {{ swiftiesData.rank1 }}</p>
+						<p> Rank 2 </br> {{ swiftiesData.rank2 }}</p>
+						<p> Rank 3 </br> {{ swiftiesData.rank3 }}</p>
+						<p> Rank 4 </br> {{ swiftiesData.rank4 }}</p>
+						<p> Rank 5 </br> {{ swiftiesData.rank5 }}</p>
+					</div>
+			</div>
+			<div class="lg-cont">
+				<p>This part is added in because of the recent popularity of Boots of Swiftness (aptly named "Swifties").</p>
+				<p>Slow Resist has a huge impact on the effect of the slow, especially at high ranks of Time Warp.</p>
+				<p>In general, you want to avoid casting Time Warp on enemies with Swifties because it makes your spell at least 1 rank less effective. However, if you are being disengaged upon or find a pick, ALWAYS use Time Warp no matter what. The worst case scenario is that you get the enemy to burn a Flash.</p>
+			</div>
+		</div>
+	</div>
+		<div class="article-footer">
+			<div class="footer-container">
+				<a href="/advanced-guides/the-great-q-vs-e-debate.html"><i class="fa fa-arrow-circle-o-left fa-3x"></i></a>
+				<a href="/advanced-guides/the-great-q-vs-e-debate.html"><p>The Great Q vs E Debate</p></a>
+			</div>
+			<div class="footer-container">
+				<h4>Want More Articles?</h4>
+			</div>
+			<div class="footer-container">
+				<a href="/advanced-guides/triple-bombs.html"><p>Triple Bombs<br>and Chain Bombs</p></a>
+				<a href="/advanced-guides/triple-bombs.html"><i class="fa fa-arrow-circle-o-right fa-3x"></i></a>
+			</div>
+	</div>
+</main>
+
+<div ng-include src="'/assets/footer.url'"></div>
+
+	<script type="text/javascript" src="/js/app.js"></script>
+	<script type="text/javascript" src="/js/ms.min.js"></script>
+
+</body>
+</html>

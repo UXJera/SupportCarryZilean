@@ -1,16 +1,15 @@
 //	STYLES FOR GAMEPLAY VIDEO	//
 
 .video-block {
-	background: $white;
-	border-radius: $border-radius;
-	border: $border;
+	@include white-gradient;
+	@include border;
 	margin: 1em 0;
 	max-width: 95%;
 	min-width: 95%;
 	@include box-shadow;
 	& > * {margin: .5em 1em;}
 	div {display:flex; justify-content: center;}
-	p {font-size: .9em;} 
+	p {font-size: .9em;}
 }
 
 // TURN YOUTUBE VIDEO INTO RESPONSIVE BLOCK //

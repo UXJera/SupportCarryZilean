@@ -1,0 +1,34 @@
+<div class="support-difficulty-container diff-{{listing.difficulty}}">
+	<div class="champion-section">
+		<h4 class="champion-name" id="#{{listing.name}}-support">{{listing.name | capitalize }}</h4>
+		<img ng-src="/img/champion/{{listing.name}}.png" alt="{{listing.name}}">
+
+		<div class="difficulty">
+			<!-- <p>Difficulty = {{listing.difficulty}}</p> -->
+			<ul>
+				<li ng-repeat="n in listing.stars" class="star">{{$index+1}}</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="strategy-section">
+		<div class="diffExp">
+			<h5>Overview</h5>
+			<p>{{ listing.diffExp | join }}</p>
+		</div>
+		<div class="weaknesses">
+			<h5>Champion Weaknesses</h5>
+			<ul>
+				<li ng-repeat="weakness in listing.weakness">{{weakness}}</li>
+			</ul>
+		</div>
+		<!-- <div class="tips">
+			<ul>
+				<li ng-repeat="tip in listing.tips">{{tip}}</li>
+			</ul>
+		</div> -->
+	</div>
+
+</div>
+
+</div>

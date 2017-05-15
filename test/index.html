@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app="testApp">
+  <head>
+      <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-controller="JsonController">
+    <div>
+      <p>Sort by: </p>
+      <button ng-click="sortBy('name')">Name</button>
+      <span class="sortorder" ng-show="propertyName === 'name'" ng-class="{reverse:reverse}"></span>
+      <button ng-click="sortBy('difficulty')">Difficulty</button>
+      <span class="sortorder" ng-show="propertyName === 'difficulty'" ng-class="{reverse:reverse}"></span>
+      <div><p>Toggle difficulty</p>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+    </div>
+    <ul>
+      <div ng-repeat="value in values | orderBy:propertyName:reverse" id="{{value.id}}" class="diff-{{value.difficulty}}" style="border: 2px solid red;">
+
+        <h4>{{value.name}}</h4>
+        <p>Difficulty - {{value.difficulty}}<p>
+        <p></p>
+      </div>
+    </ul>
+  </body>
+</html>

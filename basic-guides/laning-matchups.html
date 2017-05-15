@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html xmlns="//www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>Laning Matchups | Support Carry Zilean</title>
+	<meta name="author" content="Jera"></meta>
+	<meta name="description" content="Support Zilean has several great and several poor lane matchups. Here is the list breaking down each Marksman and Support matchup"></meta>
+	<meta name="robots" content="noarchive, noimageindex" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="/favicon/favicon.ico">
+
+	<script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-72638737-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+
+</head>
+<body ng-app="sczApp">
+
+<div ng-include src="'/assets/nav.url'"></div>
+
+<main>
+	<div class="content-wrapper">
+		<div class="content-container">
+			<div class="introduction">
+				<h1>Laning Matchups</h1>
+				<p>Laning is one of the toughest aspects when learning Support Zilean. There are two main playstyles: reactive and aggressive, and both depend on how you decide to skill your ranks.</p>
+				<p>Below are my subjective ratings of difficulty for enemy supports and marksmen (both with and against you). In general, the support is who makes the lane.</p>
+				<p>Zilean tends to play passively, so the enemy support is usually the one who decides the tempo for the lane.</p>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrapper">
+
+		<div class="quick-guide"  id="/support">
+			<ul>
+				<li><a class="active-item">Support Matchups</a></li>
+				<li><a href="#enemy">Enemy ADC Matchups</a></li>
+				<li><a href="#synergies">Your Lane Partner</a></li>
+			</ul>
+		</div>
+
+		<div class="content-container">
+
+			<div class="" ng-controller="matchupController">
+
+				<div class="sort-order-box">
+					<p>Sort By:</p>
+					<button ng-click="sortBy('difficulty')">Difficulty</button>
+	        <span class="sort-order" ng-show="propertyName === 'difficulty'" ng-class="{reverse: reverse}"></span>
+	        <button ng-click="sortBy('name')">Name</button>
+	        <span class="sort-order" ng-show="propertyName === 'name'" ng-class="{reverse: reverse}"></span>
+	      </div>
+
+				<div ng-repeat="champ in supports | orderBy:propertyName:reverse">
+					<matchup-list listing="champ"></matchup-list>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="content-wrapper">
+
+		<div class="quick-guide"  id="/enemy">
+			<ul>
+				<li><a href="#support">Support Matchups</a></li>
+				<li><a class="active-item">Enemy ADC Matchups</a></li>
+				<li><a href="#synergies">Your Lane Partner</a></li>
+			</ul>
+		</div>
+		<div class="content-container">
+			<h4>Enemy Marksmen Matchups</h4>
+			<p>For the most part, the enemy support has a much larger impact on the lane than the AD Carry.</p>
+			<p>There are some rough matchups for Zilean (those with dashes), and some good matches (those without dashes).</p>
+			<p>AD Carries that do a massive amount of burst damage are dangerous to Zilean.</p>
+			<div class="tier-box tier-3">
+				<h4>Challenging Marksmen for Zilean to face</h4>
+				<div class="stars">
+					<img src="/img/etc/star.svg">
+					<img src="/img/etc/star.svg">
+					<img src="/img/etc/star.svg">
+					<img src="/img/etc/star.svg">
+					<img src="/img/etc/star.svg">
+				</div>
+				<div>
+					<img src="/img/champion/ezreal.png" alt="Ezreal Champion Icon">
+					<img src="/img/champion/sivir.png" alt="Sivir Champion Icon">
+					<img src="/img/champion/lucian.png" alt="Lucian Champion Icon">
+				</div>
+				<div class="stars">
+					<img src="/img/etc/star.svg">
+					<img src="/img/etc/star.svg">
+					<img src="/img/etc/star.svg">
+					<img src="/img/etc/star.svg">
+				</div>
+				<div>
+					<img src="/img/champion/draven.png" alt="Draven Champion Icon">
+					<img src="/img/champion/caitlyn.png" alt="Caitlyn Champion Icon">
+					<img src="/img/champion/xayah.png" alt="Xayah Champion Icon">
+				</div>
+				<p>The most difficult markemts to face are those with high mobility, high burst or poke and can destroy the lane if you get out of position slightly. You have to be very cautious against these champions because a single mistake could snowball the enemy out of control.</p>
+				<p>Ezreal and Lucian have plenty of mobility and range, so landing Time Bombs without taking poke is very difficult.</p>
+				<p>Sivir is the worst ADC matchup to play against because she has two chances to absorb the spell, either as it lands, or as it detonates. This makes it incredibly difficult to play around her spellshield.</p>
+				<p>Many of the 4-star marksmen have incredible pre-6 damage and can easily zone you out (or engage for kills) if you are out of position. The enemy support will be a huge factor on if you should take a passive or aggressive playstyle against these marksmen.</p>
+			</div>
+			<div class="tier-box tier-2">
+				<h4>Average Difficulty Marksmen for Zilean to face</h4>
+				<div class="stars">
+					<img src="/img/etc/star.svg">
+					<img src="/img/etc/star.svg">
+					<img src="/img/etc/star.svg">
+				</div>
+				<div>
+					<img src="/img/champion/ashe.png" alt="Ashe Champion Icon">
+					<img src="/img/champion/corki.png" alt="Corki Champion Icon">
+					<img src="/img/champion/jinx.png" alt="Jinx Champion Icon">
+					<img src="/img/champion/tristana.png" alt="Tristana Champion Icon">
+					<img src="/img/champion/twitch.png" alt="Twitch Champion Icon">
+					<img src="/img/champion/quinn.png" alt="Quinn Champion Icon">
+					<img src="/img/champion/jihn.png" alt="Jhin Champion Icon">
+				</div>
+					<p>These are the standard marksmen that Zilean does OK against. Against these champions, it's important to know the respect the abilities of the enemy support and adapt your playstyle around them.</p>
+					<p>Many of these champions have predictable burst points, and if you are playing correctly, you can identify when they are moving in for the kill (usually by advancing into a minion wave as you are retreating) and prepare to use your ultimate or throw bombs to zone if you aren't level 6 yet.</p>
+			</div>
+			<div class="tier-box tier-1">
+				<h4>Easiest Marksmen for Zilean to face</h4>
+				<div class="stars">
+					<img src="/img/etc/star.svg">
+					<img src="/img/etc/star.svg">
+				</div>
+				<div>
+					<img src="/img/champion/graves.png" alt="Graves Champion Icon">
+					<img src="/img/champion/kindred.png" alt="Kindred Champion Icon">
+					<img src="/img/champion/missfortune.png" alt="Miss Fortune Champion Icon">
+					<img src="/img/champion/urgot.png" alt="Urgot Champion Icon">
+					<img src="/img/champion/kalista.png" alt="Kalista Champion Icon">
+				</div>
+				<div class="stars">
+					<img src="/img/etc/star.svg">
+				</div>
+				<div>
+					<img src="/img/champion/vayne.png" alt="Vayne Champion Icon">
+					<img src="/img/champion/kogmaw.png" alt="Kog'Maw Champion Icon">
+				</div>
+				<p>The champions that work best with Zilean are also countered by Zilean. These champions have low mobility and very predictable play paterns. Against these champions, it's recommended that you max Time Warp because to force the enemies to play safely or take loads of damage by being unable to escape.</p>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrapper">
+
+		<div class="quick-guide"  id="/synergies">
+			<ul>
+				<li><a href="#support">Support Matchups</a></li>
+				<li><a href="#enemy">Enemy ADC Matchups</a></li>
+				<li><a class="active-item">Your Lane Partner</a></li>
+			</ul>
+		</div>
+		<div class="content-container">
+			<h4>What does and doesn't lane well with Support Zilean</h4>
+			<p>Zilean has an interesting kit which allows him to play two distinct playstyles depending on the match-up: A heavy poke damage lane, or a heavy crowd control lane where you usually have an extra member to follow up on damage.</p>
+			<p>
+			<div class="tier-box tier-1">
+				<h4>Best Marksmen to pair with Zilean</h4>
+				<div class="stars">
+					<img src="/img/etc/star.svg">
+					<img src="/img/etc/star.svg">
+					<img src="/img/etc/star.svg">
+					<img src="/img/etc/star.svg">
+					<img src="/img/etc/star.svg">
+				</div>
+				<div>
+					<img src="/img/champion/vayne.png" alt="Vayne Champion Icon">
+					<img src="/img/champion/kogmaw.png" alt="Kog'Maw Champion Icon">
+					<img src="/img/champion/jihn.png" alt="Jhin Champion Icon">
+				</div>
+				<div class="stars">
+					<img src="/img/etc/star.svg">
+					<img src="/img/etc/star.svg">
+					<img src="/img/etc/star.svg">
+					<img src="/img/etc/star.svg">
+				</div>
+				<div>
+					<img src="/img/champion/jinx.png" alt="Jinx Champion Icon">
+					<img src="/img/champion/caitlyn.png" alt="Caitlyn Champion Icon">
+					<img src="/img/champion/draven.png" alt="Draven Champion Icon">
+					<img src="/img/champion/lucian.png" alt="Lucian Champion Icon">
+				</div>
+				<p>These champions are the best pairing with Zilean for two factors:</p>
+					<ol>
+						<li>1) Marksmen who lack mobility</li>
+						<li>2) Marksmen that can root or follow up to crowd control</li>
+					</ol>
+				<p>Many of these champions have a distinct weakness or flaw, and Zilean can help shield against that weakness. For example, Vayne needs help with positioning and is prone to all-in dives. But by having Zilean ult, you can make them waste spells trying to kill the Marksman as the team cleans up the tanks.</p>
+				<p>Generally, maxing Time Warp is more favorable than Time Bomb, but you want to make that decision based on what lane you are going against.</p>
+			</div>
+			<div class="tier-box tier-2">
+				<h4>Decent Marksmen to pair with Zilean</h4>
+				<div class="stars">
+					<img src="/img/etc/star.svg">
+					<img src="/img/etc/star.svg">
+					<img src="/img/etc/star.svg">
+				</div>
+				<div>
+					<img src="/img/champion/ashe.png" alt="Ashe Champion Icon">
+					<img src="/img/champion/corki.png" alt="Corki Champion Icon">
+					<img src="/img/champion/graves.png" alt="Graves Champion Icon">
+					<img src="/img/champion/kalista.png" alt="Kalista Champion Icon">
+					<img src="/img/champion/kindred.png" alt="Kindred Champion Icon">
+					<img src="/img/champion/missfortune.png" alt="Miss Fortune Champion Icon">
+					<img src="/img/champion/sivir.png" alt="Sivir Champion Icon">
+					<img src="/img/champion/tristana.png" alt="Tristana Champion Icon">
+					<img src="/img/champion/twitch.png" alt="Twitch Champion Icon">
+					<img src="/img/champion/quinn.png" alt="Quinn Champion Icon">
+					<img src="/img/champion/urgot.png" alt="Urgot Champion Icon">
+					<img src="/img/champion/xayah.png" alt="Xayah Champion Icon">
+				</div>
+				<p>This group is the majority of Marksmen, who all work well with Zilean. While there are some that excel with Zilean's kit, most benefit from the speed up and protection with Zilean's ult.</p>
+				<p>Maxing Time Bomb is more favorable with this group, but maxing Time Warp is fine.</p>
+			</div>
+			<div class="tier-box tier-3">
+				<h4>Poor Marksmen to pair with Zilean</h4>
+				<div class="stars">
+					<img src="/img/etc/star.svg">
+				</div>
+				<div>
+					<img src="/img/champion/ezreal.png" alt="Ezreal Champion Icon">
+				</div>
+				<p>Ezreal is the only marksman that comes to mind who doesn't synergize well with Zilean in one form or another. Ezreal has plenty of mobility and great poke damage, but his burst within a 2 second combo is very low.</p>
+				<p>If you do lane with a Zilean, you want to max Time Bomb and build AP, because you're going to try poking as hard as possible.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="article-footer">
+		<div class="footer-container">
+			<a href="/basic-guides/item-buildpaths.html"><i class="fa fa-arrow-circle-o-left fa-3x"></i></a>
+			<a href="/basic-guides/item-buildpaths.html"><p>Item Buildpaths</p></a>
+		</div>
+		<div class="footer-container">
+			<h4>Want More Articles?</h4>
+		</div>
+		<div class="footer-container">
+			<a href="/basic-guides/runes-101.html"><p>Runes 101</p></a>
+			<a href="/basic-guides/runes-101.html"><i class="fa fa-arrow-circle-o-right fa-3x"></i></a>
+		</div>
+	</div>
+</main>
+
+<div ng-include src="'/assets/footer.url'"></div>
+	<script type="text/javascript" src="/js/app.js"></script>
+	<script type="text/javascript" src="/js/scz.min.js"></script>
+	<script type="text/javascript" src="/js/supports.json"></script>
+
+
+</body>
+</html>

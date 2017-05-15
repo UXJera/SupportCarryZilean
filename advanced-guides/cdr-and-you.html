@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="//www.w3.org/1999/xhtml" lang="en" ng-app>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>CDR and You | Support Carry Zilean</title>
+	<meta name="author" content="Jera"></meta>
+	<meta name="description" content="CDR is vital to Support Zilean, but how important is it really? Here are the numbers and reasons showing the importance of Cooldown Reduction."></meta>
+	<meta name="robots" content="noarchive, noimageindex" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="/favicon/favicon.ico">
+
+	<script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-72638737-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+
+</head>
+<body>
+
+<div ng-include src="'/assets/nav.url'"></div>
+
+<main>
+	<div class="content-wrapper">
+		<div class="content-container">
+			<div class="introduction">
+				<h1>CDR and You</h1>
+				<p>This is an in-depth guide looking into the numbers behind Zilean's spells.</p>
+				<p>Zilean is a combo mage, meaning the more spell cycles you can get off, the more possible chances you have to land stuns, slows and damage.</p>
+				<h4>What is a spell cycle?</h4>
+				<p>A spell cycle is how long it takes you to use all of your primary spells and be able to cast them all again. For Zilean, these can be broken down into a Time Bomb cycle and a Full Cycle.</p>
+				<div class="spell-combo">
+					<img src="/img/skills/Q64.png" alt="Time Bomb Icon">
+					<img src="/img/skills/W64.png" alt="Rewind Icon">
+					<img src="/img/skills/Q64.png" alt="Time Bomb Icon">
+				</div>
+				<p><span>Double Bomb Cycle = 4.4 - 14 seconds (dependent on CDR and ranks)</span></p>
+				<p>A Double Bomb spell cycle is the time takes to cast Time Bomb + Rewind + Time Bomb and the refresh lasting a maximum of 14 seconds (no CDR and only 1 spell rank in Q and W) down to 4.4 seconds at maximum CDR and spell ranks.</p>
+				<div class="spell-combo">
+					<img src="/img/skills/E64.png" alt="Time Warp Icon">
+					<img src="/img/skills/Q64.png" alt="Time Bomb Icon">
+					<img src="/img/skills/W64.png" alt="Rewind Icon">
+					<img src="/img/skills/Q64.png" alt="Time Bomb Icon">
+					<img src="/img/skills/E64.png" alt="Time Warp Icon">
+				</div>
+				<p><span>Full Cycle = 8.2 - 15 seconds (dependent on CDR)</span></p>
+				<p>Depending on how much CDR you have and how many ranks you have invested into skills, the Full spell cycle can be as low as 8.2 seconds (from Time Warp at 45% CDR).</p>
+				<h4>What is the "spell delay"?</h4>
+				<p>When you use Rewind, all of your primary skills are reduced by 10 seconds, and Rewind goes on cooldown. Normally, you quickly cast your second spell, and that goes on cooldown.</p>
+				<p>In most cases, Rewind will be off cooldown while Time Bomb or Time Warp are still refreshing. In order to land a Double Bomb combo, both Time Bomb AND Rewind must be off cooldown.</p>
+				<span>Time Bomb Cooldown (Q) - Rewind Cooldown (W) = Delay</span>
+				<span>4.4s (Time Bomb Rank 5 @ 45% CDR) - 3.3s (Rewind Rank 5 @ 45% CDR) = 1.1sec Delay</span>
+				<span>8.2s (Time Warp @ 45% CDR) - 3.3s (Rewind Rank 5  @ 45% CDR) = 4.9sec Delay</span>
+				<p>The "delay" is the difference in time when Rewind is off cooldown, but Time Bomb is still on cooldown. When you are wanting to cast Double Bombs, it is ALWAYS advised that you wait until both Time Bomb and Rewind are off cooldown, otherwise you end up throwing a single bomb and create an even longer, inefficient spell cycle.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="content-wrapper">
+		<h3><img src="/img/skills/Q64.png" alt="Time Bomb Icon"> Time Bomb - Q </h3>
+		<div class="content-container cdr-container">
+			<a href="/img/tables/cdr-q-table-lg.jpg" target="_blank"><img src="/img/tables/cdr-q-table.jpg" alt="Time Bomb (Q) CDR Table"></a>
+			<div>
+				<p>Time Bomb is the iconic skill that people associate with Zilean, and for good reason.</p>
+				<p>With regards to Cooldown Reduction vs. Skill Ranks, every rank into Q adds 5% CDR per rank, which isn't much. The big benefit of CDR comes with the low spell cycle of at +30% Cooldown Reduction.</p>
+				<p>In most cases, your spell cycle will revolve around Time Bomb's cooldown, meaning the total time you have to wait for a spell cycle to refresh is going to be calculated based on your CDR and ranks into Time Bomb (see the table to find your exact number).</p>
+				<p>Something to note is that rank 5 Rewind (W) has a lower cooldown than Time Bomb, so there will be many times when Rewind is up before Time Bomb is on cooldown. The difference in that time is your delay, meaning that you should not recast Rewind until Time Bomb comes off cooldown, otherwise you are not getting a full spell cycle and you will not be able to cast Double Bombs.</p>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrapper">
+		<h3><img src="/img/skills/W64.png" alt="Rewind Icon">Rewind - W</h3>
+		<div class="content-container cdr-container">
+			<a href="/img/tables/cdr-w-table-lg.jpg" target="_blank"><img src="/img/tables/cdr-w-table.jpg" alt="Rewind (W) CDR Table"></a>
+			<div>
+				<p>Rewind is the focal point of CDR, but skill ranks help a ton.</p>
+				<p>Through ranking up Rewind, you gain a massive 57% Cooldown Reduction through ranks, which makes the CDR from the build less efficient.</p>
+				<p>However, Rewind is the key skill that determines if you are able to cast a double spell vs. only casting a single spell. The lower the cooldown on the skill, the more often you will be able to cast Double Bomb or Double Slow, depending on if you are patient to wait the delay.</p>
+				<p>An important thing to note is that you do have to wait the refresh time for Time Bomb and Time Warp, meaning that depending on the spell level and amount of CDR, you may have a 2-5 second window where Rewind is up, but Time Bomb / Time Warp are not. Using Rewind to refresh those skills makes it so you won't be able to double cast the spell.</p>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrapper">
+		<h3><img src="/img/skills/E64.png" alt="Time Warp Icon"> Time Warp - E</h3>
+		<div class="content-container cdr-container">
+			<a href="/img/tables/cdr-e-table-lg.jpg" target="_blank"><img src="/img/tables/cdr-e-table.jpg" alt="Time Warp (E) CDR Table"></a>
+			<div>
+				<p>Time Warp has no cooldown scaling with level and is entirely dependent on your items for Cooldown Reduction.</p>
+				<p>Time Warp has the longest refresh cycle of all of the primary skills, making CDR vital if you plan on using Time Warp often (which I highly recommend).</p>
+				<p>The big breakpoint here is at 30% CDR, where the refresh rate goes to 10.5 seconds. This means that you can use slow on an enemy, cast the first Time Bomb, Rewind (which will reset Time Warp's cooldown to 0), cast the second Time Bomb (stun), then land another slow.</p>
+				<p>Even though 35% guarantees that Time Warp will be completely reset by Rewind, you should never try to quickly double slow, but wait until the first slow is almost done, then cast the second, meaning that the extra CDR isn't absolutely necessary in this case.</p>
+				<p>As the game goes on, you want to have Time Warp on the lowest cooldown as possible. It can be used as an engage tool for the tank, a disengage if someone tries to run up, a pick tool if someone is out of position, or an escape tool to get two members of the team out fast.</p>
+				<p>The lowest refresh cycle for this spell is 8.2 seconds, which means that you will have to wait 8.2 seconds AFTER you cast it the second time while Rewind is on cooldown. In most cases, it is OK to use the Rewind when there are about 4-5 seconds on the refresh cycle of Time Warp to ensure that you get the spell off.</p>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrapper">
+		<h3><img src="/img/skills/R64.png" alt="Chronoshift Icon">Chronoshift - R</h3>
+		<div class="content-container cdr-container">
+			<a href="/img/tables/cdr-r-table-lg.jpg" target="_blank"><img src="/img/tables/cdr-r-table.jpg" alt="Chronoshift (R) CDR Table"></a>
+			<div>
+				<p>In general, the longer the spell refresh, the more you will get out of Cooldown Reduction.</p>
+				<p>Before the Zilean rework of 2015, Zilean's ultimate was affected by Rewind's 10 second cooldown reduction, meaning this spell could almost always be up every 20-30 seconds. However, with enough CDR, you can get close to the same results with a 33 second refresh cycle on Chronoshift.</p>
+				<p>This is huge because in longer teamfights, you should be able to get 2 or 3 of these spells off.</p>
+				<p>Ranking up Chronoshift gives 25% base CDR per rank, which takes a spell from a 2 minute refresh to a 1 minute refresh. Toss in CDR from the build and you are looking at an ultimate that is up every 33-39 seconds.</p>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrapper">
+		<h3>35% vs 45% CDR</h3>
+		<div class="content-container cdr-container">
+			<a href="/img/tables/35-vs-45-cdr.jpg" target="_blank"><img src="/img/tables/35-vs-45-cdr-sm.jpg" alt="Comparing 35% vs 45% CDR on spells"></a>
+			<div>
+				<p>Starting off, it is assumed that you are taking the 5 points in the Intelligence Mastery which will give you another 5% CDR, seeing as there are no other good alternatives for masteries.</p>
+				<p>The philosophy behind taking 35% CDR comes from the mid lane, where you can be granted the Blue Buff which adds an extra 10% CDR, which makes CDR efficiency being either inefficient for 2 minutes (with max CDR from items) or CDR efficient for 2 minutes (only building 30% CDR from items).</p>
+				<p>This table is more relevant for Zileans who are playing mid lane, to help optimize their builds.</p>
+				<p>For support, it is extremely unlikely that you should ever be given Blue Buff, and should be priorities to the AD Carry before you.</p>
+				<p>Looking into the numbers, you only gain under 1 second of cooldown on Time Bomb and Rewind, but 6 seconds on the ultimate.</p>
+				<p>Most could argue that fractions of seconds are trivial, but as a caster who should constantly be casting to zone out enemies, or have an ultimate available most of the time, hitting the CDR is asset to your overall utility.</p>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrapper">
+		<div class="content-container summary">
+			<h3>CDR and Max Skill Order</h3>
+			<p>This is the part where we get philosophical about skill order and spell cycles.</p>
+			<h5><img src="/img/skills/E64.png" alt="Time Warp Icon"> Maxing Time Warp</h5>
+			<p>When you start maxing Time Warp, you are doing it because of the slow and speed up, even though you do not get any cooldown from increasing ranks.</p>
+			<p>By picking up early CDR, you are able to cast more Time Warps, but also get lower times on Time Bomb, which at rank 1 has a 10 second cooldown.</p>
+			<p>When Time Bomb is at Rank 1 and you have 25% CDR, you effectively have the same cooldown as Rank 5 with 0% CDR, meaning that the CDR greatly assists the number of Double Bombs that you can toss out.</p>
+			<h5><img src="/img/skills/Q64.png" alt="Time Bomb Icon"> Maxing Time Bomb</h5>
+			<p>By taking extra ranks into Time Bomb early, you get the base 20% CDR at Rank 5, along with the extra damage and slightly longer stun.</p>
+			<p>The extra CDR affects Time Warp well, since ranks do not lower the spell's cooldown any further.</p>
+			<p>Looking at just CDR and low spell cycles (without accounting for the utility of Time Warp), maxing Time Bomb will result in shorter spell cycles.</p>
+		</div>
+	</div>
+	<div class="article-footer">
+		<div class="footer-container">
+			<a href="/advanced-guides/patch-evolution.html"><i class="fa fa-arrow-circle-o-left fa-3x"></i></a>
+			<a href="/advanced-guides/patch-evolution.html"><p>Patch Evolution</p></a>
+		</div>
+		<div class="footer-container">
+			<h4>Want More Articles?</h4>
+		</div>
+		<div class="footer-container">
+			<a href="/advanced-guides/the-great-q-vs-e-debate.html"><p>The Great Q vs E Debate</p></a>
+			<a href="/advanced-guides/the-great-q-vs-e-debate.html"><i class="fa fa-arrow-circle-o-right fa-3x"></i></a>
+		</div>
+	</div>
+</main>
+
+<div ng-include src="'/assets/footer.url'"></div>
+
+	<script type="text/javascript" src="/js/app.js"></script>
+
+</body>
+</html>

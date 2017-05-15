@@ -1,0 +1,43 @@
+$border: 2px solid $dark;
+$thin-border: 1px solid $dark;
+$border-radius: 10px;
+
+@mixin fullbg {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position:center;
+  background-size: cover;
+}
+
+@mixin border {
+  border-radius: $border-radius;
+  border: $border;
+}
+
+@mixin border-thin {
+  border-radius: $border-radius;
+  border: $thin-border;
+}
+
+@mixin box-shadow {
+  box-shadow: 5px 5px 5px #888;
+}
+
+@mixin box-shadow-alt {
+  box-shadow: 5px 5px 5px #333;
+}
+@mixin box-shadow-alt-2 {
+  box-shadow: 5px 5px 5px #111;
+}
+
+@mixin border-shadow {
+  border-radius: $border-radius;
+  border: $border;
+  box-shadow: 5px 5px 5px #888;
+}
+
+@mixin border-shadow-dark {
+  border-radius: $border-radius;
+  border: $border;
+  box-shadow: 5px 5px 5px #333;
+}

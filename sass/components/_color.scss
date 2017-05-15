@@ -1,70 +1,38 @@
 //			SASS MAIN COLOR SHORTHANDS		//
 
-$runes-red: #FF4747;
-$runes-light-red: lighten( #FF4747, 20%);
-$runes-yellow: #FFF24F;
-$runes-light-yellow: lighten(#FFF24F, 20%);
-$runes-blue: #00A8E8;
-$runes-light-blue: lighten(#00A8E8, 20%);
-$runes-purple: #E24FE2;
-$runes-light-purple: lighten(#E24FE2, 20%);
-
-
 $time-bomb-blue: #549aa8;
 $time-warp-blue: #2010a9;
+$time-bomb-blue-bg: lighten(rgba(28, 93, 153, .8), 10%);
+$time-warp-blue-bg: lighten(rgba(32, 16, 169, .8), 15%);
 
-$nav-blue: #639fab;
+$dark: #222;
 $light: #bbcde5;
+
 $red: #FF4747;
 $red-light: lighten($red, 20%);
 $yellow: #edc236;
 $yellow-light:lighten($yellow, 20%);
+$green: #64f38c;
+$blue: #00A8E8;
+$blue-light: lighten($blue, 25%);
 $light-blue: darken(#bbcde5, 10%);
-$dark: #222;
-//$blue-bg: rgba(99, 159, 171, .92);
-//$light-blue-bg: rgba(140, 232, 255, .95);
-//$light-bg: rgba(191, 238, 255, .95);
+
 $blue-bg: rgba(99, 159, 171, .92);
 $light-blue-bg: rgba(140, 232, 255, .9);
 $light-bg: rgba(191, 238, 255, .9);
 $fade-bg:  rgba(255, 255, 255, .5);
 $fade-light-bg: rgba(255, 255, 255, .3);
-$green-bg: lighten(rgba(87, 255, 87, .9), 10%);
-$time-bomb-blue-bg: lighten(rgba(28, 93, 153, .8), 10%);
-$time-warp-blue-bg: lighten(rgba(32, 16, 169, .8), 15%);
 $yellow-bg: rgba(237, 194, 54, .5);
 $white: #eee;
 
 .green {background: #5CBA55;}
 
-//  BG COLORS FOR RUNES ON HOME PAGE AND RUNES 101  //
+// FOR SPELLS PAGE -> BASIC COLORS //
 
-.red {background: $red;}
-.light-red {background: $red-light;}
-
-.yellow {background: $yellow;} //#FFF24F
-.light-yellow {background: $yellow-light;}
-
-.blue {background: #00A8E8;} //
-.light-blue {background: lighten(#00A8E8, 20%);}
-
-.purple {background: $time-warp-blue;}
-.light-purple {background: lighten($time-warp-blue, 20%);}
-
-.red-runes > ul { background: $red;}
-.yellow-runes > ul { background: $runes-yellow;}
-.blue-runes >  ul { background: $runes-blue;}
-.purple-runes >  ul { background: $time-warp-blue-bg; color:white;}
-
-//  BG IMG FOR MASTERY PAGE //
-
-.cunning {background: #36213C;}//background:url('/img/masteries/cunning-bg.png');}
-.ferocity {background: #321000;}//background:url('/img/masteries/ferocity-bg.png');}
-.resolve {background: #152530;}//background:url('/img/masteries/resolve-bg.png');}
+.red-text {color:red;}
+.yellow-text{color:darken(yellow, 15%);}
+.blue-text{color:blue;}
 
 .cunning, .ferocity, .resolve {
-  min-height: 100vh;
-  background-attachment: fixed;
-  background-size: cover;
   > h4, h6 {color: #eee;}
 }

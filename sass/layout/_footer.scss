@@ -1,15 +1,13 @@
 //		FOOTER STYLINGS		//
 
 .article-footer {
-	display:flex;
+	@include flex-col;
   flex:1;
-  flex-direction:column;
 	.footer-container{
-		align-items:center;
+		@include content-center;
 		background: $blue-bg;
 		display:flex;
 		flex: 1;
-    justify-content:center;
 		a {
 			color:$dark;
 			text-decoration:none;
@@ -23,7 +21,7 @@
 
 footer {
 	align-items: center;
-	background: $dark;
+	@include dark-gradient;
 	display: flex;
   flex: 1;
   justify-content: flex-end;
@@ -31,7 +29,7 @@ footer {
 		color:$white;
 		padding: .5em;
 		@include transition;
-		&:hover {color:$runes-light-blue;}
+		&:hover {color:$blue-light;}
 	}
 	div {
 		align-items:center;

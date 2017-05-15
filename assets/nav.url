@@ -2,25 +2,29 @@
 <nav role="navigation" class="main-nav menu">
 	<div class="mobile-nav"><a href="/#" class="mobile-brand">SUPPORT CARRY ZILEAN</a><a class="nav-trigger hamburger"></a></div>
 	<ul class="primary-nav isOpen">
-		<li class="brand no-mobile"><a href="/"><h1>SUPPORT <span>CARRY</span> </h1><img src="/img/Zilport.png" alt="Zilean face icon"></a></li>
+		<li class="brand no-mobile">
+			<a href="/">
+			<div>SUPPORT <span>CARRY</span></div>
+			<img src="/img/Zilport.png" alt="Zilean face icon">
+		</a></li>
 		<li class="blank-nav"></li>
 		<li><a class="nav-toggle" href="#" aria-haspopup="true"><img src="/img/skills/Q64.png" alt="Time bomb Icon">BASIC GUIDES</a>
 			<ul class="sub-menu">
-				<li><a href="/basic-guides/runes-101/">Runes 101</a></li>
-				<li><a href="/basic-guides/mastery-breakdown/">Mastery Breakdown</a></li>
-				<li><a href="/basic-guides/spells-combos-tricks/">Spells, Combos, and Tricks</a></li>
-				<li><a href="/basic-guides/item-buildpaths/">Item Buildpaths</a></li>
-				<li><a href="/basic-guides/laning-matchups/">Laning Matchups</a></li>
+				<li><a href="/basic-guides/runes-101.html">Runes 101</a></li>
+				<li><a href="/basic-guides/mastery-breakdown.html">Mastery Breakdown</a></li>
+				<li><a href="/basic-guides/spells-combos-tricks.html">Spells, Combos, and Tricks</a></li>
+				<li><a href="/basic-guides/item-buildpaths.html">Item Buildpaths</a></li>
+				<li><a href="/basic-guides/laning-matchups.html">Laning Matchups</a></li>
 			</ul>
 		</li>
 
 		<li><a class="nav-toggle" href="#" aria-haspopup="true"><img src="/img/skills/E64.png" alt="Time Warp Icon">ADVANCED GUIDES</a>
 			<ul class="sub-menu">
-				<li><a href="/advanced-guides/cdr-and-you/">CDR and You</a></li>
-				<li><a href="/advanced-guides/the-great-q-vs-e-debate/">The Great Q vs E Debate</a></li>
-				<li><a href="/advanced-guides/harnessing-the-power-of-ms/">Harnessing the Power of Movement Speed</a></li>
-				<li><a href="/advanced-guides/triple-bombs/">Triple Bombs and Chain Bombs</a></li>
-				<li><a href="/advanced-guides/patch-evolution/">Patch Evolution</a></li>
+				<li><a href="/advanced-guides/cdr-and-you.html">CDR and You</a></li>
+				<li><a href="/advanced-guides/the-great-q-vs-e-debate.html">The Great Q vs E Debate</a></li>
+				<li><a href="/advanced-guides/harnessing-the-power-of-ms.html">Harnessing the Power of Movement Speed</a></li>
+				<li><a href="/advanced-guides/triple-bombs.html">Triple Bombs and Chain Bombs</a></li>
+				<li><a href="/advanced-guides/patch-evolution.html">Patch Evolution</a></li>
 			</ul>
 		</li>
 		<li class=""><a href="/gameplay/"><img src="/img/skills/R64.png" alt="Chronoshift Icon">GAMEPLAY</a></li>

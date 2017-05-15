@@ -2,12 +2,10 @@
 	padding-bottom: .5em;
 	width: 100%;
 	ul {
-		align-items:center;
-		display:flex;
-		flex-direction:column;
-		justify-content: center;
+		@include flex-col;
+		@include content-center;
+		@include dark-gradient;
 		li {
-			background: $dark;
 			width: 100%;
 			a {
 				color: $light;
@@ -16,6 +14,7 @@
 				justify-content: center;
 				padding: .25em 0;
 				text-decoration: none;
+				font-weight: 700;
 				@include transition;
 				&:hover {
 					background: darken($yellow, 15%);
@@ -25,7 +24,6 @@
 			.active-item {
 				background: $yellow;
 				color: $time-warp-blue;
-				font-weight: 700;
 			}
 		}
 	}
@@ -35,26 +33,30 @@
   display:none;
   background:$light;
   ul {
-    display:flex;
-    flex-direction: column;
+    @include flex-col;
     margin: 0 auto;
     text-align: center;
+		@include time-bomb-gradient;
     li {
       font-size: 1.3em;
       font-weight: 700;
       display: flex;
       justify-content: center;
       flex:1;
-      background: $time-bomb-blue-bg;
       overflow: hidden;
-      img {max-width: 60px; min-width: 60px; border-radius: 5px; margin: .25em; margin-bottom:.5em;}
+      img {
+				max-width: 60px;
+				min-width: 60px;
+				border-radius: 5px;
+				margin: .25em;
+				margin-bottom:.5em;
+			}
       &.quick-guide-active {
-        background: $yellow-bg;
+        background: transparentize($yellow, .15);
           a { color: $dark;}
         }
       a {
-        display:flex;
-        flex-direction: column;
+        @include flex-col;
         align-items: center;
         flex: 1;
         text-align: center;
@@ -85,7 +87,7 @@
 .quick-guide-main ul li {
   &:nth-of-type(odd) {background: $time-warp-blue-bg;}
   &:nth-of-type(even) {background: $time-bomb-blue-bg;}
-  &.thead {background: $runes-blue;  color:white; padding: .25em 0;}
+  &.thead {background: $blue;  color:white; padding: .25em 0;}
 }
 
 @media screen and (min-width: 765px) {

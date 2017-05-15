@@ -2,7 +2,7 @@
 
 .pros-and-cons img {
 	margin: 0 auto;
-	max-height:64px; max-width: 64px; 
+	max-height:64px; max-width: 64px;
 	@include border-thin;
 }
 
@@ -12,16 +12,14 @@
 		color:$white;
 		@include box-shadow;
 	}
-	.time-bomb {background: $time-bomb-blue-bg;}
-	.time-warp {background: $time-warp-blue-bg;}
+	.time-bomb {@include time-bomb-gradient;}
+	.time-warp {@include time-warp-gradient;}
 }
 
 .debate-winner {
-	background:  $fade-bg;
-	border: $border;
-	border-radius: $border-radius;
-	display:flex;
-	flex-direction:column;
+	@include white-gradient;
+	@include border;
+	@include flex-col;
 	justify-content:center;
 	margin-top: 1em;
 	max-width: 70%;

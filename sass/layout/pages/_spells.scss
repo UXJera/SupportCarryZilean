@@ -1,9 +1,8 @@
 //	STYLES FOR SKILLS, SPELLS, COMBOS AND TRICKS	//
 
 .skill-container{
-	display:flex;
+	@include flex-row;
 	flex: 1;
-  flex-direction: row;
 	flex-wrap: wrap;
   justify-content: space-around;
 	margin: .5em 0;
@@ -15,11 +14,30 @@
 	h4, h5 {width: 100%;}
 }
 
+.skill-table {
+	width: 95%;
+	@include border-shadow;
+	@include white-gradient;
+	overflow:hidden;
+	table {
+		width: 100%;
+		text-align:center;
+		overflow:hidden;
+		tr {background: $light;}
+		tr:nth-of-type(odd){background: $fade-bg;}
+		tr:nth-of-type(1){background: $time-warp-blue-bg;}
+		th { color: $white; font-weight: 700;}
+		td {font-size: .95em;}
+		th, td {
+			border: 1px solid $dark;
+			text-align: center;
+		}
+	}
+}
+
 .spell-combo {
-	align-content:center;
-	display:flex;
   flex-direction: row;
-	//flex-wrap: wrap;
+	align-content:center;
   justify-content: space-around;
 	margin: .5em 0;
 	max-width: 90%;
@@ -30,25 +48,31 @@
 		@include box-shadow;
 	}
 	div {
-		align-items:center;
 		display:flex;
-	  justify-content:center;
+	  @include content-center;
 		padding: 0 1em;
 	}
 }
 
+.spell-row {
+	@include flex-row;
+	flex-wrap: wrap;
+	img {
+		width: 100%;
+		max-width: 450px;
+		@include border-shadow;
+	}
+}
+
 .skill-column {
-	align-items: center;
-	display:flex;
-  flex-direction: column;
-  justify-content: center;
+	@include flex-col;
+	@include content-center;
 	p {
 		padding: .3em 0;
 		font-size:.7em;
 	}
 	.spell-description {
-		display:flex;
-    flex-direction:column;
+		@include flex-col;
 		margin: .5em 0;
 		padding: .5em 2em;
 		background: $fade-bg;
@@ -62,8 +86,14 @@
 .res-image {
 	img {
 		width: 100%;
-		@include border;
-		@include box-shadow;
+		@include border-shadow;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.half-row {max-width: 45%;}
+	.skill-table {
+		width: 75%;
 	}
 }
 
