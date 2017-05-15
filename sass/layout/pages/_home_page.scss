@@ -1,0 +1,81 @@
+//			MAIN HOME PAGE STYLING		//
+
+// This is the sub nav for the home page nav to items/skills/runes/masteries, NOT TO ANOTHER PAGE.
+.blank-nav {display:none;}
+
+.patch-version {
+	background: $dark;
+	@include white-gradient;
+	color: $dark;
+	font-weight: 700;
+	font-size: .85em;
+	border-top: 1px solid $dark;
+	border-bottom: 1px solid $dark;
+	p {
+		width: 100%;
+		text-align: center;
+		a {
+			padding-left: .25em;
+			font-weight: 700;
+			color: darken($green, 20%);
+			text-decoration:none;
+			@include transition;
+			&:hover {color: $red;}
+		}
+	}
+}
+
+
+// RUNES CONTAINER FOR HOME PAGE //
+
+.home-runes-container {
+	@include flex-col;
+	width: 100%;
+}
+
+// SKILL ORDER FOR HOME PAGE //
+
+.skill-order {
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	font-weight: 700;
+	margin: 0 auto;
+	max-width: 90%;
+	padding: .5em 0;
+	li {
+		@include flex-col;
+		align-items:center;
+		padding: .2em;
+		img {
+			@include border-thin;
+			margin: .5em;
+			width:64px;
+			@include box-shadow;
+		}
+	}
+}
+
+
+.skill-order-gfx {
+	@include content-center;
+	display:flex;
+	margin: .75em 0;
+	img {
+		max-width: 100%;
+  	@include box-shadow;
+	}
+}
+
+.skill-hide {
+	background: $fade-bg;
+	display:none;
+	@include border;
+}
+@media screen and (min-width: 765px) {
+	.max-order {
+		margin: 0 auto;
+		max-width: 60%;
+	}
+}

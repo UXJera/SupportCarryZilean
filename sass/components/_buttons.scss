@@ -1,0 +1,15 @@
+button {
+	background: $dark;
+	border-color:$light $light-blue $light-blue $light;
+	border-radius: $border-radius;
+	color: $light;
+	font-weight: 700;
+	padding: .25em 1em;
+	margin: .25em auto;
+	margin-bottom: 1em;
+	@include transition;
+	&:hover {
+		background:$yellow;
+		color: $dark;
+	}
+}

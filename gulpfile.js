@@ -15,7 +15,7 @@ gulp.task('build-css', function(cb) {
 
       // output non-minified CSS file
       .pipe(sass({
-         outputStyle : 'expanded'
+         outputStyle : 'expanded' 
       }).on('error', sass.logError))
       .pipe(prefix())
       .pipe(gulp.dest(config.buildCss))
