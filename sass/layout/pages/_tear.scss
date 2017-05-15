@@ -82,7 +82,7 @@
           text-decoration: none;
           color: $yellow;
           @include box-shadow-alt;
-          @include border-radius;
+          @include border;
           @include transition;
           &:hover {
             background: $green;
