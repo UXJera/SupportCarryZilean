@@ -4,6 +4,7 @@ var gulp    = require('gulp'),
     minCss  = require('gulp-minify-css'),
     rename  = require('gulp-rename'),
     concat  = require('gulp-concat');
+    map     = require('gulp-sourcemaps')
 
 var config = {
   srcCss    : 'sass/**/*.scss',
@@ -13,10 +14,12 @@ var config = {
 gulp.task('build-css', function(cb) {
    gulp.src(config.srcCss)
 
-      // output non-minified CSS file
+      // output non-minified CSS file and map the scss
+      .pipe(map.init())
       .pipe(sass({
-         outputStyle : 'expanded' 
+         outputStyle : 'expanded'
       }).on('error', sass.logError))
+      .pipe(map.write())
       .pipe(prefix())
       .pipe(gulp.dest(config.buildCss))
 
