@@ -1,0 +1,11 @@
+// SUMMARY ELEMENTS USED FOR EVERY ARTICLE PAGE
+
+.summary {
+	@include flex-col;
+	@include content-center;
+	img {max-width: 100%;}
+}
+
+@media screen and (min-width: 1000px) {
+	.summary{max-width: 75%;}
+}

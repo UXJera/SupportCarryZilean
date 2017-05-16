@@ -1,3 +1,5 @@
+//  INTRODUCTION STYLINGS USED ON EVERY PAGE
+
 .introduction {
 	@include flex-col;
 	flex-wrap: wrap;
@@ -21,20 +23,7 @@
 	}
 }
 
-.summary {
-	@include flex-col;
-	@include content-center;
-	img {max-width: 100%;}
-}
-
-
-@media screen and (min-width: 765px) {
-	button{@include box-shadow;}
-}
-
 @media screen and (min-width: 1000px) {
 	.introduction p {max-width: 70%;}
-	.lg-cont{max-width: 75%;}
-	.summary{max-width: 75%;}
-	ul.bump-right{margin-left: 2em;}
+	.introduction .explanation p {max-width: 100%;}
 }

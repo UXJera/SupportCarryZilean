@@ -1,0 +1,62 @@
+//	STYLING FOR THE PRIMARY WRAPPERS USED FOR CONTENT
+
+main {
+	background: $dark;
+	h1 {
+		font-size: 1.8em;
+		font-weight: 700;
+		padding: 1em 0 .5em;
+	}
+}
+
+// OUTER WRAPPER
+
+.content-wrapper {
+	@include flex-col;
+	@include content-center;
+	height: 100%;
+	padding-bottom: .5em;
+	&:nth-of-type(odd){background:$light-blue-bg;}
+	&:nth-of-type(even){background:$light-bg;}
+	&.home-wrapper {
+		&:nth-of-type(2n){background:$light-blue-bg;}
+		&:nth-of-type(4n){background:$light-bg;}
+	}
+	h3, h5 {
+		@include content-center;
+		display:flex;
+		img {
+			border: $thin-border;
+			border-radius: $border-radius;
+			margin: 0 .5em;
+			@include box-shadow;
+		}
+	}
+}
+
+// INNER WRAPPER
+
+.content-container{
+	@include flex-col;
+	align-items:center;
+	flex-wrap: wrap;
+	max-width:95%;
+	width: 100%;
+}
+
+@media screen and (min-width: 765px) {
+	main {
+		background: url("/img/bg/zilbm.jpg");
+		background-attachment: fixed;
+		background-size: cover;
+		min-height: 100vh;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.content-container{max-width:80%;}
+}
+
+@media screen and (min-width: 1600px) {
+	.content-container {max-width: 70%;}
+}

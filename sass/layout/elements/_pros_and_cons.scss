@@ -1,0 +1,42 @@
+//  STYLING FOR PROS AND CONS //
+//  PAGES IN USE:
+//  HOME
+
+
+.pros-and-cons {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	div{
+		@include flex-col;
+		margin-top:.5em;
+		padding: .4em;
+		@include border;
+		ul {
+			@include flex-col;
+			justify-content: flex-start;
+			list-style-type: disc;
+			margin-left: 2em;
+			li { padding-right: 1em;}
+		}
+	}
+	img {
+		margin: 0 auto;
+		max-width: 64px;
+		max-height:64px;
+		@include border-thin;
+	}
+	.pros {@include green-gradient;}
+	.cons {@include red-gradient;}
+}
+
+@media screen and (min-width: 765px) {
+	.pros-and-cons {
+		flex-wrap:nowrap;
+		div{
+			max-width: 45%;
+			min-width: 40%;
+			@include box-shadow;
+		}
+	}
+}
