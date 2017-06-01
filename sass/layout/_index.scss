@@ -1,9 +1,5 @@
 //			COMPILING OF LAYOUT STYLINGS		//
 
-@import "nav";
-@import "home_main";
-@import "footer";
-@import "content_template";
-@import "pages/index";
+@import "elements/index";    // MULTI PAGE STYLES
+@import "pages/index";       // SINGLE PAGE STYLES
 @import "mobile_only";
-@import "font_awesome_alterations";

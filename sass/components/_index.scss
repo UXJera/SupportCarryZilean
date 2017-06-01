@@ -1,10 +1,15 @@
 //			COMPONENTS COMPILER			//
 
 @import "color";
-@import "background-gradients";
+@import "background_gradients";
 @import "fonts";
-@import "mixin";
+@import "text_modifiers";
 @import "flexbox_shorthands";
-@import "borders-and-shadows";
+@import "borders_and_shadows";
 @import "transitions";
 @import "screen_reader";
+@import "buttons";
+
+//    ALTERATIONS TO FRAMEWORKS AND LIBS  //
+
+@import "font_awesome_alterations";

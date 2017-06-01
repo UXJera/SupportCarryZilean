@@ -1,12 +1,14 @@
-@import "quickguide";
-@import "runes";
-@import "mastery";
-@import "spells";
-@import "items";
-@import "matchups";
-@import "cdr";
-@import "qvedebate";
-@import "movespeed";
-@import "patchnotes";
-@import "gameplay";
-@import "tear";
+//  PAGE SPECIFIC STYLING FOR:
+
+@import "home_page";  //  index.html
+@import "runes";      //  /basic/runes
+@import "mastery";    //  /basic/mastery
+@import "spells";     //  /basic/spells
+@import "items";      //  /basic/items
+@import "matchups";   //  /basic/laning-matchups
+@import "cdr";        //  /adv/cdr
+@import "qvedebate";  //  /adv/q-v-e
+@import "movespeed";  //  /adv/movespeed
+@import "patchnotes"; //  /adv/patch-notes
+@import "gameplay";   //  /gameplay
+@import "tear";       //  /adv/tear <-- unfinished article

@@ -1,0 +1,15 @@
+.img-box {
+	@include border-shadow;
+	margin: 0 1em;
+}
+
+
+// IMAGE RESIZES TO 100% CONTAINER WIDTH
+// USED IN: /adv/triple-bomb
+
+.res-image {
+	img {
+		width: 100%;
+		@include border-shadow;
+	}
+}
