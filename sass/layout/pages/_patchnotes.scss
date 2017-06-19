@@ -2,7 +2,13 @@
 //	STYLES FOR PATCH EVOLUTION	//
 
 .patch-container {
+	@include flex-col;
+	align-items: center;
 	li {
+		max-width: 95%;
+		margin-top: 1.5em;
+		border-bottom: 2px solid $dark;
+		box-shadow: 0 4px 2px -2px #444;
 		@include flex-col;
 		p:first-of-type {
 			font-weight: 700;
@@ -24,6 +30,12 @@
 	}
 }
 
-.nerf{color:$red;}
-.buff{color:darken($green, 43%);}
-.neutral{color:#777;}
+// .nerf{color:$red;}
+// .buff{color:darken($green, 43%);}
+// .neutral{color:#777;}
+
+@media screen and (min-width: 765px) {
+	.patch-container li {
+		max-width: 70%;
+	}
+}

@@ -115,7 +115,7 @@
    "index": 15,
    "name": "nautilus",
    "difficulty": 1,
-   "stars": "[1]",
+   "stars": [1],
    "diffExp": ["Nautilus is an easy match-up if you focus on poking down the enemy ADC and slowing Nautilus if he is out of position."],
    "weakness": ["Needs ADC to follow-up","Has trouble backing out of fights","Needs gold to become a big tank threat"]
  },
@@ -171,7 +171,7 @@
    "index": 22,
    "name": "trundle",
    "difficulty": 1,
-   "stars": "[1]",
+   "stars": [1],
    "diffExp": ["Trundle is a very easy match-up because Zilean can prey upon his immobility and predictable, passive playstyle."],
    "weakness": ["Has to be in melee range to deal meaningful damage","Tends to max Pillar first, resulting in a passive lane","Tries to pin people between walls or to cut escape paths"]
  },
@@ -195,7 +195,7 @@
    "index": 25,
    "name": "malzahar",
    "difficulty": 1,
-   "stars": "[1]",
+   "stars": [1],
    "diffExp": ["Malzahar is an easy match up for Zilean because a single Bomb can proc his shield and can save whoever Malzahar targets with ult."],
    "weakness": ["Damage contingent on Voidlings melee attacks","Spellshield can be popped easily","Wastes ult if Zilean ults the same target"]
  },
@@ -210,9 +210,9 @@
  {
    "index": 27,
    "name": "rakan",
-   "difficulty": 2,
-   "stars": [1,2],
-   "diffExp": ["Rakan is an easy match for Zilean because of his low presence in lane and weak early game."],
-   "weakness": ["Low impact in the early game","Needs teammates around to do anything","Slippery, but long cooldowns for spells early on"]
+   "difficulty": 3,
+   "stars": [1,2,3],
+   "diffExp": ["Rakan is very slippery and hard to lock down, but relies completely on his team to follow up."],
+   "weakness": ["Long cooldowns early in the game","Needs teammates around to do anything","Has a hard time if he falls behind"]
  }
 ]
