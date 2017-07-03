@@ -79,6 +79,9 @@
   padding: 1em 0;
   display:block;
   div {max-width: 70vw; margin: 0 auto;}
+	ul {
+		background: none;
+	}
   ul:nth-of-type(1) {
     li {border-radius: 10px 10px 0 0;}
   }
